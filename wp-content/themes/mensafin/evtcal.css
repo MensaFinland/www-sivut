@@ -1,0 +1,170 @@
+﻿
+/* Main list item */
+.myevent {
+    width: auto;
+    height: auto;
+    /*height: 150px;*/
+    position:relative;
+    z-index: 50;
+	border: 1px dotted #06F;
+	padding-top: 5px;
+}
+.myNearEvent {
+    width: auto;
+    height: auto;
+    /*height: 150px;*/
+    position:relative;
+    z-index: 50;
+	border: 1px dotted #06F;
+	padding-top: 5px;
+	background-color: #a4c7ff;
+}
+.myDateEvent {
+    background-color: #A4ADFF;
+    width: auto;
+    height: auto; /*height: 150px;*/
+    position: relative;
+    z-index: 50;
+    border: 1px dotted #06F;
+    padding-top: 5px;
+}
+.timeAndCity {
+    font-weight: bold
+}
+.details {
+}
+.location {
+}
+.info {
+}
+.qrcode {
+    overflow: visible;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: 70;
+}
+.maintopic {
+    width: 400px;
+}
+.qrButton{
+    background-image:url('images/qr-small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.icalButton{
+    background-image:url('images/ical-small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Google maps container: */
+#mapContainer {
+    width: 235px; /* lisätty 35 px */
+    height: 345px;
+    display: block;
+    float: right;
+    margin-right: auto;
+    margin-left: 10px;
+    z-index: 100;
+    padding-top: 20px;
+    border-bottom-style: double;
+    border-left-style: double;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-bottom-color: #517CFF;
+    border-left-color: #517CFF;
+}
+
+.ui-resizable-helper { border: 2px dotted #00F; }
+
+/* Calendar */
+.ui-datepicker-current-day .ui-state-active { background: #9F9F6F } 
+.eventDate a.ui-state-hover
+{ background: #718DE2 } 
+.eventDate a.ui-state-default 
+{ background: #4D70DB } 
+div.ui-datepicker
+{ font-size:12px; margin: 10px; }  
+.datepicker{
+	width: 230px;
+	height: 210px;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.technicaldate {
+    position:absolute;
+    visibility: hidden;
+}
+
+/* Data source: See the table if JavaScript is disabled... */
+#datasource {
+    padding: 2px;
+    background-color: #CCCCCC;
+    border: thin solid #000000;
+    z-index: 150;
+}
+
+.dsHead {
+    background-color: #3366CC;
+    color: #CCCCCC;
+}
+.dsEvent {
+    padding: 2px;
+    background-color: #CCCCCC;
+    border: thin solid #000000;
+}
+.dsInfo {
+    padding: 2px;
+    background-color: #CCCCCC;
+    border: thin solid #000000;
+
+}
+ .datacontainer{}
+ .mdatacontainer{}
+
+.dsCity
+.dsDay
+.dsDetails
+.dsEvent
+.dsTitle
+.dsEventName
+.dsHour
+.dsId
+.dsInfo
+.dsLatitude
+.dsLocationDetails
+.dsLongitude
+.dsMinute
+.dsMonth
+.dsStreetAddress
+.dsYear
+{}
+
+.aHour
+.aMinute
+.aMonth
+.aDay
+{}
+
+.graytarget {
+    color: lightgray
+}
+
+.ui-widget-header {
+	border: 1px solid #aaaaaa;
+	background: #365bb1 url(images/BGtop.jpg) 20% 20% repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+}
