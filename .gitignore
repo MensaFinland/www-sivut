@@ -1,0 +1,5 @@
+#Ignoroitavat tiedostot
+wp-config.php
+speksi*/
+*.inc
+
