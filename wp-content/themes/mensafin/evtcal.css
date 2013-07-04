@@ -96,10 +96,10 @@ div.ui-datepicker
 { font-size:12px; margin: 10px; }  
 .datepicker{
 	width: 230px;
-	height: 210px;
+	height: 270px;
 	display: block;
 	float: left;
-	padding-left: 10px;
+	padding-left: 0px;
 	margin-right: auto;
 	margin-left: auto;
 }

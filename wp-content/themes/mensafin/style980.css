@@ -1,0 +1,748 @@
+﻿@charset "UTF-8";
+
+
+header,nav,article,footer {
+	display:block;
+}
+
+body,article,p,h1,h2,h3,h4,p,ul,ol,li,header,form {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	background-image: url(images/BG.jpg);
+	background-repeat: repeat;
+}
+
+#background {
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 313px;
+	background-image: url(images/BGtop.jpg);
+}
+
+#wrapper {
+	display:block;
+	width: 980px; /* lisätty 20 px */
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	font-size: 36px;
+	color: #FFF;
+	height: 151px;
+	width: 980px; /* lisätty 20 px */
+	font-family: 'Montserrat', sans-serif;
+}
+
+#MensaLogo {
+	width: 160px;
+	height: 150px;
+	display:block;
+	float: left;
+}
+
+#MensaText {
+	width: 410px;
+	height: 64px;
+	display:block;
+	float: left;
+}
+
+#some {
+	width: 210px; /* lisätty 20 px */
+	height: 64px;
+	display:block;
+	float: left;
+}
+
+#members {
+	width: 180px;
+	height: 64px;
+	display:block;
+	float: left;
+	padding-right: 20px;
+}
+
+#edge { /* tämä div puuttui - jos wrapper ei veny, tää riittää eikä tarvita edge1 tai edge2 */
+}
+
+#edge1 {
+	width: 640px;
+	height: 27px;
+	display:block;
+	float: left;
+	padding-bottom: 37px;
+}
+
+#edge2 {
+	width: 145px; /* lisätty 20 px */
+	height: 64px;
+	margin-top: -29px;
+	display:block;
+	float: left;
+	background-image: url(images/edge2.png);
+	background-repeat: repeat-x;
+}
+
+#main {
+	width: 980px; /* lisätty 20 px */
+	height: 690px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+nav {
+	font-family: 'Montserrat', sans-serif;
+	height: 490px;
+	width: 160px;
+	padding-top: 20px;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+nav ul li {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	width: 160px;
+	height: 24px;
+	font-weight: normal;
+	color: #35548a;
+	padding-left: 18px;
+	list-style-image: url(images/transparent.png);
+}
+
+nav ul li img {
+	width: 15px;
+	height: 5px;
+}
+
+.link a:link {
+	text-decoration: none;
+	color: #35548a;
+	letter-spacing: 0.04em;
+}
+
+.link a:visited {
+	color: #35548a;
+	letter-spacing: 0.04em;   	
+}
+
+.link a:hover {
+	color: #06C; 
+	font-weight: bolder;
+	letter-spacing: -0.1em;
+}
+
+.link a:active {
+	color: #06C;
+	font-weight: bolder;
+	letter-spacing: -0.1em;
+}
+
+.linkHeader {
+    padding-top:0.5em;
+    margin-left: -1.2em;
+}
+
+.miinus{
+    width: 10px; 
+    height: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.menu1,.menu2,.menu3,.menu4{ }
+
+.current {
+	color: #06C;
+	font-weight: bolder;
+	letter-spacing: -0.1em;
+}
+
+#content {
+	width: 800px; /* lisätty 20 px */
+	height: 570px;
+	padding-right: 20px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -58px;
+	background-image: url(images/notepaper980.png);
+	background-repeat: repeat-y;
+}
+
+article {
+	display: block;
+	float: left;
+	margin-right: auto;
+	width: 400px; /* lisätty 10 px */
+	height: 570px;
+	margin-left: 10px;
+	padding-right: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.95em;
+	line-height: 1.8em;
+	color: #2c3745;
+	background-color: #FFF;
+}
+
+#mainContent { /* tämä div puuttui */
+	display: block;
+	float: left;
+	margin-right: auto;
+	width: 100%; 
+	/* tämä div puuttui, aattelin et 100% tekee tästä venyvän, jos kalenteri on display:none */
+	height: 570px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+#news {
+	width: 370px; /* vähennetty 10 px, jostain syystä näytti auttavan */
+	height: 210px;
+	background-image: url(images/BGnews.jpg);
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	background-position: center;
+	padding-left: 30px;
+}
+
+.mainArticle {
+	display: block;
+	float: left;
+	margin-right: auto;
+	width: 100%; /* aattelin et 100% tekee tästä venyvän, jos kalenteri on display:none */
+	height: 340px;
+	overflow:auto;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.mainArticleFull {
+	width: 530px;  /* mikäs tää on? en tehnyt muutoksia */
+	height: 550px;
+}
+.mainArticleFullHeight {
+	height: 550px;
+}
+
+.juttu {
+	width: 390px;
+	padding-left: 5px;
+	padding-right: 25px;
+	padding-top: 20px;
+}
+
+#calenderBG {
+	font-family: 'Montserrat', sans-serif;
+	width: 150px; /* lisätty 20 px */
+	height: 570px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(images/BGdotted.jpg);
+	background-repeat: repeat-y;
+	background-color: #FFF;
+}
+
+#calender {
+	font-family: 'Montserrat', sans-serif;
+	width: 150px; /* lisätty 20 px */
+	height: 570px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(images/BGcalender980.png);
+	background-repeat: none;
+}
+
+.testit {
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	width: 135px; /* lisätty 20 px */
+	height: 400px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding-bottom: 10px;
+	padding-left: 12px;
+}
+
+.testit ul li {
+	font-size: 0.6em;
+	line-height: 1.2em;
+	letter-spacing: 0.04em;
+	padding-left: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	list-style-image: url(images/elements/transparent.png);
+} 
+
+.testit ul {
+   font-family: Verdana, Geneva, sans-serif;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/* Span aika testikalenteriin */
+.aika {
+	font-weight: bolder;
+	color: #06C;
+}
+
+.testitPistelinja {
+	display: block;
+	font-size: 0.1em;
+	width: 110px; /* lisätty 10 px */
+	float: left;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px; /* lisää rakoa > muutettu 1stä 5een px */
+	padding-bottom: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f979c;
+	clear: both;
+}
+
+#testikalenteriImg {
+	padding-left:30px; /* lisätty 20 px */
+	height: 92px;
+	width: 120px;
+}
+
+#sidebar {
+	font-family: 'Montserrat', sans-serif;
+	width: 215px;
+	height: 566px;
+	display: block;
+	float: right;
+	margin-right: 20px;
+	margin-left: auto;
+	background-image: url(images/BGdotted.jpg);
+	background-repeat: repeat-y;
+	background-color: #FFF;
+	padding-top: 4px;
+	padding-left: 5px;
+}
+
+#blog {
+	width: 200px;
+	height: 210px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(images/alyblogi.png);
+	background-repeat: no-repeat;
+}
+
+#fb-like-box {
+	width: 200px;
+	height: 345px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: -5px;
+}
+
+a {outline : none;}
+
+a img {outline : none;}
+
+img {border : 0;}
+
+.picLeft {
+	padding:5px;
+	height:auto;
+	width:auto;
+	float: left;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.picRight {
+	padding:5px;
+	height:auto;
+	width:auto;
+	float: right;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.picNews {
+	float: right;
+	height:200px;
+	width:160px;
+	padding-right: 20px;
+	margin-top: -60px;
+}
+
+.flag {
+	height: 15px;
+	width: 16px;
+	padding-right: 5px;
+}
+
+.pistelinja {
+	display: block;
+	width: 340px;
+	float: left;
+	margin-left: 35px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #7f979c;
+	clear: both;
+}
+
+/*------- Typography -------*/
+
+.text {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	letter-spacing: 0.04em;
+	padding-left: 35px;
+	padding-right: 5px;
+	color: #4b5660;
+}
+
+.text a:link {
+	text-decoration: none;
+	color: #013ba6;
+}
+
+.text a:visited {
+	color: #013ba6;   	
+}
+
+.text a:hover {
+	color: #0059fc; 
+}
+
+.text a:active {
+	color: #0059fc;
+}
+
+.palsta {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	letter-spacing: 0.03em;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #06C;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.palstaOtsikko {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	letter-spacing: 0.02em;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top: 0px;
+	color: #06C;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.textNews {
+	font-size: 0.7em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-right: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.textNews a {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #06C;
+}
+
+.textBlogi {
+	font-size: 0.7em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	padding-left: 30px;
+	padding-top: 110px;
+	padding-right: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+}	
+	
+.textBlogi a {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #06C;
+}	
+	
+h1 {
+	display: none;
+}/* hakuautomaatteja varten, lukevat h1 otsikot */
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #4c6378;
+	letter-spacing: 0.04em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	clear: both;
+}
+
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #4c6378;
+	font-style: italic;
+	letter-spacing: 0.04em;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	clear: both;
+}
+
+/* SpanVers */
+.vers {
+	font-size: 0.9em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.vers a:link {
+	text-decoration: none;
+	color: #6a7873;
+}
+
+.vers a:visited {
+	color: #6a7873;
+}
+
+.vers a:hover {
+	background-color: #FF0;
+	color: #6a7873;
+}
+
+.vers a:active {
+	color: #F3F;
+	background-color: #FFF;
+	vertical-align:top;
+}
+
+
+
+/*------- Footer -------*/
+
+.footerText {
+	color: #5f7d99;
+	font-size: 0.65em;
+	padding-right: 10px;
+	line-height: 1.3em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#footerBG {
+	width: 780px;
+	height: 180px;
+	padding-left: 35px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: 160px;
+	background-repeat: no-repeat;
+	background-image: url(images/BGfooter.png);
+}
+
+footer {
+	width: 780px;
+	height: 180px;
+	padding-left: 5px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+.footerInfo {
+	width: 180px;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline;
+	float: left;
+}
+
+footer ul li {
+	color: #5f7d99;
+	font-size: 0.65em;
+	padding-right: 10px;
+	line-height: 1.3em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	padding-left: 10px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.footerText a:link {
+	text-decoration: none;
+	color: #5f7d99;
+}
+
+.footerText li a {
+	text-decoration: none;
+}
+
+.footerText a:visited {
+	color: #4a7eaf;   
+}
+
+.footerText a:hover {
+	color: #2b81da; 
+}
+
+.footerText a:active {
+	color: #2b81da;
+}
+
+
+/* testikalenterisivun lomake */
+
+#wish {
+	width: 400px;
+	height: 560px;
+	display: block;
+	float: left;
+	background-image: url(images/lomakepohja.png);
+	background-repeat: no-repeat;
+}
+
+.lomakeOtsikko {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	letter-spacing: 0.02em;
+	padding-left: 40px;
+	padding-right:25px;
+	padding-top: 60px;
+	color: #06C;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.textWish {
+	color: #4c6378;
+	font-size: 0.7em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	padding-top: 5px;
+	padding-left: 40px;
+	padding-right:25px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.lomakeLaatikko {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	letter-spacing: 0.04em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+textarea {
+	background-color: #fff;
+	border: thin dotted #5f7d99;
+	border-radius: 5px;
+	width: 290px;
+	height: 100px;
+	margin-left: 40px;
+	padding-right: 25px;
+}
+
+#mailfrom {
+	background-color: #fff;
+	border: thin dotted #5f7d99;
+	border-radius: 5px;
+	width: 290px;
+	height: 20px;
+	margin-left: 40px;
+	padding-right: 25px;
+}
+
+#answer {
+	background-color: #fff;
+	border: thin dotted #5f7d99;
+	border-radius: 5px;
+	width: 290px;
+	height: 20px;
+	margin-left: 40px;
+	padding-right: 25px;
+}
+
+#sendbtn {
+	background-color: #79a4db;
+	border-radius: 10px;
+	width: 30%;
+	font-size: 1em;
+	line-height: 1.8em;
+	letter-spacing: 0.04em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 60%;
+	margin-top: 20px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}

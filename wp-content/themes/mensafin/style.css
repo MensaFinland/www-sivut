@@ -1,18 +1,4 @@
-﻿/*
-Theme Name: MensaFin
-Description: Mensa custom theme for WordPress.
-Author: Suomen Mensa ry
-Author URI: http://www.mensa.fi/
-Version: 1.0
-Tags: blue, four-columns, fixed-width, custom-menu (optional)
-
-License:
-License URI:
-
-General comments (optional).
-*/
-
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 
 header,nav,article,footer {
