@@ -158,7 +158,9 @@ nav ul li img {
     cursor: pointer;
 }
 
-.menu1,.menu2,.menu3,.menu4{ }
+.menu1,.menu2,.menu3,.menu4{
+  padding-left: 27px;
+}
 
 .current {
 	color: #06C;

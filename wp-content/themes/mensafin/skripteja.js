@@ -4,13 +4,21 @@
 	document.write(unescape("%3Cscript src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js' type='text/javascript'%3E%3C/script%3E"));
 
 	$(document).ready(function() {
+            /* Wordpressin teeman kuvahakemisto */
+            var theme_path = '';
+            if (window.wordpress_theme_path) {
+              theme_path = window.wordpress_theme_path
+            }
+
 	    /* Valikon valitun kohteen tyyli */
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
 
         /* Menun piilotus */
 		$('.miinus').click(function () {
-		    $(this).attr('src', $(this).attr('src') == "images/miinus.png" ? "images/plus.png" : "images/miinus.png");
+                    var miinus = theme_path + "images/miinus.png";
+                    var plus   = theme_path + "images/plus.png"
+		    $(this).attr('src', $(this).attr('src') == miinus ? plus : miinus );
 		    $('.' + $(this).attr('id').substr(6, 5)).toggle(500);
 		});
 
