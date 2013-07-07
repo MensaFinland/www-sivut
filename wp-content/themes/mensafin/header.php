@@ -38,6 +38,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php get_template_part('template_parts/init-facebook-social-plugin') ?>
+
 <div id="background">
 <div id="wrapper">
 

@@ -28,8 +28,9 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	<div id="sidebar" style="width: 235px;"> 
-          <p> kissa </p>
+	<div id="sidebar"> 
+          <?php get_template_part( 'template_parts/link-to-iq-blog' ) ?>
+          <?php get_template_part( 'template_parts/mensatestit-on-facebook' ) ?>
 	</div><!-- #sidebar (secondary) -->
 
 <?php //get_sidebar(); ?>
