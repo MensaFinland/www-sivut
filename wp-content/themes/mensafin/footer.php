@@ -8,8 +8,8 @@
  */
 ?>
 
-		</div><!-- end content -->
-	</div><!-- #main -->
+		</div><!-- end container -->
+	<!-- </div> --><!-- #main -->
 
 	<div id="footerBG"> 
 	<footer id="colophon" class="site-footer" role="contentinfo">

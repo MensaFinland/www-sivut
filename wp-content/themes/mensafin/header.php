@@ -46,5 +46,6 @@
         <?php get_template_part('template_parts/heading'); ?>
         <?php get_template_part('template_parts/navigation'); ?>
 
-	<div id="main" class="site-main">
-	<div id="content">
+	<!-- <div id="main" class="site-main"> -->
+	<div id="container">
+        <div id="container-edge"></div>
