@@ -18,7 +18,7 @@
 		  <h1>Mensa on kansainvälinen järjestö, jonka toiminnan tarkoituksena on älykkyyden tunnistaminen ja kehittäminen ihmisyyden hyväksi, älykkyystutkimuksen tukeminen sekä älyllisen ja sosiaalisen ympäristön tarjoaminen jäsenilleen. Mensan jäseneksi voi liittyä jokainen, joka saavuttaa älykkyystestissä paremman tuloksen kuin 98% väestöstä. mensa, älykkyystesti, mensan testi, älykkyys, äo, iq, äo testi, iq testi, testi, test, älykkyysosamäärä, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, älykkyystestit, pulmapeli, pulmapelit, sosiaalinen älykkyys, älypeli, älypää, psykologinen, logiikka, looginen, loogiset, päättely, kyky, tehtäviä, tunneäly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, järjestö, yhdistys</h1>
 		  
 		  
-		  <img id="forumLink" src="<?php bloginfo('template_directory'); ?>/images/jasen.png" width="180" height="64" alt="members area" style="cursor:pointer;" />
+		  <a href="https://www.mensa.fi/forum/"><img id="forumLink" src="<?php bloginfo('template_directory'); ?>/images/jasen.png" width="180" height="64" alt="members area" style="cursor:pointer;" /></a>
 			</div><!-- end members -->
 	  </div><!-- end network --> 
 		

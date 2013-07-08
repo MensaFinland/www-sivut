@@ -12,7 +12,6 @@ body,article,p,h1,h2,h3,h4,p,ul,ol,li,header,form {
 
 body {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 1em;
 	background-image: url(images/BG.jpg);
 	background-repeat: repeat;
 }
@@ -27,7 +26,7 @@ body {
 #wrapper {
 	display:block;
 	width: 1000px;
-	height: 800px;
+	height: auto; 
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -36,7 +35,7 @@ header {
 	font-size: 36px;
 	color: #FFF;
 	height: 151px;
-	width: 960px;
+	width: 1000px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,7 +54,7 @@ header {
 }
 
 #some {
-	width: 190px;
+	width: 230px;
 	height: 64px;
 	display:block;
 	float: left;
@@ -193,8 +192,8 @@ article {
 	display: block;
 	float: left;
 	margin-right: auto;
-	width: 390px;
-	height: 570px;
+	width: 555px;
+	height: auto;
 	margin-left: 10px;
 	padding-right: 10px;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -232,16 +231,14 @@ article {
 	display: block;
 	float: left;
 	margin-right: auto;
-	width: 400px;
-	height: 340px;
+	width: 540px;
 	overflow:auto;
 	overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .mainArticleFull {
 	width: 530px;
-	height: 550px;
+	overflow-y: scroll;
 }
 .mainArticleFullHeight {
 	height: 550px;
@@ -249,6 +246,12 @@ article {
 
 .juttu {
 	width: 390px;
+	padding-left: 5px;
+	padding-right: 25px;
+	padding-top: 20px;
+}
+.juttuWide {
+	width: 555px;
 	padding-left: 5px;
 	padding-right: 25px;
 	padding-top: 20px;
@@ -504,7 +507,7 @@ img {border : 0;}
 	line-height: 1.4em;
 	letter-spacing: 0.04em;
 	padding-left: 30px;
-	padding-top: 110px;
+	padding-top: 100px;
 	padding-right: 5px;
 	font-family: Verdana, Geneva, sans-serif;
 }	
@@ -590,14 +593,15 @@ h3 {
 
 #footerBG {
 	width: 780px;
-	height: 180px;
+	height: 120px;
 	padding-left: 35px;
 	display: block;
 	float: left;
 	margin-right: auto;
 	margin-left: 160px;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-image: url(images/BGfooter.png);
+	clear: both;
 }
 
 footer {
