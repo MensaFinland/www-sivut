@@ -231,7 +231,7 @@ article {
 }
 
 .mainArticle {
-
+	margin-right: -8px; /* Tilapainen IE fix: scrollbar leventaa sivua */
 	display: block;
 	float: left;
 	margin-right: auto;
@@ -243,6 +243,7 @@ article {
 .mainArticleFull {
 	width: 530px;
 	overflow-y: scroll;
+	height: 550px;
 }
 .mainArticleFullHeight {
 	height: 550px;
