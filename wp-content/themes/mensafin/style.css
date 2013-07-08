@@ -189,11 +189,7 @@ nav ul li img {
 }
 
 article {
-	display: block;
-	float: left;
 	margin-right: auto;
-	width: 555px;
-	height: auto;
 	margin-left: 10px;
 	padding-right: 10px;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -592,7 +588,7 @@ h3 {
 }
 
 #footerBG {
-	width: 780px;
+	width: 800px;
 	height: 120px;
 	padding-left: 35px;
 	display: block;
