@@ -35,8 +35,15 @@ header {
 	font-size: 36px;
 	color: #FFF;
 	height: 151px;
-	width: 1000px;
 	font-family: 'Montserrat', sans-serif;
+}
+.entry-header{
+	width: 555px;
+	height: auto;
+}
+
+.site-header{
+	width: 1000px;
 }
 
 #MensaLogo {
@@ -224,6 +231,7 @@ article {
 }
 
 .mainArticle {
+
 	display: block;
 	float: left;
 	margin-right: auto;
