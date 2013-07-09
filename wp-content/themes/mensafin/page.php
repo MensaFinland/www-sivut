@@ -11,6 +11,9 @@
  */
 
 get_header(); ?>
+<div id="container">
+<div id="container-edge"></div>
+
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -31,4 +34,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div> <!-- #container -->
+<?php get_template_part( 'template_parts/default-footer' ); ?>
 <?php get_footer(); ?>
