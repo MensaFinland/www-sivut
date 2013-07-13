@@ -170,11 +170,11 @@ function mensafin_posted_on() {
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
+		'', //esc_attr( get_the_modified_date( 'c' ) ),
+		''  //esc_html( get_the_modified_date() )
 	);
 
-	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark">%3$s</a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s" rel="author">%6$s</a></span></span>', 'mensafin' ),
+	printf( __( 'Julkaistu: <a href="%1$s" title="%2$s" rel="bookmark">%3$s</a><span class="byline">. Kirjoittaja: <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s" rel="author">%6$s</a></span></span>.', 'mensafin' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		$time_string,

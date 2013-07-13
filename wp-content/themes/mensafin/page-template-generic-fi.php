@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Perussivu (suomi)
+Template Name: Perussivu (suomenkielinen)
 */
 
 /**

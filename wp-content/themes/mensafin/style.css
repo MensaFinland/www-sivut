@@ -265,7 +265,7 @@ article {
 	padding-top: 20px;
 }
 
-#calenderBG {
+#calendarBG {
 	font-family: 'Montserrat', sans-serif;
 	width: 130px;
 	height: 570px;
@@ -277,7 +277,7 @@ article {
 	background-repeat: repeat-y;
 }
 
-#calender {
+#calendar {
 	font-family: 'Montserrat', sans-serif;
 	width: 130px;
 	height: 570px;
@@ -285,7 +285,7 @@ article {
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(images/BGcalender.png);
+	background-image: url(images/BGcalender980.png);
 	background-repeat: repeat-x;
 }
 
