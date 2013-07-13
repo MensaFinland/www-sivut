@@ -39,12 +39,12 @@
 
 <body <?php body_class(); ?>>
 
-<?php get_template_part('template_parts/init-facebook-social-plugin') ?>
+<?php get_template_part('template-parts/init-facebook-social-plugin') ?>
 
 <div id="background">
 <div id="wrapper">
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-        <?php get_template_part('template_parts/heading'); ?>
-        <?php get_template_part('template_parts/navigation'); ?>
+        <?php get_template_part('template-parts/heading'); ?>
+        <?php get_template_part('template-parts/navigation'); ?>

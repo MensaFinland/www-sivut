@@ -24,17 +24,17 @@ get_header(); ?>
 			<?php the_post(); //while ( have_posts() ) : the_post(); ?>
 
 				<?php //get_template_part( 'content', 'page' ); ?>
-				<?php get_template_part( 'template_parts/content-page' ); ?>
+				<?php get_template_part( 'template-parts/content-page' ); ?>
 
 			<?php //endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<div id="sidebar"> 
-          <?php get_template_part( 'template_parts/link-to-iq-blog' ) ?>
-          <?php get_template_part( 'template_parts/mensatestit-on-facebook' ) ?>
+          <?php get_template_part( 'template-parts/link-to-iq-blog' ) ?>
+          <?php get_template_part( 'template-parts/mensatestit-on-facebook' ) ?>
 	</div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->
 
-<?php get_template_part( 'template_parts/sitemap-footer' ); ?>
+<?php get_template_part( 'template-parts/sitemap-footer' ); ?>
 <?php get_footer(); ?>

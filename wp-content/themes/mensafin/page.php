@@ -35,5 +35,5 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 </div> <!-- #container -->
-<?php get_template_part( 'template_parts/default-footer' ); ?>
+<?php get_template_part( 'template-parts/default-footer' ); ?>
 <?php get_footer(); ?>

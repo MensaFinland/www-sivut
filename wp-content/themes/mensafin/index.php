@@ -43,5 +43,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<?php get_template_part( 'template_parts/default-footer' ); ?>
+<?php get_template_part( 'template-parts/default-footer' ); ?>
 <?php get_footer(); ?>
