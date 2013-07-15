@@ -6,8 +6,8 @@
  */
 ?>
 	<header id="masthead" class="site-header" role="banner">
-		<div id="MensaLogo"><a href="index.html"><img src="<?php bloginfo('template_directory'); ?>/images/MensaLogo.png" alt="Mensa Logo" /></a></div><!-- end MensaLogo -->
-		<div id="MensaText"><a href="index.html"><img src="<?php bloginfo('template_directory'); ?>/images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
+		<div id="MensaLogo"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaLogo.png" alt="Mensa Logo" /></a></div><!-- end MensaLogo -->
+		<div id="MensaText"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
 		<div id="network">
 			<div id="some"><img src="<?php bloginfo('template_directory'); ?>/images/some.png" width="190" height="64" alt="social media" />
 			</div><!-- end facebook -->

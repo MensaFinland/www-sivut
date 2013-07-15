@@ -52,8 +52,8 @@ $eventdata=$DA->getValues($sql);
 <div id="wrapper">
     
     <header>
-        <div id="MensaLogo"><a href="index.html"><img src="images/MensaLogo.png" alt="Mensa Logo" /></a></div><!-- end MensaLogo -->
-        <div id="MensaText"><a href="index.html"><img src="images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
+        <div id="MensaLogo"><a href="index.php"><img src="images/MensaLogo.png" alt="Mensa Logo" /></a></div><!-- end MensaLogo -->
+        <div id="MensaText"><a href="index.php"><img src="images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
         <div id="network">
 			<div id="some"><img src="images/some.png" width="190" height="64" alt="social media" />
 			</div><!-- end facebook -->
