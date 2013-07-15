@@ -45,7 +45,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<div id="calendarBG" style="float: left;">
 	<div id="calendar" style="">
-        <?php get_template_part('template-parts/narrow-test-calendar'); ?>
+        <?php get_template_part('template-parts/narrow-test-calendar-main'); ?>
 	</div> <!-- #calendar -->
 	</div> <!-- #calendarBG -->
         <div id="sidebar"> 

@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" class="nounderline"><?php the_title(); ?></a></h2>
 		<div class="entry-meta" style="font-size:10px; color: black; padding-left: 10px;">
 			<?php mensafin_posted_on(); ?>
                         <?php
@@ -18,7 +18,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content text juttu">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
