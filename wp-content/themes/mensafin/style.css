@@ -255,6 +255,7 @@ article {
 .site-content {
     overflow-x: hidden;
     overflow-y: scroll;
+    height: 800px;
 }
 
 .juttu {
