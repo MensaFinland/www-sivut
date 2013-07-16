@@ -7,4 +7,4 @@
       
 ?>
      	<p class="palsta">Testikalenteri 2013</p>
-          <div class="testit" id="maineventlist">
+          <div class="testit" id="maineventlist"></div>
