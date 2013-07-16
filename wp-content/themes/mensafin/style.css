@@ -241,7 +241,6 @@ article {
 }
 
 .mainArticleFull {
-	width: 530px;
 	height: 750px;
 }
 .mainArticleFull .entry-content {
@@ -254,7 +253,6 @@ article {
 
 .site-content {
     overflow-x: hidden;
-    overflow-y: scroll;
     height: 800px;
     margin-left: 20px;
     background-color: white;
@@ -267,9 +265,7 @@ article {
 	padding-top: 20px;
 }
 .juttuWide {
-	width: 555px;
 	padding-left: 5px;
-	padding-right: 25px;
 	padding-top: 20px;
 }
 
