@@ -13,9 +13,21 @@ Template Name: Testikalenteri (suomenkielinen)
  *
  * @package mensaFin
  */
-?>
+ 
+////Debug:
+//ini_set('display_errors', 'On');
+ 
+////Alustetaan sivu:
+//require 'dataaccess.php';
+//$DA = new Data_Access;
+//$DA->openDatabase();
 
-<!DOCTYPE html>
+//$hideGone = "and (ISNULL(CONCAT(DateYear, '-', DateMonth, '-', DateDay)) or DateYear=0 or STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') >= NOW() ) ";
+//$sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') DESC, Id DESC";
+//$eventdata=$DA->getValues($sql);
+
+ 
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -80,6 +92,28 @@ Template Name: Testikalenteri (suomenkielinen)
 
 			<?php //endwhile; // end of the loop. ?>
 
+                <div class="pistelinja"></div><!-- end pistelinja -->
+                <div class="juttu">
+				<div><form id="wish" name="wish">
+                  
+					<p class="lomakeOtsikko">Toivo uutta testiä</p>
+					<p class="textWish">VOIT toivoa uutta testiä. Ilmoita toiveessasi paikkaunta ja muut toiveet. </p>
+					<p class="textWish">Emme lähetä automaattista postia, vaan käsittelemme toiveet ja palaamme asiaan, jos se on aiheellista.</p>
+					<br/>
+            <div><label for="mailbody"><p class="textWish"><span class="lomakeLaatikko">Toive</span> (255 merkkiä)</p> </label><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
+                        
+					<div><label for="mailfrom"><p class="textWish"><span class="lomakeLaatikko">Sähköposti</span> </p></label>
+                    <input type="email" name="mailfrom" id="mailfrom" tooltip="Palaamme asiaan" maxlength="255" /></div>
+                        
+					<div><label for="answer"><p class="textWish"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </p></label>
+                    <input name="answer" type="text" id="answer" maxlength="255" /></div>
+					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="textWish">Lähetä</p></button></div>
+					</form>
+                </div>
+                </div><!-- end juttu -->
+                <div class="pistelinja"></div><!-- end pistelinja -->
+            
+            
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<div id="calendarBG" style="float: left;">
@@ -111,7 +145,31 @@ Template Name: Testikalenteri (suomenkielinen)
 					Id-field is what ever url-encoded string or number.
 					Please be brief for all fields: QR-codes have SMS-style character limitations.
 				-->
-				<tr class="dsEvent"><td class="dsId">1231</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">07</td><td class="dsHour">17</td><td class="dsMinute">30</td><td class="dsCity">Helsinki</td><td class="dsStreetAddress">Rikhardinkatu 3</td><td class="dsLocationDetails">Rikhardinkadun kirjasto, Salonki, 3. krs</td><td class="dsEventDetails">(viitenumero: 11743)</td><td class="dsLatitude">60.1661552</td><td class="dsLongitude">24.9463225</td></tr>
+<?php
+//if(isset($eventdata)){
+//    while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC)){
+//        if($row["EventType"]=="0" || $row["EventType"]==0){
+//            print "<tr class='dsEvent'><td class='dsId'>".htmlspecialchars($row["Id"]);
+//            print "</td>\r\n<td class='dsTitle'>".htmlspecialchars($row["Title"]);
+//            print "</td>\r\n<td class='dsYear'>".htmlspecialchars($row["DateYear"]);
+//            print "</td>\r\n<td class='dsMonth'>".htmlspecialchars($row["DateMonth"]);
+//            print "</td>\r\n<td class='dsDay'>".htmlspecialchars($row["DateDay"]);
+//            print "</td>\r\n<td class='dsHour'>".htmlspecialchars($row["DateHour"]);
+//            print "</td>\r\n<td class='dsMinute'>".htmlspecialchars($row["DateMinute"]);
+//            print "</td>\r\n<td class='dsCity'>".htmlspecialchars($row["City"]);
+//            print "</td>\r\n<td class='dsStreetAddress'>".htmlspecialchars($row["StreetAddress"]);
+//            print "</td>\r\n<td class='dsLocationDetails'>".htmlspecialchars($row["LocationDetails"]);
+//            print "</td>\r\n<td class='dsEventDetails'>".htmlspecialchars($row["EventDetails"]);
+//            print "</td>\r\n<td class='dsLatitude'>".htmlspecialchars($row["Latitude"]);
+//            print "</td>\r\n<td class='dsLongitude'>".htmlspecialchars($row["Longitude"])."</td></tr>";
+//        } else {
+//            print "<tr class='dsInfo'><td class='dsId'>".htmlspecialchars($row["Id"])."</td>\r\n<td colspan='9' class='dsTitle'>".htmlspecialchars($row["Title"])."</td>\r\n<td colspan='3' class='dsDetails'>".htmlspecialchars($row["EventDetails"])."</td></tr>";
+//        }
+//    }
+//}                    
+//?>
+
+                <tr class="dsEvent"><td class="dsId">1231</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">07</td><td class="dsHour">17</td><td class="dsMinute">30</td><td class="dsCity">Helsinki</td><td class="dsStreetAddress">Rikhardinkatu 3</td><td class="dsLocationDetails">Rikhardinkadun kirjasto, Salonki, 3. krs</td><td class="dsEventDetails">(viitenumero: 11743)</td><td class="dsLatitude">60.1661552</td><td class="dsLongitude">24.9463225</td></tr>
 				<tr class="dsEvent"><td class="dsId">1232</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">16</td><td class="dsHour">17</td><td class="dsMinute">30</td><td class="dsCity">Tampere</td><td class="dsStreetAddress">Kirjastotalo Metso, Pirkankatu 2</td><td class="dsLocationDetails">Toivonen-sali, muumikerros</td><td class="dsEventDetails">(viitenumero: 11620)</td><td class="dsLatitude">61.4977606</td><td class="dsLongitude">23.7507924</td></tr>
 				<tr class="dsEvent"><td class="dsId">1233</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">22</td><td class="dsHour">18</td><td class="dsMinute">00</td><td class="dsCity">Lappeenranta</td><td class="dsStreetAddress">Villimiehenkatu 1</td><td class="dsLocationDetails"></td><td class="dsEventDetails">(viitenumero: 11905)</td><td class="dsLatitude">61.0573018</td><td class="dsLongitude">28.1917542</td></tr>
 				<tr class="dsEvent"><td class="dsId">1234</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">25</td><td class="dsHour">13</td><td class="dsMinute">00</td><td class="dsCity">Seinäjoki</td><td class="dsStreetAddress">Alvar Aallon katu 14</td><td class="dsLocationDetails">Pääkirjasto Apila, Jaaksi 3 (pieni kokoustila/atk-luokka)</td><td class="dsEventDetails">(viitenumero: 11879)</td><td class="dsLatitude">62.7858996</td><td class="dsLongitude">22.8402672</td></tr>
