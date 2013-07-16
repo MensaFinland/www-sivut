@@ -31,18 +31,16 @@ Template Name: Testikalenteri (suomenkielinen)
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/skripteja.js" type="text/javascript"></script> 
 
-<script src="skripteja.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<link href="evtcal.css" rel="stylesheet" type="text/css" />
-<script src="eventcalendar.js" type="text/javascript"></script>
-<script src="evtcal2.js" type="text/javascript"></script>
-<script src="skripteja2.js" type="text/javascript"></script>
+<link href="<?php bloginfo('template_directory'); ?>/evtcal.css" rel="stylesheet" type="text/css" />
+<script src="<?php bloginfo('template_directory'); ?>/eventcalendar.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/evtcal2.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/skripteja2.js" type="text/javascript"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
