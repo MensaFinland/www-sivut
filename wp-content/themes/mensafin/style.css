@@ -370,6 +370,10 @@ article {
 	padding-left: 5px;
 }
 
+#sidebar.pos-map {
+  padding-right:25px;
+}
+
 #blog {
 	width: 200px;
 	height: 210px;

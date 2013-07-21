@@ -4,6 +4,15 @@
  *
  * @package mensaFin
  */
+
+function render_contentlike_template_part()
+{
+	global $contentlike_template_part;
+	if ($contentlike_template_part)
+	{
+		get_template_part($contentlike_template_part);
+	}
+}
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="juttuWide mainArticleFull">
@@ -14,6 +23,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<?php render_contentlike_template_part(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 <div class="pistelinja"></div><!-- end pistelinja -->
