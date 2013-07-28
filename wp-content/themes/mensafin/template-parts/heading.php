@@ -16,7 +16,7 @@
 			<img name="some" src="<?php bloginfo('template_directory'); ?>/images/networkKaikki.png" width="351" height="25" border="0" usemap="#some1">
 
 			<map name="some1">
-				<area shape="rect" coords="0,0,24,25" href="https://www.facebook.com/Mensantestit" target="_blank" class="fb-follow" alt="Mensan älykkyystestit Facebookissa">
+				<area shape="rect" coords="0,0,24,25" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa">
 				<area shape="rect" coords="29,0,67,25" href="https://twitter.com/intent/follow?screen_name=mensafinland&tw_p=followbutton&variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland">
 				<area shape="rect" coords="67,0,130,25" href="http://www.youtube.com" target="_blank" alt="Virallinen tili vasta tulossa...">
 				<area shape="rect" coords="134,0,169,25" href="http://pinterest.com/" target="_blank" alt="Virallinen Pinterst-tili...">
@@ -29,10 +29,8 @@
 	  </div><!-- end network --> 
 		
 		<div id="edge">
-		  <div id="edge1"><img src="<?php bloginfo('template_directory'); ?>/images/reuna1.png" alt="reuna" />
+		  <div id="edge1"><img src="<?php bloginfo('template_directory'); ?>/images/edgeFull.png" alt="reuna" />
 			</div><!-- end edge1 -->
-		  <div id="edge2">
-			</div><!-- end edge2 -->
 		</div><!-- end network --> 
 
 		<div class="site-branding">
