@@ -51,6 +51,7 @@ get_header(); ?>
         <div id="sidebar"> 
           <?php get_template_part( 'template-parts/link-to-iq-blog' ) ?>
           <?php get_template_part( 'template-parts/mensatestit-on-facebook' ) ?>
+          <?php get_template_part( 'template-parts/link-to-gifted-children' ) ?>
         </div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->
 
