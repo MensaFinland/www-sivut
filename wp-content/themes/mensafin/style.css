@@ -846,10 +846,10 @@ textarea {
 	padding-left: 5px;
 }
 
-// Contact info ribbon on the very top of the page.
+/* Contact info ribbon on the very top of the page. */
 #contact {
 	display: block;
-	position: fixed;
+	/* position: fixed; */
 	z-index: 999;
 	height: 15px;
 	width: 100%;
@@ -907,7 +907,7 @@ textarea {
 	color: #2b81da;
 }
 
-// 404 not found: indentation for widgets (search, monthly archives, recent posts)
+/* 404 not found: indentation for widgets (search, monthly archives, recent posts) */
 #widgets-for-404 .widgettitle {
 	font-size:1.4em;
 }
