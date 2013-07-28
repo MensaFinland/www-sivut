@@ -1,31 +1,17 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * In the front page, renders an individual news item in "announcements" blog.
  *
  * @package mensaFin
  */
 
 get_header(); ?>
+<div id="container">
+<div id="container-edge"></div>
+  <?php $content_style = 'post'; ?>
+  <?php get_template_part( 'template-parts/default-content-area' ); ?>
+  <?php get_template_part( 'template-parts/default-sidebar'      ); ?>
+</div> <!-- #container -->
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'content', 'single' ); ?>
-
-			<?php mensafin_content_nav( 'nav-below' ); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() )
-					comments_template();
-			?>
-
-		<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<?php get_template_part( 'template-parts/sitemap-footer' ); ?>
 <?php get_footer(); ?>

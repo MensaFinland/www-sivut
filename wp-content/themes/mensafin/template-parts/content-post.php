@@ -1,18 +1,10 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying a post.
+ * Post summaries are displayed in the front page. Clikcing one opens single.php and flows down to this file.
  *
  * @package mensaFin
  */
-
-function render_contentlike_template_part()
-{
-	global $contentlike_template_part;
-	if ($contentlike_template_part)
-	{
-		get_template_part($contentlike_template_part);
-	}
-}
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="juttuWide mainArticleFull">
@@ -21,11 +13,12 @@ function render_contentlike_template_part()
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<!-- The human readable title of the post -->
 		<h2 class="entry-title"><?php the_title(); ?></h2>
+		<?php get_template_part( 'template-parts/post-time-author-and-tags' ); ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php render_contentlike_template_part(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 <div class="pistelinja"></div><!-- end pistelinja -->

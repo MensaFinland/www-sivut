@@ -245,7 +245,7 @@ article {
 }
 .mainArticleFull .entry-content {
         height: 760px;
-	overflow-y: scroll;
+	//overflow-y: scroll;
 }
 .mainArticleFullHeight {
 	height: 550px;
@@ -362,9 +362,6 @@ article {
 	float: right;
 	margin-right: 20px;
 	margin-left: auto;
-        // Mites tämä sopii yhteen ruutupaperitaustan kanssa? Joku joka tajuu ovi korjata.
-	// background-image: url(images/BGdotted.jpg);
-	// background-repeat: repeat-y;
 	background-color: transparent;
 	padding-top: 4px;
 	padding-left: 5px;

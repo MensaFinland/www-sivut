@@ -17,23 +17,9 @@ Template Name: Perussivu (suomenkielinen)
 get_header(); ?>
 <div id="container">
 <div id="container-edge"></div>
-
-	<div id="primary" class="content-area" style="width:555px; float:left; background-color:transparent;">
-		<div id="content" class="site-content" role="main">
-
-			<?php the_post(); //while ( have_posts() ) : the_post(); ?>
-
-				<?php //get_template_part( 'content', 'page' ); ?>
-				<?php get_template_part( 'template-parts/content-page' ); ?>
-
-			<?php //endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<div id="sidebar"> 
-          <?php get_template_part( 'template-parts/link-to-iq-blog' ) ?>
-          <?php get_template_part( 'template-parts/mensatestit-on-facebook' ) ?>
-	</div><!-- #sidebar (secondary) -->
+  <?php $content_style = 'page'; ?>
+  <?php get_template_part( 'template-parts/default-content-area' ); ?>
+  <?php get_template_part( 'template-parts/default-sidebar'      ); ?>
 </div> <!-- #container -->
 
 <?php get_template_part( 'template-parts/sitemap-footer' ); ?>
