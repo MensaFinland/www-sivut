@@ -907,3 +907,14 @@ textarea {
 #contact a:active {
 	color: #2b81da;
 }
+
+// 404 not found: indentation for widgets (search, monthly archives, recent posts)
+#widgets-for-404 .widgettitle {
+	font-size:1.4em;
+}
+#widgets-for-404 form, 
+#widgets-for-404 select,
+#widgets-for-404 div.tagcloud, 
+#widgets-for-404 ul {
+	margin-left: 35px;
+}
