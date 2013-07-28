@@ -23,9 +23,6 @@
 				<area shape="rect" coords="209,0,351,25" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto">
 			</map>
 		  </div> <!-- some -->
-		  <div id="members">
-		  
-			</div><!-- end members -->
 	  </div><!-- end network --> 
 		
 		<div id="edge">
