@@ -160,15 +160,15 @@ nav ul li img {
 }
 
 .linkHeader {
-    padding-top:0.5em;
-    margin-left: -1.2em;
+	padding-top:0.5em;
+	margin-left: -1.2em;
 }
 
 .miinus{
-    width: 10px; 
-    height: 10px;
-    padding-right: 5px;
-    cursor: pointer;
+	width: 10px; 
+	height: 10px;
+	padding-right: 5px;
+	cursor: pointer;
 }
 
 .menu1,.menu2,.menu3,.menu4{
@@ -206,17 +206,17 @@ article {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+	width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
-    border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
 
 #news {
@@ -243,18 +243,17 @@ article {
 	height: 750px;
 }
 .mainArticleFull .entry-content {
-        height: 760px;
-	//overflow-y: scroll;
+		height: 760px;
 }
 .mainArticleFullHeight {
 	height: 550px;
 }
 
 .site-content {
-    overflow-x: hidden;
-    height: 800px;
-    margin-left: 20px;
-    background-color: white;
+	overflow-x: hidden;
+	height: 800px;
+	margin-left: 20px;
+	background-color: white;
 }
 
 .juttu {
@@ -322,8 +321,8 @@ article {
 
 .testit ul {
    font-family: Verdana, Geneva, sans-serif;
-    list-style-type: none;
-    list-style-image: none;
+	list-style-type: none;
+	list-style-image: none;
 }
 
 /* Span aika testikalenteriin */
@@ -571,9 +570,9 @@ h3 {
 }
 
 .nounderline {
-    text-decoration: none;
-    font-style: normal;
-    color: #4c6378;
+	text-decoration: none;
+	font-style: normal;
+	color: #4c6378;
 }
 /* SpanVers */
 .vers {
@@ -687,7 +686,7 @@ footer ul li {
 
 #wish {
 	width: 320px;
-	height: 600px;
+	height: 500px;
 	display: block;
 	float: left;
 	margin-right: 10px;
@@ -832,7 +831,6 @@ textarea {
 #sendbtn {
 	background-color: #79a4db;
 	border-radius: 10px;
-	width: 30%;
 	font-size: 1em;
 	line-height: 1.8em;
 	letter-spacing: 0.04em;
@@ -858,6 +856,8 @@ textarea {
 	left: 0px;
 	top: 0px;
 	background-color: #009;
+	visibility: hidden;
+	position: absolute;
 }
 
 #contact ul {
