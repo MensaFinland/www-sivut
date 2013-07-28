@@ -46,5 +46,6 @@
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
+	<?php get_template_part('template-parts/contact-info-ribbon'); ?>
         <?php get_template_part('template-parts/heading'); ?>
         <?php get_template_part('template-parts/navigation'); ?>

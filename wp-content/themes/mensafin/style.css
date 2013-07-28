@@ -848,3 +848,62 @@ textarea {
 	padding-bottom: 5px;
 	padding-left: 5px;
 }
+
+// Contact info ribbon on the very top of the page.
+#contact {
+	display: block;
+	position: fixed;
+	z-index: 999;
+	height: 15px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: #009;
+}
+
+#contact ul {
+	margin: 0px auto;
+	width: 930px;
+	display:block;
+}
+
+#contact ul li img {
+	margin-top: -10px;
+}
+
+#contact ul li {
+	color: #fff;
+	font-size: 0.6em;
+	letter-spacing: 0.2em;
+	padding-right: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	padding-left: 10px;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#contact a:link {
+	text-decoration: none;
+	color: #5f7d99;
+}
+
+#contact li a {
+	text-decoration: none;
+}
+
+.contact a:visited {
+	color: #4a7eaf;   
+}
+
+#contact a:hover {
+	color: #2b81da; 
+}
+
+#contact a:active {
+	color: #2b81da;
+}
