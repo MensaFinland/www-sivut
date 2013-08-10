@@ -16,11 +16,16 @@
 			<img name="some" src="<?php bloginfo('template_directory'); ?>/images/networkKaikki.png" width="351" height="25" border="0" usemap="#some1">
 
 			<map name="some1">
-				<area shape="rect" coords="0,0,24,25" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa">
-				<area shape="rect" coords="29,0,67,25" href="https://twitter.com/intent/follow?screen_name=mensafinland&tw_p=followbutton&variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland">
-				<area shape="rect" coords="67,0,130,25" href="https://www.youtube.com/MensaFinland" target="_blank" alt="Youtube">
-				<area shape="rect" coords="134,0,169,25" href="https://pinterest.com/mensafinland/" target="_blank" alt="Pinterest">
-				<area shape="rect" coords="209,0,351,25" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto">
+				<area shape="rect" coords="0,0,24,25" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiF.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
+				<area shape="rect" coords="29,0,67,25" href="https://twitter.com/intent/follow?screen_name=mensafinland&tw_p=followbutton&variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiT.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
+				<area shape="rect" coords="67,0,130,25" href="https://www.youtube.com/MensaFinland" target="_blank" alt="Youtube" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiY.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
+				<area shape="rect" coords="134,0,169,25" href="https://pinterest.com/mensafinland/" target="_blank" alt="Pinterest" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiP.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
+				<area shape="rect" coords="209,0,351,25" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiFo.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
 			</map>
 		  </div> <!-- some -->
 	  </div><!-- end network --> 
