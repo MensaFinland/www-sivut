@@ -11,9 +11,9 @@
     <div id="footerInfoArea"> 
        <div style="width:170px;" class="footerInfo">
          <ul>
-           <li style="padding-top:10px;" class="footerText"><a href="http://www.kolumbus.fi/ulla.sainio/press.html">Medialle</a></li>
-           <li class="footerText"><a href="#">Aineistopankki</a></li>
-           <li class="footerText"><a href="http://www.gentil.fi/404.html">Arkisto</a></li>
+           <li style="padding-top:10px;" class="footerText"><a href="http://www.mensa.fi/wordpress/?page_id=85">Medialle</a></li>
+           <!--<li class="footerText"><a href="#">Aineistopankki</a></li>-->
+           <li class="footerText"><a href="http://www.mensa.fi/wordpress/?year=<?php echo date("Y"); ?>">Arkisto</a></li>
          </ul>
        </div><!-- end footerInfo yhteystiedot -->
        <div style="width:195px;" class="footerInfo">

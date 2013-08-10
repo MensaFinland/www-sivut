@@ -1,7 +1,7 @@
 <article id="post-0" class="post not-found">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'mensafin' ); ?></h1>
-		<h2 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'mensafin' ); ?></h1>
+		<h1 class="entry-title"><?php _e( 'Oho! Sivu hukassa.', 'mensafin' ); ?></h1>
+		<h2 class="entry-title"><?php _e( 'Oho! Sivu hukassa.', 'mensafin' ); ?></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
