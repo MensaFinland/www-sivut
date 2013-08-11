@@ -13,19 +13,19 @@
 		<div id="MensaText"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
 		<div id="network">
 		  <div id="some">
-			<img name="some" src="<?php bloginfo('template_directory'); ?>/images/networkKaikki.png" width="355" height="29" border="0" usemap="#some1">
+			<img name="some" src="<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png" width="355" height="29" border="0" usemap="#some1">
 
 			<map name="some1">
-				<area shape="rect" coords="0,0,24,31" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiF.png';" 
-	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
-				<area shape="rect" coords="31,0,69,29" href="https://twitter.com/intent/follow?screen_name=mensafinland&tw_p=followbutton&variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiT.png';" 
-	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
-				<area shape="rect" coords="69,0,132,29" href="https://www.youtube.com/MensaFinland" target="_blank" alt="Youtube" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiY.png';" 
-	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
-				<area shape="rect" coords="136,0,171,29" href="https://pinterest.com/mensafinland/" target="_blank" alt="Pinterest" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiP.png';" 
-	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
-				<area shape="rect" coords="211,0,355,29" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikkiFo.png';" 
-	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/networkKaikki.png';">
+				<area shape="rect" coords="0,0,24,31" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2F.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png';">
+				<area shape="rect" coords="31,0,69,29" href="https://twitter.com/intent/follow?screen_name=mensafinland&tw_p=followbutton&variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2T.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png';">
+				<area shape="rect" coords="69,0,132,29" href="https://www.youtube.com/MensaFinland" target="_blank" alt="Youtube" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2Y.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png';">
+				<area shape="rect" coords="136,0,171,29" href="https://pinterest.com/mensafinland/" target="_blank" alt="Pinterest" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2P.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png';">
+				<area shape="rect" coords="211,0,355,29" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto" onMouseOver="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2Fo.png';" 
+	onMouseOut="if(document.images) document.some.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png';">
 			</map>
 		  </div> <!-- some -->
 	  </div><!-- end network --> 
