@@ -156,13 +156,13 @@ nav ul li img {
 .link a:hover {
 	color: #06C; 
 	font-weight: bolder;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.00em;
 }
 
 .link a:active {
 	color: #06C;
 	font-weight: bolder;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.00em;
 }
 
 .linkHeader {
