@@ -8,7 +8,7 @@
 
 <!-- POS-kartta -->
 <div style="display:inline">
-	<img name="poskartta0" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif" width="235" height="396" style="border:thin black none" usemap="#poskartta"/>
+	<img name="poskartta0" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif" width="235" height="430" style="border:thin black none" usemap="#poskartta"/>
 
 	<map name="poskartta">
 	<area href="#pos2" title="Lappi" id="apos2" shape="poly" coords="160, 7, 167, 16, 180, 21, 180, 29, 173, 37, 174, 55, 169, 66, 172, 73, 181, 84, 195, 98, 181, 124, 190, 144, 176, 143, 176, 164, 170, 167, 161, 167, 148, 173, 133, 169, 118, 176, 106, 166, 98, 145, 105, 131, 100, 109, 99, 82, 91, 66, 80, 64, 63, 43, 75, 32, 87, 52, 98, 59, 109, 53, 120, 63, 133, 49, 133, 30, 142, 10, 153, 13" alt="Lappi"
