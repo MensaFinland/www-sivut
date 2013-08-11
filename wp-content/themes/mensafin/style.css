@@ -10,6 +10,10 @@ body,article,p,h1,h2,h3,h4,p,ul,ol,li,header,form {
 	padding:0px;
 }
 
+map{
+    position: absolute;
+}
+
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	background-image: url(images/BG.jpg);
@@ -61,10 +65,11 @@ header {
 }
 
 #some {
-	width: 230px;
-	height: 64px;
-	display:block;
-	float: left;
+    padding: 28px 0px 0px 0px;
+    width: 360px;
+    height: 64px;
+    display: block;
+    float: left;
 }
 
 #members {
