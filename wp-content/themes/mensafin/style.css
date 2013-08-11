@@ -41,6 +41,7 @@ header {
 	height: 151px;
 	font-family: 'Montserrat', sans-serif;
 }
+
 .entry-header{
 	width: 555px;
 	height: auto;
@@ -48,6 +49,7 @@ header {
 
 .site-header{
 	width: 1000px;
+	font-size: 12px;
 }
 
 #MensaLogo {
@@ -92,7 +94,6 @@ header {
 	height: 27px;
 	display:block;
 	float: left;
-	padding-bottom: 37px;
 }
 
 #edge2 {
@@ -194,7 +195,7 @@ nav ul li img {
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: -58px;
+	margin-top: -60px;
 	background-image: url(images/notepaperTesti.png);
 	background-repeat: repeat-y;
 }
