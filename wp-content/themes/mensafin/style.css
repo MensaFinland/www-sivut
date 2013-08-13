@@ -117,6 +117,7 @@ header {
 
 nav {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
 	height: 490px;
 	width: 160px;
 	padding-top: 20px;
@@ -126,40 +127,45 @@ nav {
 	display: block;
 }
 
-nav ul li {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.8em;
+ul#menu-mainmensamenu li {
 	width: 160px;
-	height: 24px;
 	font-weight: normal;
 	color: #35548a;
 	padding-left: 18px;
 	list-style-image: url(images/transparent.png);
 }
 
-nav ul li img {
-	width: 15px;
-	height: 5px;
+.navTextBox {
+    height: 27px;
 }
 
-.link a:link {
+ul#menu-mainmensamenu > li {
+	padding-bottom: 12px;
+}
+
+ul#menu-mainmensamenu li li {
+	height: 24px;
+	padding-left: 23px;
+}
+
+.link a:link, ul#menu-mainmensamenu a:link {
 	text-decoration: none;
 	color: #35548a;
 	letter-spacing: 0.04em;
 }
 
-.link a:visited {
+.link a:visited, ul#menu-mainmensamenu a:visited {
 	color: #35548a;
 	letter-spacing: 0.04em;   	
 }
 
-.link a:hover {
+.link a:hover, ul#menu-mainmensamenu a:hover {
 	color: #06C; 
 	font-weight: bolder;
 	letter-spacing: 0.00em;
 }
 
-.link a:active {
+.link a:active, ul#menu-mainmensamenu a:active {
 	color: #06C;
 	font-weight: bolder;
 	letter-spacing: 0.00em;

@@ -14,13 +14,27 @@
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
 
-        /* Menun piilotus */
-		$('.miinus').click(function () {
-                    var miinus = theme_path + "images/miinus.png";
-                    var plus   = theme_path + "images/plus.png"
-		    $(this).attr('src', $(this).attr('src') == miinus ? plus : miinus );
-		    $('.' + $(this).attr('id').substr(6, 5)).toggle(500);
-		});
+            /* Lisää ylätason valikkoihin piilotusnuolet. */
+            $('ul#menu-mainmensamenu > li').each(
+                function(index, element) {
+                    /* Jos valikolla on alalinkkejä... */
+                    if ($(element).find('ul').length > 0) {
+
+                        /* Lisää foldausnulen kuva vasemmalle ... */
+                        $(element).children('div').prepend('<img src="' + theme_path + 'images/miinus.png' + '" alt="miinus" class="miinus"/>');
+                        $(element).find('div img').click( function() {
+
+                            /* ... jota klikkaamalla alalinkit katoavat tai tulevat näkyviin. */
+                            $(element).find('ul').toggle(500);
+
+                            /* Ja nuolen suunta vaihtuu. */
+                            var miinus = theme_path + "images/miinus.png";
+                            var plus   = theme_path + "images/plus.png"
+                            $(this).attr('src', $(this).attr('src') == miinus ? plus : miinus );
+                        });
+                    }
+                }
+            );
 
 		$('#forumLink').click(function () {
 		    window.location.href = 'https://www.mensa.fi/forum/';
