@@ -76,7 +76,7 @@
   foreach($poses as $pos) {
 
     /* When POS map is clicked, this is the link we scroll to. Example: <a name="pos14"></a> */
-    if ($pos['map_id']) { print('<a name="' . $pos["map_id"] . '"></a>'); }
+    if ($pos['map_id']) { print('<a id="' . $pos["map_id"] . '"></a>'); }
 
     print('<h3>' . $pos["name"] . '</h3>');
     print('<table>');
