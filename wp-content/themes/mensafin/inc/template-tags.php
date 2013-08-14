@@ -164,14 +164,14 @@ if ( ! function_exists( 'mensafin_posted_on' ) ) :
  */
 function mensafin_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) )
-		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+	//if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) )
+	//	$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
-		'', //esc_attr( get_the_modified_date( 'c' ) ),
-		''  //esc_html( get_the_modified_date() )
+		esc_attr( get_the_modified_date( 'c' ) ),
+		esc_html( get_the_modified_date() )
 	);
 
 	printf( __( 'Julkaistu: <a href="%1$s" title="%2$s" rel="bookmark">%3$s</a><span class="byline">. Kirjoittaja: <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s" rel="author">%6$s</a></span></span>.', 'mensafin' ),
