@@ -7,7 +7,7 @@
  * @package mensaFin
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -26,13 +26,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<meta name="robots" content="index,follow" /> 
+<meta name="robots" content="index,follow" />
 <meta name="rating" content="general" />
-<meta charset="utf-8" />
-<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.19)" />
-<meta name="description" content="Mensa on kansainvälinen järjestö, jonka toiminnan tarkoituksena on älykkyyden tunnistaminen ja kehittäminen ihmisyyden hyväksi, älykkyystutkimuksen tukeminen sekä älyllisen ja sosiaalisen ympäristön tarjoaminen jäsenilleen. Mensan jäseneksi voi liittyä jokainen, joka saavuttaa älykkyystestissä paremman tuloksen kuin 98% väestöstä." />
-<meta name="keywords" content="mensa, älykkyystesti, mensan testi, älykkyys, äo, iq, äo testi, iq testi, testi, test, älykkyysosamäärä, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, älykkyystestit, pulmapeli, pulmapelit, sosiaalinen älykkyys, älypeli, älypää, psykologinen, logiikka, looginen, loogiset, päättely, kyky, tehtäviä, tunneäly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, järjestö, yhdistys" />
-<meta name="Author" content="Suomen Mensa ry, Sivut suunnitteli Tuomas Hietanen, Ulla Sainio, Simo Härkönen 2013" />
+<meta name="description" content="Mensa on kansainvÃ¤linen jÃ¤rjestÃ¶, jonka toiminnan tarkoituksena on Ã¤lykkyyden tunnistaminen ja kehittÃ¤minen ihmisyyden hyvÃ¤ksi, Ã¤lykkyystutkimuksen tukeminen sekÃ¤ Ã¤lyllisen ja sosiaalisen ympÃ¤ristÃ¶n tarjoaminen jÃ¤senilleen. Mensan jÃ¤seneksi voi liittyÃ¤ jokainen, joka saavuttaa Ã¤lykkyystestissÃ¤ paremman tuloksen kuin 98% vÃ¤estÃ¶stÃ¤." />
+<meta name="keywords" content="mensa, Ã¤lykkyystesti, mensan testi, Ã¤ykkyys, Ã¤o, iq, Ã¤o testi, iq testi, testi, test, Ã¤lykkyysosamÃ¤Ã¤rÃ¤, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, älykkyystestit, pulmapeli, pulmapelit, sosiaalinen Ã¤lykkyys, Ã¤lypeli, Ã¤lypÃ¤Ã¤, psykologinen, logiikka, looginen, loogiset, pÃ¤Ã¤ttely, kyky, tehtÃ¤viÃ¤, tunneÃ¤ly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, jÃ¤rjestÃ¶, yhdistys" />
+<meta name="Author" content="Suomen Mensa ry, Sivut suunnitteli Tuomas Hietanen, Ulla Sainio, Simo HÃ¤rkÃ¶nen 2013" />
 
 <?php wp_head(); ?>
 </head>
