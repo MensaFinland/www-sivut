@@ -75,14 +75,14 @@ Template Name: Testikalenteri (suomenkielinen)
 					<p class="textWish">VOIT toivoa uutta testiä. Ilmoita toiveessasi paikkaunta ja muut toiveet. </p>
 					<p class="textWish">Emme lähetä automaattista postia, vaan käsittelemme toiveet ja palaamme asiaan, jos se on aiheellista.</p>
 					<br/>
-            <div><label for="mailbody"><p class="textWish"><span class="lomakeLaatikko">Toive</span> (255 merkkiä)</p> </label><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
+            <div><p class="textWish"><label for="mailbody"><span class="lomakeLaatikko">Toive</span> (255 merkkiä)</label></p><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
                         
-					<div><label for="mailfrom"><p class="textWish"><span class="lomakeLaatikko">Sähköposti</span> </p></label>
-                    <input type="email" name="mailfrom" id="mailfrom" tooltip="Palaamme asiaan" maxlength="255" /></div>
+					<div><p class="textWish"><label for="mailfrom"><span class="lomakeLaatikko">Sähköposti</span> </label></p>
+                    <input type="email" name="mailfrom" id="mailfrom" title="Palaamme asiaan" maxlength="255" /></div>
                         
-					<div><label for="answer"><p class="textWish"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </p></label>
+					<div><p class="textWish"><label for="answer"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </label></p>
                     <input name="answer" type="text" id="answer" maxlength="255" /></div>
-					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="textWish">Lähetä</p></button></div>
+					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><span class="textWish">Lähetä</span></button></div>
 					</form>
                 </div>
                 </div><!-- end juttu -->
@@ -105,7 +105,7 @@ Template Name: Testikalenteri (suomenkielinen)
 
         <div id="dialog" title="QR-Code">
             <p>Valokuvaa QR-koodi asianmukaisella ohjelmalla kännykälläsi, niin voit asettaa muistutuksen tapahtumasta.</p>
-            <img id="iQRCode" alt="QR-code" />
+            <img id="iQRCode" alt="QR-code" src="<?php bloginfo('template_directory') ?>/images/qr-empty.png"/>
         </div>
         <div id="LocalizationQrcode" style="visibility: hidden">QR</div>
         <div id="LocalizationIcal" style="visibility: hidden">iCal</div>
