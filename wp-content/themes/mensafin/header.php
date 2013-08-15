@@ -14,15 +14,15 @@
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script type="text/javascript">
   window.wordpress_theme_path = "<?php bloginfo('template_directory'); ?>/";
 </script>
-<script src="<?php bloginfo('template_directory'); ?>/skripteja.js" type="text/javascript"></script> 
+<?php wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.js'                                       ); ?>
+<?php wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           ); ?>
+<?php wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   ); ?>
+<?php wp_enqueue_style('font-montserrat', 'http://fonts.googleapis.com/css?family=Montserrat'); ?>
+<?php wp_head(); ?>
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -32,7 +32,6 @@
 <meta name="keywords" content="mensa, älykkyystesti, mensan testi, äykkyys, äo, iq, äo testi, iq testi, testi, test, älykkyysosamäärä, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, älykkyystestit, pulmapeli, pulmapelit, sosiaalinen älykkyys, älypeli, älypää, psykologinen, logiikka, looginen, loogiset, päättely, kyky, tehtäviä, tunneäly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, järjestö, yhdistys" />
 <meta name="Author" content="Suomen Mensa ry, Sivut suunnitteli Tuomas Hietanen, Ulla Sainio, Simo Härkönen 2013" />
 
-<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

@@ -27,57 +27,32 @@ Template Name: Testikalenteri (suomenkielinen)
 //$eventdata=$DA->getValues($sql);
 
  
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+?>
 
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script type="text/javascript">
-  window.wordpress_theme_path = "<?php bloginfo('template_directory'); ?>/";
-</script>
-<script src="<?php bloginfo('template_directory'); ?>/skripteja.js" type="text/javascript"></script> 
 
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<?php
+  // wp_enqueue_script is the preferred way to include Javascript and CSS.
+  //  - Scripts are included only once.
+  //  - Dependencies are included in correct order.
+  // wp_head() call in header.php prints the actual include lines.
+  //
+  //                 A NAME WE CHOOSE   ADDRESS OF SCRIPT/CSS                                  DEPENDENCY SCRIPTS
+  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.js'                                       );
+  wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
+  wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.js'      , array('jquery-bundle')   );
+  wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<link href="<?php bloginfo('template_directory'); ?>/evtcal.css" rel="stylesheet" type="text/css" />
-<script src="<?php bloginfo('template_directory'); ?>/eventcalendar.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/evtcal2.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/skripteja2.js" type="text/javascript"></script>
+  wp_enqueue_script('goggle-maps-api' , 'http://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
+  wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   );
+  wp_enqueue_script('local-skripteja2', get_bloginfo('template_directory') . '/skripteja2.js', array('jquery-bundle')   );
+  wp_enqueue_script('local-evtcal'    , get_bloginfo('template_directory') . '/eventcalendar.js', array('jquery-ui-bundle')   );
+  wp_enqueue_style( 'local-evtcal'    , get_bloginfo('template_directory') . '/evtcal.css' );
 
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  wp_enqueue_script('local-evtcal2'   , get_bloginfo('template_directory') . '/evtcal2.js', array('jquery-ui-bundle')   );
 
-<meta name="robots" content="index,follow" /> 
-<meta name="rating" content="general" />
-<meta charset="utf-8" />
-<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.19)" />
-<meta name="description" content="Mensa on kansainv‰linen j‰rjestˆ, jonka toiminnan tarkoituksena on ‰lykkyyden tunnistaminen ja kehitt‰minen ihmisyyden hyv‰ksi, ‰lykkyystutkimuksen tukeminen sek‰ ‰lyllisen ja sosiaalisen ymp‰ristˆn tarjoaminen j‰senilleen. Mensan j‰seneksi voi liitty‰ jokainen, joka saavuttaa ‰lykkyystestiss‰ paremman tuloksen kuin 98% v‰estˆst‰." />
-<meta name="keywords" content="mensa, ‰lykkyystesti, mensan testi, ‰lykkyys, ‰o, iq, ‰o testi, iq testi, testi, test, ‰lykkyysosam‰‰r‰, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, ‰lykkyystestit, pulmapeli, pulmapelit, sosiaalinen ‰lykkyys, ‰lypeli, ‰lyp‰‰, psykologinen, logiikka, looginen, loogiset, p‰‰ttely, kyky, teht‰vi‰, tunne‰ly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, j‰rjestˆ, yhdistys" />
-<meta name="Author" content="Suomen Mensa ry, Sivut suunnitteli Tuomas Hietanen, Ulla Sainio 2013" />
-
-<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-
-<?php get_template_part('template-parts/init-facebook-social-plugin') ?>
-
-<div id="background">
-<div id="wrapper">
-
-<div id="page" class="hfeed site">
-	<?php do_action( 'before' ); ?>
-        <?php get_template_part('template-parts/heading'); ?>
-        <?php get_template_part('template-parts/navigation'); ?>
+  wp_enqueue_style('font-montserrat', 'http://fonts.googleapis.com/css?family=Montserrat');
+  get_template_part('header');
+?>
 
 <div id="container">
 <div id="container-edge"></div>
@@ -96,18 +71,18 @@ Template Name: Testikalenteri (suomenkielinen)
                 <div class="juttu">
 				<div><form id="wish" name="wish">
                   
-					<p class="lomakeOtsikko">Toivo uutta testi‰</p>
-					<p class="textWish">VOIT toivoa uutta testi‰. Ilmoita toiveessasi paikkaunta ja muut toiveet. </p>
-					<p class="textWish">Emme l‰het‰ automaattista postia, vaan k‰sittelemme toiveet ja palaamme asiaan, jos se on aiheellista.</p>
+					<p class="lomakeOtsikko">Toivo uutta testi√§</p>
+					<p class="textWish">VOIT toivoa uutta testi√§. Ilmoita toiveessasi paikkaunta ja muut toiveet. </p>
+					<p class="textWish">Emme l√§het√§ automaattista postia, vaan k√§sittelemme toiveet ja palaamme asiaan, jos se on aiheellista.</p>
 					<br/>
-            <div><label for="mailbody"><p class="textWish"><span class="lomakeLaatikko">Toive</span> (255 merkki‰)</p> </label><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
+            <div><label for="mailbody"><p class="textWish"><span class="lomakeLaatikko">Toive</span> (255 merkki√§)</p> </label><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
                         
-					<div><label for="mailfrom"><p class="textWish"><span class="lomakeLaatikko">S‰hkˆposti</span> </p></label>
+					<div><label for="mailfrom"><p class="textWish"><span class="lomakeLaatikko">S√§hk√∂posti</span> </p></label>
                     <input type="email" name="mailfrom" id="mailfrom" tooltip="Palaamme asiaan" maxlength="255" /></div>
                         
-					<div><label for="answer"><p class="textWish"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynn‰ kolme (kirjaimin)?  </p></label>
+					<div><label for="answer"><p class="textWish"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynn√§ kolme (kirjaimin)?  </p></label>
                     <input name="answer" type="text" id="answer" maxlength="255" /></div>
-					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="textWish">L‰het‰</p></button></div>
+					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="textWish">L√§het√§</p></button></div>
 					</form>
                 </div>
                 </div><!-- end juttu -->
@@ -129,7 +104,7 @@ Template Name: Testikalenteri (suomenkielinen)
 <?php get_template_part( 'template-parts/sitemap-footer' ); ?>
 
         <div id="dialog" title="QR-Code">
-            <p>Valokuvaa QR-koodi asianmukaisella ohjelmalla k‰nnyk‰ll‰si, niin voit asettaa muistutuksen tapahtumasta.</p>
+            <p>Valokuvaa QR-koodi asianmukaisella ohjelmalla k√§nnyk√§ll√§si, niin voit asettaa muistutuksen tapahtumasta.</p>
             <img id="iQRCode" alt="QR-code" />
         </div>
         <div id="LocalizationQrcode" style="visibility: hidden">QR</div>
@@ -172,7 +147,7 @@ Template Name: Testikalenteri (suomenkielinen)
                 <tr class="dsEvent"><td class="dsId">1231</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">07</td><td class="dsHour">17</td><td class="dsMinute">30</td><td class="dsCity">Helsinki</td><td class="dsStreetAddress">Rikhardinkatu 3</td><td class="dsLocationDetails">Rikhardinkadun kirjasto, Salonki, 3. krs</td><td class="dsEventDetails">(viitenumero: 11743)</td><td class="dsLatitude">60.1661552</td><td class="dsLongitude">24.9463225</td></tr>
 				<tr class="dsEvent"><td class="dsId">1232</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">16</td><td class="dsHour">17</td><td class="dsMinute">30</td><td class="dsCity">Tampere</td><td class="dsStreetAddress">Kirjastotalo Metso, Pirkankatu 2</td><td class="dsLocationDetails">Toivonen-sali, muumikerros</td><td class="dsEventDetails">(viitenumero: 11620)</td><td class="dsLatitude">61.4977606</td><td class="dsLongitude">23.7507924</td></tr>
 				<tr class="dsEvent"><td class="dsId">1233</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">22</td><td class="dsHour">18</td><td class="dsMinute">00</td><td class="dsCity">Lappeenranta</td><td class="dsStreetAddress">Villimiehenkatu 1</td><td class="dsLocationDetails"></td><td class="dsEventDetails">(viitenumero: 11905)</td><td class="dsLatitude">61.0573018</td><td class="dsLongitude">28.1917542</td></tr>
-				<tr class="dsEvent"><td class="dsId">1234</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">25</td><td class="dsHour">13</td><td class="dsMinute">00</td><td class="dsCity">Sein‰joki</td><td class="dsStreetAddress">Alvar Aallon katu 14</td><td class="dsLocationDetails">P‰‰kirjasto Apila, Jaaksi 3 (pieni kokoustila/atk-luokka)</td><td class="dsEventDetails">(viitenumero: 11879)</td><td class="dsLatitude">62.7858996</td><td class="dsLongitude">22.8402672</td></tr>
+				<tr class="dsEvent"><td class="dsId">1234</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">25</td><td class="dsHour">13</td><td class="dsMinute">00</td><td class="dsCity">Sein√§joki</td><td class="dsStreetAddress">Alvar Aallon katu 14</td><td class="dsLocationDetails">P√§√§kirjasto Apila, Jaaksi 3 (pieni kokoustila/atk-luokka)</td><td class="dsEventDetails">(viitenumero: 11879)</td><td class="dsLatitude">62.7858996</td><td class="dsLongitude">22.8402672</td></tr>
 				<tr class="dsEvent"><td class="dsId">1235</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">25</td><td class="dsHour">13</td><td class="dsMinute">00</td><td class="dsCity">Turku</td><td class="dsStreetAddress">Rauhankatu 1</td><td class="dsLocationDetails"></td><td class="dsEventDetails">(viitenumero: 11879)</td><td class="dsLatitude">60.4526784</td><td class="dsLongitude">22.2573233</td></tr>
 				<tr class="dsEvent"><td class="dsId">1236</td><td class="dsTitle">Test</td><td class="dsYear">2013</td><td class="dsMonth">06</td><td class="dsDay">25</td><td class="dsHour">14</td><td class="dsMinute">30</td><td class="dsCity">Helsinki</td><td class="dsStreetAddress">Rikhardinkatu 3</td><td class="dsLocationDetails">Rikhardinkadun kirjasto, Salonki, 3. krs</td><td class="dsEventDetails">(viitenumero: 11895)</td><td class="dsLatitude">60.1661552</td><td class="dsLongitude">24.9463225</td></tr>
 				<tr class="dsInfo"><td class="dsId">1237</td><td colspan="9" class="dsTitle">Global test day 1.10.2013</td><td colspan="3" class="dsDetails">Some more info to come...</td></tr>
