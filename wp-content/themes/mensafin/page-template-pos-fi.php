@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="container-edge"></div>
 
 	<div id="primary" class="content-area" style="width: 525px; float:left; background-color:transparent;">
-		<div id="content" class="site-content" role="main" style="overflow:hidden;">
+		<div id="content" class="site-content" role="main">
 
 			<?php the_post(); //while ( have_posts() ) : the_post(); ?>
 

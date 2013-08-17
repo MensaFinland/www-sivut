@@ -247,7 +247,7 @@ article {
 	float: left;
 	margin-right: auto;
 	width: 760px;
-	overflow:auto;
+	overflow: auto;
 	overflow-x: hidden;
 }
 
@@ -928,4 +928,28 @@ textarea {
 #widgets-for-404 div.tagcloud, 
 #widgets-for-404 ul {
 	margin-left: 35px;
+}
+
+/* Paikalliosastojen yhteystiedot */
+table.pos {
+	padding-left: 25px;
+	width: 100%;
+}
+table.pos td.col1 {
+	width: 33%;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+table.pos td.col2 {
+	width: 66%;
+}
+table.pos td {
+	vertical-align: top;
+	line-height: 140%;
+	padding-bottom: 10px;
+}
+h3.pos {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
 }

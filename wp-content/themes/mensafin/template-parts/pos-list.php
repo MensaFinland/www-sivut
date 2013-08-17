@@ -11,9 +11,9 @@
     array(
       "map_id" => "pos17", "province" => "Ahvenanmaa / Åland", "name" => "Mensa Åland", "people" => array(
         array("title" => "Puheenjohtaja",     "name" => "Carl Mörn",    "email" => "ahvenanmaa.pj at mensa.fi", "tel" => "0457 52 44 221"),
-        array("title" => "Vapapuheenjohtaja", "name" => "Eva Ringwall", "email" => "eva.ringwall at mensa.fi" ) ) ),
+        array("title" => "Varapuheenjohtaja", "name" => "Eva Ringwall", "email" => "eva.ringwall at mensa.fi" ) ) ),
   array(
-    "map_id" => "pos8", "name" => "PäämajaMensa", "province" => "", "people" => array(
+    "map_id" => "pos8", "name" => "PäämajaMensa", "province" => "Etelä-Savo", "people" => array(
       array( "title" => "Puheenjohtaja", "name" => "Markku Paukku", "email" => "etela-savo.pj at mensa.fi", "tel" => "040 5897471") ) ),
   array(
     "map_id" => "pos12", "name" => "Helsingin Mensa", "province" => "Pääkaupunkiseutu", "people" => array(
@@ -78,13 +78,13 @@
     /* When POS map is clicked, this is the link we scroll to. Example: <a name="pos14"></a> */
     if ($pos['map_id']) { print('<a id="' . $pos["map_id"] . '"></a>'); }
 
-    print('<h3>' . $pos["name"] . '</h3>');
-    print('<table>');
-    print('<tr><td class="eka">Toimialue</td><td>' . $pos["province"] . '</td></tr>');
+    print('<h3 class="pos">' . $pos["name"] . '</h3>');
+    print('<table class="pos">');
+    print('<tr><td class="col1">Toimialue</td><td>' . $pos["province"] . '</td></tr>');
     foreach($pos["people"] as $person) {
       print('<tr>');
-      print('<td class="eka">' . $person['title'] . '</td>');
-      print('<td class="toka">' . $person['name'] . '<br/>' . $person['email'] . '<br/>' . $person['tel'] . '</td>');
+      print('<td class="col1">' . $person['title'] . '</td>');
+      print('<td class="col2">' . $person['name'] . '<br/>' . $person['email'] . '<br/>' . $person['tel'] . '</td>');
       print('</tr>');
     }
     print('</table>');
