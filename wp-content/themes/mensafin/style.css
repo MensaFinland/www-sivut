@@ -308,10 +308,11 @@ article {
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
-	width: 235px;
+	width: 223px;
 	height: 345px;
 	overflow: auto;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	padding-bottom: 10px;
 	padding-left: 12px;
 	background-image: url(images/poskartta/POSbg.png);
