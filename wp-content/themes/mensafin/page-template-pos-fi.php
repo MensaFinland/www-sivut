@@ -36,7 +36,8 @@ get_header(); ?>
 			
 			Kartan pitaisi hakea 
 			valitun POS:in tiedot 
-			tahan...
+			tahan... 
+			(scrollattava lista)
 		</div>
 	</div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->

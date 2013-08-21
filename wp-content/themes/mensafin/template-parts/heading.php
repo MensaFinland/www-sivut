@@ -13,7 +13,7 @@
 		<div id="MensaText"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaText.png" alt="leiska" /></a></div><!-- end MensaText -->
 		<div id="network">
 		  <div id="some">
-			<img id="someicons" src="<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png" width="355" height="29" usemap="#some1" alt="FB, Twitter, YouTube, Pinterest, Foorumi" style="border:thin black none">
+			<img id="someicons" name="someicons" src="<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png" width="355" height="29" usemap="#some1" alt="FB, Twitter, YouTube, Pinterest, Foorumi" style="border:thin black none">
 
 			<map name="some1">
 				<area shape="rect" coords="0,0,24,31" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa" onMouseOver="if(document.images) document.someicons.src='<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2F.png';" 
