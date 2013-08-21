@@ -22,7 +22,6 @@ get_header(); ?>
 			<?php the_post(); //while ( have_posts() ) : the_post(); ?>
 
 				<?php //get_template_part( 'content', 'page' ); ?>
-				<?php $contentlike_template_part = 'template-parts/pos-list'; ?>
 				<?php get_template_part( 'template-parts/content-page' ); ?>
 
 			<?php //endwhile; // end of the loop. ?>
@@ -30,7 +29,11 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<div id="sidebar" class="pos-map">
-		<?php get_template_part( 'template-parts/pos-map' ); ?>
+		<?php get_template_part( 'template-parts/pos-map' ); ?>	
+		<img id="posOtsake" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/POSheadline.jpg" style="border:thin black none"/>
+		<div class="posLista">
+		<?php $contentlike_template_part = 'template-parts/pos-list'; ?>
+		</div>
 	</div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->
 

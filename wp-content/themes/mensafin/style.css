@@ -303,6 +303,21 @@ article {
 	background-repeat: repeat-x;
 }
 
+.posLista{
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	width: 235px;
+	height: 345px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	background-image: url(images/poskartta/POSbg.png);
+	color: white;
+}
+
 .testit {
 	display: block;
 	float: left;
