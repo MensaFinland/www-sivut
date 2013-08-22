@@ -17,10 +17,10 @@ class Data_Access {
         global $dataconnection1;
         // Haetaan tietokannan asetukset
         require '/data/www/include/eventcalendar.inc';
-        $this->server = $db_server1; //"localhost";
-        $this->databasename =  $db_name1; //"eventcalendar-database";
-        $this->user =  $db_user1; //"eventcalendar-exampleuser";
-        $this->pwd = $db_pass1; //"cal123-examplepassword";
+        $this->server = $db_server2; //"localhost";
+        $this->databasename = $db_name2; //"eventcalendar-database";
+        $this->user = $db_user2; //"eventcalendar-exampleuser";
+        $this->pwd = $db_pass2; //"cal123-examplepassword";
 
         $this->connection = mysqli_connect($this->server,$this->user,$this->pwd,$this->databasename);
         if (mysqli_connect_errno($this->connection)) {
