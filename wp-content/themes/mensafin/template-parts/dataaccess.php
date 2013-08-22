@@ -49,7 +49,7 @@ class Data_Access {
         }
         $q_result=mysqli_query($this->connection,$sql_query);
         if (!$q_result) {
-            echo mysqli_errno() . ": " . mysqli_error() . "\n<br><br>";
+            echo mysqli_errno($this->connection) . ": " . mysqli_error($this->connection) . "\n<br><br>";
             echo htmlspecialchars($sql_query);
             exit("\n<br><br>Query failed.");
         }
@@ -67,7 +67,7 @@ class Data_Access {
         }
         $q_result=mysqli_query($this->connection,$sql_query);
         if (!$q_result) {
-            echo mysqli_errno() . ": " . mysqli_error() . "\n<br><br>";
+            echo mysqli_errno($this->connection) . ": " . mysqli_error($this->connection) . "\n<br><br>";
             echo htmlspecialchars($sql_query);
             exit("\n<br><br>Query failed.");
         }
@@ -87,7 +87,7 @@ class Data_Access {
         }
         $q_result=mysqli_query($this->connection,$sql_query);
         if(!$q_result){
-            echo mysqli_errno() . ": " . mysqli_error() . "\n<br><br>";
+            echo mysqli_errno($this->connection) . ": " . mysqli_error($this->connection) . "\n<br><br>";
             echo htmlspecialchars($sql_query);
             exit("\n<br><br>Query failed.");
         }
@@ -104,7 +104,7 @@ class Data_Access {
         }
         $q_result=mysqli_query($this->connection,$sql_query);
         if (!$q_result) {
-            echo mysqli_errno() . ": " . mysqli_error() . "\n<br><br>";
+            echo mysqli_errno($this->connection) . ": " . mysqli_error($this->connection) . "\n<br><br>";
             echo htmlspecialchars($sql_query);
             exit("\n<br><br>Query failed.");
         }
