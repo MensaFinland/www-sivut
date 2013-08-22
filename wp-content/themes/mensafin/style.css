@@ -417,7 +417,7 @@ article {
 }
 
 #blog {
-	width: 200px;
+	width: 235px;
 	height: 210px;
 	display: block;
 	float: left;
@@ -573,7 +573,7 @@ article p {
 	line-height: 1.4em;
 	letter-spacing: 0.04em;
 	padding-left: 30px;
-	padding-top: 100px;
+	padding-top: 120px;
 	padding-right: 5px;
 	font-family: Verdana, Geneva, sans-serif;
 }	
