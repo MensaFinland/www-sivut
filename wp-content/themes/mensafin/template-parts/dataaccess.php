@@ -16,11 +16,11 @@ class Data_Access {
     function openDatabase() {
         global $dataconnection1;
         // Haetaan tietokannan asetukset
-        // require '/var/www/localhost/sql_connect/eventcalendar.inc';
-        $this->server = "localhost"; // $db_server1;
-        $this->databasename =  "eventcalendar"; // = $db_name1;
-        $this->user =  "eventcalendar"; // $db_user1;
-        $this->pwd = "cal123"; //$db_pass1;
+        require '/var/www/localhost/sql_connect/eventcalendar.inc';
+        $this->server = $db_server1; //"localhost";
+        $this->databasename =  $db_name1; //"eventcalendar";
+        $this->user =  $db_user1; //"eventcalendar";
+        $this->pwd = $db_pass1; //"cal123";
 
         $this->connection = mysqli_connect($this->server,$this->user,$this->pwd,$this->databasename);
         if (mysqli_connect_errno($this->connection)) {
