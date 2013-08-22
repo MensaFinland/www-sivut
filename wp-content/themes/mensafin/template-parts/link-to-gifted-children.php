@@ -5,8 +5,10 @@
  * @package mensafin
  */
 ?>
-
-<a href="http://lahjakkaatlapset.fi">
-<img src="<?php bloginfo('template_directory') ?>/images/LahjLapset2.jpg"
-     alt="linkki lahjakkaat lapset -sivustolle"/>
-</a>
+<div id="lahjakkaat">
+  <a href="http://lahjakkaatlapset.fi" target="_blank">
+  <p class="textBlogi">
+    Linkki lahjakkaat lapset sivustolle...
+    <a target="_blank" href="http://blog.mensa.fi/">Lue lis‰‰ ‰lyst‰...</a>
+  </p></a> <!-- .textBlogi -->
+</div> <!-- #blog -->

@@ -427,6 +427,17 @@ article {
 	background-repeat: no-repeat;
 }
 
+#lahjakkaat {
+	width: 235px;
+	height: 210px;
+	display: block;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(images/LahjLapset2.jpg);
+	background-repeat: no-repeat;
+}
+
 #fb-like-box {
 	width: 200px;
 	height: 345px;
