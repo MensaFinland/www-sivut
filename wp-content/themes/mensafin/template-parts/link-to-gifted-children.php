@@ -6,9 +6,9 @@
  */
 ?>
 <div id="lahjakkaat">
-  <a href="http://lahjakkaatlapset.fi" target="_blank">
-  <p class="textBlogi">
-    Linkki lahjakkaat lapset sivustolle...
-    <a target="_blank" href="http://blog.mensa.fi/">Lue lis‰‰ ‰lyst‰...</a>
-  </p></a> <!-- .textBlogi -->
+  
+  <p class="textLahjakkaat">
+    Ohjelmalla on nyt oma porttaali.
+    <a href="http://lahjakkaatlapset.fi" target="_blank">Linkki lahjakkaat lapset sivustolle...</a>
+  </p> <!-- .textBlogi -->
 </div> <!-- #blog -->
