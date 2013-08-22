@@ -7,6 +7,6 @@
 ?>
 
 <a href="http://lahjakkaatlapset.fi">
-<img src="<?php bloginfo('template_directory') ?>/images/lahjakkaat-lapset-banneri.jpg"
+<img src="<?php bloginfo('template_directory') ?>/images/LahjLapset2.jpg"
      alt="linkki lahjakkaat lapset -sivustolle"/>
 </a>
