@@ -303,7 +303,8 @@ article {
 	background-repeat: repeat-x;
 }
 
-.posLista{
+/* Pieni POS-laatikko paikallisosastokartan alapuolella. */
+.posLista {
 	display: block;
 	float: left;
 	margin-right: auto;
@@ -317,6 +318,24 @@ article {
 	padding-left: 12px;
 	background-image: url(images/poskartta/POSbg.png);
 	color: white;
+}
+
+.posLista h3 {
+	color: white;
+	padding-left:10px;
+}
+.posLista h4 {
+	padding-left:10px;
+	padding-top:7px;
+	font-size: 0.9em;
+}
+.posLista p {
+	padding-left: 20px;
+	font-size: 0.8em;
+}
+
+.posLista .posOsasto {
+	padding-top: 50px;
 }
 
 .testit {

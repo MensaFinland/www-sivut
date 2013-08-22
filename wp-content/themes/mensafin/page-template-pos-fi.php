@@ -12,6 +12,8 @@ Template Name: Paikallisosastosivu (suomenkielinen)
  * @package mensaFin
  */
 
+get_template_part('template-parts/pos-data');
+
 get_header(); ?>
 <div id="container">
 <div id="container-edge"></div>
@@ -30,15 +32,8 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<div id="sidebar" class="pos-map">
-		<?php get_template_part( 'template-parts/pos-map' ); ?>	
-		<div class="posLista">
-			<img id="posOtsake" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/POSheadline.jpg" style="border:thin black none"/>
-			
-			Kartan pitaisi hakea 
-			valitun POS:in tiedot 
-			tahan... 
-			(scrollattava lista)
-		</div>
+		<?php get_template_part( 'template-parts/pos-map' ); ?>
+		<?php get_template_part( 'template-parts/pos-box' ); ?>
 	</div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->
 
