@@ -32,7 +32,8 @@ $eventdata=$DA->getValues($sql);
                     if($row["EventType"]=="0" || $row["EventType"]==0){
                         print "<span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"]);
-                        print "</span></li><li>klo ".htmlspecialchars($row["DateHour"]).".".htmlspecialchars($row["DateMinute"])." ".htmlspecialchars($row["Title"]);
+						$parseMin = htmlspecialchars($row["DateMinute"]);
+                        print "</span></li><li>klo ".htmlspecialchars($row["DateHour"]).".".(intval($parseMin)<10?"0".$parseMin:$parseMin)." ".htmlspecialchars($row["Title"]);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
