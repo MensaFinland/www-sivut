@@ -635,6 +635,18 @@ h2 {
 
 h3 {
 	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #4c6378;
+	letter-spacing: 0.04em;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	clear: both;
+}
+
+h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 0.9em;
 	font-weight: normal;
 	color: #4c6378;
