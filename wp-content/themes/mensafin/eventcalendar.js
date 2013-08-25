@@ -86,7 +86,7 @@ var list_1_Nil, list_1_Cons, i_vevent__ctor, i_notification__ctor, i_mkIEnumerat
     {
       var diff;
       return 0.000000;
-    }), Item1: _temp1, Item2: lz(md.getMonth()), Item3: lz(md.getDate()), Item4: lz((md.getHours() + duration)), Item5: lz(md.getMinutes()), Item6: lz(md.getSeconds())};
+    }), Item1: _temp1, Item2: lz((md.getMonth() + 1.000000)), Item3: lz(md.getDate()), Item4: lz((md.getHours() + duration)), Item5: lz(md.getMinutes()), Item6: lz(md.getSeconds())};
   });
   EventItem_get_items = (function ()
   {
@@ -230,7 +230,7 @@ var list_1_Nil, list_1_Cons, i_vevent__ctor, i_notification__ctor, i_mkIEnumerat
       var m = patternInput.Item2;
       var h = patternInput.Item4;
       var d = patternInput.Item3;
-      return ((((y + "") + m) + "") + d);
+      return ((((y + "-") + m) + "-") + d);
     }
     else
     {
@@ -304,7 +304,7 @@ var list_1_Nil, list_1_Cons, i_vevent__ctor, i_notification__ctor, i_mkIEnumerat
     }
     else
     {
-      return (new DateOrMonth_FullDate((new Date(y, m, d, h, n, 0.000000))));
+      return (new DateOrMonth_FullDate((new Date(y, (m - 1.000000), d, h, n, 0.000000))));
     };
   });
   GenericConstants_One = (function ()
@@ -722,7 +722,7 @@ var list_1_Nil, list_1_Cons, i_vevent__ctor, i_notification__ctor, i_mkIEnumerat
         })(Page_asJQuery(c).appendTo(lst));
       })((function (b)
       {
-        return Page_asJQuery(b).html((((((((((((((((((((((((((((((((("\r\n            \u003ca id=\"L" + encodeURIComponent(e.get_Id())) + "\"\u003e\u003c/a\u003e\r\n            \u003cul\u003e\r\n            \u003cli class=\"technicaldate\"\u003e") + EventItem_jsDateFormatCalendar(e.get_StarTime())) + "\u003c/li\u003e\r\n            \u003cli class=\"timeAndCity aika\"\u003e") + EventItem_jsDateFormatToUser(e.get_StarTime())) + " ") + e.get_City()) + "\u003c/li\u003e\r\n            \u003cli class=\"location\"\u003e") + e.get_StreetAddress()) + " \u003cbr /\u003e") + e.get_LocationDetails()) + "\u003c/li\u003e\r\n            \u003cli class=\"info\"\u003e") + e.get_Title()) + ", ") + e.get_Details()) + "\u003c/li\u003e\r\n            \u003c/ul\u003e\r\n            \u003cscript type=\"text/javascript\"\u003e\r\n            $(function() {\r\n                $(\"#opener") + e.get_Id()) + "\").click(function() {\r\n                    $(\"#iQRCode\").attr(\"src\",\"") + EventItem_fetchQRCodeUrl((new calEvent_Vevent(e)))) + "\");\r\n                    $(\"#dialog\").dialog(\"open\");\r\n                });\r\n                $(\"#ical") + e.get_Id()) + "\").click(function() {\r\n                    window.open(\"ical.php?itemId=") + (e.get_Id() + "00")) + "\");\r\n                });\r\n            });\r\n            \u003c/script\u003e\r\n            \u003cbutton id=\"opener") + e.get_Id()) + "\" class=\"qrButton\"\u003e") + Page_jQuery("#LocalizationQrcode").text().toString()) + "\u003c/button\u003e\r\n            \u003cbutton id=\"ical") + e.get_Id()) + "\" class=\"icalButton\"\u003e") + Page_jQuery("#LocalizationIcal").text().toString()) + "\u003c/button\u003e\r\n            \u003cp class=\"testitPistelinja\"\u003e\u003c/p\u003e\r\n            "));
+        return Page_asJQuery(b).html((((((((((((((((((((((((((((((((((("\r\n            \u003ca id=\"L" + encodeURIComponent(e.get_Id())) + "\"\u003e\u003cul\u003e\r\n            \u003cli class=\"technicaldate\"\u003e") + EventItem_jsDateFormatCalendar(e.get_StarTime())) + "\u003c/li\u003e\r\n            \u003cli class=\"timeAndCity\"\u003e") + EventItem_jsDateFormatToUser(e.get_StarTime())) + " ") + e.get_City()) + "\u003c/li\u003e\r\n            \u003cli class=\"location\"\u003e") + e.get_StreetAddress()) + " \u003cbr /\u003e") + e.get_LocationDetails()) + "\u003c/li\u003e\r\n            \u003cli class=\"info\"\u003e") + e.get_Title()) + ", ") + e.get_Details()) + "\u003c/li\u003e\r\n            \u003c/ul\u003e\r\n            \u003cscript type=\"text/javascript\"\u003e\r\n            $(function() {\r\n                $(\"#opener") + e.get_Id()) + "\").click(function() {\r\n                    $(\"#iQRCode\").attr(\"src\",\"") + EventItem_fetchQRCodeUrl((new calEvent_Vevent(e)))) + "\");\r\n                    $(\"#dialog\").dialog(\"open\");\r\n                });\r\n                $(\"#ical") + e.get_Id()) + "\").click(function() {\r\n                    window.open(\"") + Page_jQuery("#IcalPath").text().toString()) + "?itemId=") + (e.get_Id() + "00")) + "\");\r\n                });\r\n            });\r\n            \u003c/script\u003e\r\n            \u003cbutton id=\"opener") + e.get_Id()) + "\" class=\"qrButton\"\u003e") + Page_jQuery("#LocalizationQrcode").text().toString()) + "\u003c/button\u003e\r\n            \u003cbutton id=\"ical") + e.get_Id()) + "\" class=\"icalButton\"\u003e") + Page_jQuery("#LocalizationIcal").text().toString()) + "\u003c/button\u003e\r\n            \u003cp class=\"testitPistelinja\"\u003e\u003c/p\u003e\r\n            "));
       })((function (a)
       {
         return Page_asJQuery(a).attr("id", e.get_Id());

@@ -245,6 +245,7 @@ $eventdata=$DA->getValues($sql);
             <p>Valokuvaa QR-koodi asianmukaisella ohjelmalla kännykälläsi, niin voit asettaa muistutuksen tapahtumasta.</p>
             <img id="iQRCode" alt="QR-code" />
         </div>
+        <div id="IcalPath" style="visibility: hidden">ical.php</div>
         <div id="LocalizationQrcode" style="visibility: hidden">QR</div>
         <div id="LocalizationIcal" style="visibility: hidden">iCal</div>
 <table class="datacontainer">
