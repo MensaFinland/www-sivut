@@ -1,4 +1,9 @@
 // <!--
+	function openPopup(url, width, height) {
+		newwindow=window.open(url,'name','height=650,width=800');
+		if (window.focus) {newwindow.focus()}
+		return false;
+	}
 	
 	/* Modernizr-kirjasto HTML5-tukea varten */
 	document.write(unescape("%3Cscript src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js' type='text/javascript'%3E%3C/script%3E"));

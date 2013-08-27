@@ -159,7 +159,7 @@ ul#menu-mainmensamenu li li {
 	letter-spacing: 0.04em;   	
 }
 
-.link a:hover, ul#menu-mainmensamenu a:hover {
+.link a:hover, ul#menu-mainmensamenu a[href]:hover {
 	color: #06C; 
 	font-weight: bolder;
 	letter-spacing: 0.00em;
