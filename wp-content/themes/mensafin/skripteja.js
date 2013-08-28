@@ -6,7 +6,7 @@
 	}
 	
 	/* Modernizr-kirjasto HTML5-tukea varten */
-	//document.write(unescape("%3Cscript src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js' type='text/javascript'%3E%3C/script%3E"));
+	document.write(unescape("%3Cscript src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js' type='text/javascript'%3E%3C/script%3E"));
 
 	$(document).ready(function() {
             /* Wordpressin teeman kuvahakemisto */
