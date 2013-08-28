@@ -15,12 +15,12 @@
 
 <!-- POS-kartta -->
 <div style="display:inline">
-	<img id="poskartta0" name="poskartta0" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif" width="235" height="430" style="border:thin black none" usemap="#poskartta"/>
+	<img id="poskartta0" alt="Paikallisosastot" src="<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif" width="235" height="430" style="border:thin black none" usemap="#poskartta"/>
 
 	<map name="poskartta">
 	<area href="#pos2" title="Lappi" id="apos2" shape="poly" coords="160,7,167,16,180,21,180,29,173,37,174,55,169,66,172,73,181,84,195,98,181,124,190,144,176,143,176,164,170,167,161,167,148,173,133,169,118,176,106,166,98,145,105,131,100,109,99,82,91,66,80,64,63,43,75,32,87,52,98,59,109,53,120,63,133,49,133,30,142,10,153,13" alt="Lappi"
 		onMouseOver="switchPosMap('<?php bloginfo('template_directory'); ?>/images/poskartta/pos2.gif');" 
-		onMouseOut="switchPoMap('<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif');"
+		onMouseOut="switchPosMap('<?php bloginfo('template_directory'); ?>/images/poskartta/pos.gif');"
 		/>
 	<area href="#pos3" title="Oulu" id="apos3" shape="poly" coords="97,228,116,201,116,194,122,191,123,175,136,169,150,173,164,167,176,168,180,160,180,143,193,145,202,167,195,180,199,190,192,197,200,208,207,226,207,242,177,238,173,248,149,232,139,241,137,255,125,249,122,255" alt="Oulu"
 		onMouseOver="switchPosMap('<?php bloginfo('template_directory'); ?>/images/poskartta/pos3.gif');" 

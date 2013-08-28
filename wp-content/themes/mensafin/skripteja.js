@@ -1,5 +1,5 @@
 // <!--
-	function openPopup(url, width, height) {
+	function openPopup(url) {
 		newwindow=window.open(url,'name','height=650,width=800');
 		if (window.focus) {newwindow.focus()}
 		return false;
