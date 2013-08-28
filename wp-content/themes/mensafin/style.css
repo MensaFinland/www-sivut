@@ -94,6 +94,7 @@ header {
 	height: 27px;
 	display:block;
 	float: left;
+	margin-top: -90px;
 }
 
 #edge2 {
@@ -201,7 +202,7 @@ ul#menu-mainmensamenu li li {
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: -60px;
+	margin-top: -70px;
 	background-image: url(images/notepaperTesti.png);
 	background-repeat: repeat-y;
 }

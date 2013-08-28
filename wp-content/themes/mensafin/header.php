@@ -46,3 +46,9 @@
 	<?php get_template_part('template-parts/contact-info-ribbon'); ?>
         <?php get_template_part('template-parts/heading'); ?>
         <?php get_template_part('template-parts/navigation'); ?>
+
+	<!-- Torn notebook edge -->
+	<div id="edge">
+		<div id="edge1"><img src="<?php bloginfo('template_directory'); ?>/images/edgeFull.png" alt="reuna" />
+		</div><!-- end edge1 -->
+	</div><!-- end edge -->
