@@ -8,8 +8,8 @@
   */
 ?>
 <div id="sidebar"> 
-  <?php get_template_part( 'template-parts/link-to-iq-blog' ); ?>
+  <?php get_template_part( 'banneri-ylempi' ); ?>
   <?php get_template_part( 'template-parts/mensatestit-on-facebook' ); ?>
-  <?php get_template_part( 'template-parts/link-to-gifted-children' ); ?>
+  <?php get_template_part( 'banneri-alempi' ); ?>
 </div><!-- #sidebar (secondary) -->
 
