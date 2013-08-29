@@ -5,16 +5,16 @@
 		return false;
 	}
 	
+        /* Wordpressin teeman kuvahakemisto */
+        var theme_path = '';
+        if (window.wordpress_theme_path) {
+          theme_path = window.wordpress_theme_path
+        }
+
 	/* Modernizr-kirjasto HTML5-tukea varten */
-	document.write(unescape("%3Cscript src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js' type='text/javascript'%3E%3C/script%3E"));
+	document.write(unescape("%3Cscript src='" + theme_path + "/js/modernizr.2.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
 
 	$(document).ready(function() {
-            /* Wordpressin teeman kuvahakemisto */
-            var theme_path = '';
-            if (window.wordpress_theme_path) {
-              theme_path = window.wordpress_theme_path
-            }
-
 	    /* Valikon valitun kohteen tyyli */
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
