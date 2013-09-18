@@ -97,16 +97,6 @@ header {
 	margin-top: -90px;
 }
 
-#edge2 {
-	width: 125px;
-	height: 56px;
-	margin-top: 8px;
-	display:block;
-	float: left;
-	background-image: url(images/edge2.png);
-	background-repeat: repeat-x;
-}
-
 #main {
 	width: 960px;
 	height: 690px;
@@ -273,7 +263,7 @@ article {
 	width: 360px;
 	padding-left: 5px;
 	padding-right: 25px;
-	padding-top: 20px;
+	padding-top: 5px;
 }
 .juttuWide {
 	padding-left: 5px;
@@ -515,14 +505,14 @@ article p {
 	font-size: 0.9em;
 	letter-spacing: 0.04em;
 	line-height: 1.5em;
-	padding-left: 35px;
+	padding-left: 17px;
 	padding-right: 5px;
 	color: #4b5660;
 }
 
 .text a:link {
 	text-decoration: none;
-	color: #013ba6;
+	color: #4c92f0;
 }
 
 .text a:visited {
@@ -624,13 +614,13 @@ h1 {
 
 h2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 0.6em;
+	font-size: 0.5em;
 	font-weight: normal;
 	color: #4c6378;
 	letter-spacing: 0.04em;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 10px;
+	padding-left: 0px;
 	clear: both;
 }
 
@@ -865,67 +855,6 @@ textarea {
 	padding-right: 0px;
 	padding-bottom: 5px;
 	padding-left: 5px;
-}
-
-/* Contact info ribbon on the very top of the page. */
-#contact {
-	display: block;
-	/* position: fixed; */
-	z-index: 999;
-	height: 15px;
-	width: 100%;
-	left: 0px;
-	top: 0px;
-	background-color: #009;
-	visibility: hidden;
-	position: absolute;
-}
-
-#contact ul {
-	margin: 0px auto;
-	width: 930px;
-	display:block;
-}
-
-#contact ul li img {
-	margin-top: -10px;
-}
-
-#contact ul li {
-	color: #fff;
-	font-size: 0.6em;
-	letter-spacing: 0.2em;
-	padding-right: 10px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: normal;
-	padding-left: 10px;
-	text-decoration: none;
-	list-style-type: none;
-	display: inline;
-	float: left;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#contact a:link {
-	text-decoration: none;
-	color: #5f7d99;
-}
-
-#contact li a {
-	text-decoration: none;
-}
-
-.contact a:visited {
-	color: #4a7eaf;   
-}
-
-#contact a:hover {
-	color: #2b81da; 
-}
-
-#contact a:active {
-	color: #2b81da;
 }
 
 /* 404 not found: indentation for widgets (search, monthly archives, recent posts) */
