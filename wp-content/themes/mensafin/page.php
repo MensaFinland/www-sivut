@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: Perussivu (suomenkielinen)
+*/
+
 /**
  * The template for displaying all pages.
  *
@@ -13,27 +17,10 @@
 get_header(); ?>
 <div id="container">
 <div id="container-edge"></div>
-
-
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main" style="margin-right: 20px;">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template();
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+  <?php $content_style = 'page'; ?>
+  <?php get_template_part( 'template-parts/default-content-area' ); ?>
+  <?php get_template_part( 'template-parts/default-sidebar'      ); ?>
 </div> <!-- #container -->
-<?php get_template_part( 'template-parts/default-footer' ); ?>
+
+<?php get_template_part( 'template-parts/sitemap-footer' ); ?>
 <?php get_footer(); ?>

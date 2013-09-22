@@ -7,7 +7,7 @@
  * @package mensaFin
  */
 ?>
-<div id="primary" class="content-area" style="width:555px; float:left; background-color:transparent;">
+<div id="primary" class="content-area default-content-area">
   <div id="content" class="site-content" role="main">
     <?php while ( have_posts() ) : the_post(); ?>
       <?php global $content_style;

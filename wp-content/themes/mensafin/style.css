@@ -612,7 +612,7 @@ h1 {
 	display: none;
 }/* hakuautomaatteja varten, lukevat h1 otsikot */
 
-h2 {
+h2.entry-title {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 0.5em;
 	font-weight: normal;
@@ -624,7 +624,7 @@ h2 {
 	clear: both;
 }
 
-h3 {
+h3, h2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 1.0em;
 	font-weight: bold;
@@ -890,4 +890,17 @@ h3.pos {
 	margin-top: 15px;
 	margin-bottom: 10px;
 	font-size: 1.2em;
+}
+
+/* Leveä sivupalkiton taikka kapeampi sivupalkillinen sisältöalue */
+#primary.default-content-area
+{
+	width: 555px;
+	float: left;
+	background-color: transparent;
+}
+
+.spacious #primary.default-content-area
+{
+	width: 800px;
 }
