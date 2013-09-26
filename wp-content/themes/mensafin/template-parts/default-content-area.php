@@ -14,6 +14,6 @@
             get_template_part( 'template-parts/content', $content_style ); ?>
 	  <div class="pistelinja"></div><!-- end pistelinja -->
     <?php endwhile; // end of the loop. ?>
-	<img src="<?php bloginfo('template_directory'); ?>/images/loppunelio.png" width="10" height="10" alt="end of story" />
+	<img src="<?php bloginfo('template_directory'); ?>/images/loppunelio.jpg" width="10" height="10" alt="end of story" />
   </div><!-- #content -->
 </div><!-- #primary -->
