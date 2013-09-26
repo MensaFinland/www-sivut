@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //Debug:
 ini_set('display_errors', 'On');
  
@@ -151,7 +151,7 @@ $eventdata=$DA->getValues($sql);
                         
 						<div><label for="answer"><p class="textWish"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </p></label>
                         <input name="answer" type="text" id="answer" maxlength="255" /></div>
-						<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="textWish">Lähetä</p></button></div>
+						<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><p class="nappi pikkumarginaalilla">Lähetä</p></button></div>
 						</form>
                     </div>
                   </div><!-- end juttu -->
