@@ -19,7 +19,7 @@
 				<area shape="rect" coords="0,0,24,31" href="https://www.facebook.com/Mensantestit" target="_blank" alt="Mensan älykkyystestit Facebookissa"
 				  onMouseOver="if(document.images) $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2F.png');"
 				  onMouseOut= "if(document.images) $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png');">
-				<area shape="rect" coords="31,0,69,29" href="https://twitter.com/intent/follow?screen_name=mensafinland&amp;tw_p=followbutton&amp;variant=2.0" target="_blank" alt="Seuraa käyttäjää @MensaFinland"
+				<area shape="rect" coords="31,0,69,29" href="https://twitter.com/MensaFinland" target="_blank" alt="Seuraa käyttäjää @MensaFinland"
 				  onMouseOver="if(document.images) $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2T.png');" 
 				  onMouseOut="if(document.images)  $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png');">
 				<area shape="rect" coords="69,0,132,29" href="https://www.youtube.com/MensaFinland" target="_blank" alt="Youtube"

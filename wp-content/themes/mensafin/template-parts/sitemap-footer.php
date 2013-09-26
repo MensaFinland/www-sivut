@@ -32,7 +32,7 @@
            <li class="footerText"><a target="_blank" href="http://www.mensa.org/">Kansainvalinen Mensa</a></li>
 		   
            <li class="footerText"><a target="_blank" href="http://www.facebook.com/Mensantestit">Facebook</a></li>
-           <li class="footerText"><a target="_blank" href="http://twitter.com/intent/follow?screen_name=mensafinland&amp;tw_p=followbutton&amp;variant=2.0">Twitter</a></li>
+           <li class="footerText"><a target="_blank" href="https://twitter.com/MensaFinland">Twitter</a></li>
            <li class="footerText"><a target="_blank" href="http://www.youtube.com/MensaFinland">YouTube</a></li>
            
            <li class="footerText"><a target="_blank" href="http://pinterest.com/mensafinland/">Pinterest</a></li>
