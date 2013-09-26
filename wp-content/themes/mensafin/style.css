@@ -860,6 +860,10 @@ textarea {
 	margin-left: 60%;
 }
 
+.pikkumarginaalilla {
+	margin-left: 20%;
+}
+
 /* 404 not found: indentation for widgets (search, monthly archives, recent posts) */
 #widgets-for-404 .widgettitle {
 	font-size:1.4em;
