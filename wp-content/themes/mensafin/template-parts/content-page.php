@@ -28,4 +28,3 @@ function render_contentlike_template_part()
 		<?php render_contentlike_template_part(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<div class="pistelinja"></div><!-- end pistelinja -->

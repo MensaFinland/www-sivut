@@ -21,4 +21,3 @@
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<div class="pistelinja"></div><!-- end pistelinja -->
