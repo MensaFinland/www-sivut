@@ -72,7 +72,7 @@ $eventdata=$DA->getValues($sql);
 				<div><form id="wish" name="wish">
                   
 					<p class="lomakeOtsikko">Toivo uutta testiä</p>
-					<p class="textWish">VOIT toivoa uutta testiä. Ilmoita toiveessasi paikkaunta ja muut toiveet. </p>
+					<p class="textWish">Voit toivoa uutta testiä. Ilmoita toiveessasi paikkakunta ja muut toiveet. </p>
 					<p class="textWish">Emme lähetä automaattista postia, vaan käsittelemme toiveet ja palaamme asiaan, jos se on aiheellista.</p>
 					<br/>
             <div><p class="textWish"><label for="mailbody"><span class="lomakeLaatikko">Toive</span> (255 merkkiä)</label></p><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>

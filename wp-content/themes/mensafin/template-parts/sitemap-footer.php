@@ -22,7 +22,7 @@
            <li class="footerText">Suomen Mensa ry</li>
            <li class="footerText">PL 792</li>
            <li style="padding-bottom:5px;" class="footerText">00101 Helsinki FINLAND</li>
-           <li class="footerText">tel +358 50 525 2464</li>
+           <li class="footerText">+358 50 525 2464</li>
            <li style="padding-bottom:5px;" class="footerText">email toimisto[at]mensa.fi</li>
          </ul>
        </div><!-- end footerInfo kiinnostavia linkkeja -->
@@ -42,11 +42,10 @@
        <div class="footerInfo">
          <ul>
            <li class="footerText">&copy; Mensa Finland 2013</li>
-           <li style="padding-bottom:5px;" class="footerText"> all rights reserved</li>
+           <li style="padding-bottom:5px;" class="footerText"> All rights reserved</li>
            <li></li>
-           <li style="padding-bottom:5px;" class="footerText"> last update 
-           <!-- #BeginDate format:Am1 -->July 2, 2013<!-- #EndDate -->    </li>
-           <li style="padding-bottom:5px;" class="footerText"><a href="http://www.gentil.fi">design gentil.fi</a></li>
+           <li style="padding-bottom:5px;" class="footerText"> Viimeisin päivitys 26.9.2013</li>
+           <li style="padding-bottom:5px;" class="footerText"><a href="http://www.gentil.fi">Design gentil.fi</a></li>
          </ul>
        </div><!-- end footerInfo  linkkeja alykkyystesteihin -->
      </div><!-- end footerInfoArea  -->
