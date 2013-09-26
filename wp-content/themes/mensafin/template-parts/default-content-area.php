@@ -13,6 +13,6 @@
       <?php global $content_style;
             get_template_part( 'template-parts/content', $content_style ); ?>
     <?php endwhile; // end of the loop. ?>
-	<img src="<?php bloginfo('template_directory'); ?>/images/loppunelio.jpg" width="10" height="10" alt="end of story" />
+	<img style="margin-left: 32px;" src="<?php bloginfo('template_directory'); ?>/images/loppunelio.jpg" width="10" height="10" alt="end of story" /><br/>
   </div><!-- #content -->
 </div><!-- #primary -->
