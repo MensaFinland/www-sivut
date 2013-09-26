@@ -24,8 +24,9 @@ get_header(); ?>
       } 
     </script>
   <?php $content_style = 'page'; ?>
-  <?php get_template_part( 'template-parts/default-content-area' ); ?>
   <div><button class="nappi" onClick="openPopup();">Aloita nettitesti!</button></div>
+  <?php get_template_part( 'template-parts/default-content-area' ); ?>
+  <?php get_template_part( 'template-parts/default-sidebar'      ); ?>
 </div> <!-- #container -->
 
 <?php get_template_part( 'template-parts/sitemap-footer' ); ?>
