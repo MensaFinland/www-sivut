@@ -849,7 +849,6 @@ textarea {
 	font-weight: bolder;
 	text-transform: uppercase;
 	color: #fff;
-	margin-left: 60%;
 	margin-top: 20px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -857,6 +856,9 @@ textarea {
 	padding-left: 5px;
 }
 
+.marginaalilla {
+	margin-left: 60%;
+}
 
 /* 404 not found: indentation for widgets (search, monthly archives, recent posts) */
 #widgets-for-404 .widgettitle {
