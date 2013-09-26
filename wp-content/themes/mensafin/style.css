@@ -839,7 +839,7 @@ textarea {
 	padding-right: 25px;
 }
 
-#sendbtn {
+.nappi {
 	background-color: #79a4db;
 	border-radius: 10px;
 	font-size: 1em;
@@ -856,6 +856,10 @@ textarea {
 	padding-bottom: 5px;
 	padding-left: 5px;
 }
+.sivupalkki {
+	width: 235px;
+}
+
 
 /* 404 not found: indentation for widgets (search, monthly archives, recent posts) */
 #widgets-for-404 .widgettitle {

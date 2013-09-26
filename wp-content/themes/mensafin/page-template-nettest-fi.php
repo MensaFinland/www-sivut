@@ -25,7 +25,7 @@ get_header(); ?>
     </script>
   <?php $content_style = 'page'; ?>
   <?php get_template_part( 'template-parts/default-content-area' ); ?>
-  <a href="#" onClick="openPopup();">Aloita nettitesti tästä.<br></a>
+  <div><button class="nappi sivupalkki" onClick="openPopup();">Aloita nettitesti!</button></div>
   <?php get_template_part( 'template-parts/default-sidebar'      ); ?>
 </div> <!-- #container -->
 

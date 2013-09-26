@@ -82,7 +82,7 @@ $eventdata=$DA->getValues($sql);
                         
 					<div><p class="textWish"><label for="answer"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </label></p>
                     <input name="answer" type="text" id="answer" maxlength="255" /></div>
-					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" type="submit"><span class="textWish">Lähetä</span></button></div>
+					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" class="nappi" type="submit"><span class="textWish">Lähetä</span></button></div>
 					</form>
                 </div>
                 </div><!-- end juttu -->
