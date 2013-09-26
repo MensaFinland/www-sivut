@@ -15,7 +15,7 @@ Template Name: Nettitesti (suomenkielinen)
  */
 
 get_header(); ?>
-<div id="container">
+<div id="container" class="spacious">
 <div id="container-edge"></div>
     <script>
       function openPopup() {
