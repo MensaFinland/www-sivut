@@ -29,7 +29,7 @@
 
        <div style="width:195px;" class="footerInfo">
          <ul>
-           <li class="footerText"><a target="_blank" href="http://www.mensa.org/">Kansainvalinen Mensa</a></li>
+           <li class="footerText"><a target="_blank" href="http://www.mensa.org/">Kansainv&auml;linen Mensa</a></li>
 		   
            <li class="footerText"><a target="_blank" href="http://www.facebook.com/Mensantestit">Facebook</a></li>
            <li class="footerText"><a target="_blank" href="https://twitter.com/MensaFinland">Twitter</a></li>
