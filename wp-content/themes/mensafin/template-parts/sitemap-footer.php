@@ -44,7 +44,7 @@
            <li class="footerText">&copy; Mensa Finland 2013</li>
            <li style="padding-bottom:5px;" class="footerText"> All rights reserved</li>
            <li></li>
-           <li style="padding-bottom:5px;" class="footerText"> Viimeisin päivitys 26.9.2013</li>
+           <li style="padding-bottom:5px;" class="footerText"> Viimeisin p&auml;ivitys 26.9.2013</li>
            <li style="padding-bottom:5px;" class="footerText"><a href="http://www.gentil.fi">Design gentil.fi</a></li>
          </ul>
        </div><!-- end footerInfo  linkkeja alykkyystesteihin -->
