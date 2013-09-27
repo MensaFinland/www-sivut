@@ -273,7 +273,7 @@ article {
 #calendarBG {
 	font-family: 'Montserrat', sans-serif;
 	width: 130px;
-	height: 570px;
+	height: 800px;
 	display: block;
 	float: left;
 	margin-right: auto;
@@ -285,7 +285,7 @@ article {
 #calendar {
 	font-family: 'Montserrat', sans-serif;
 	width: 130px;
-	height: 570px;
+	height: 800px;
 	display: block;
 	float: left;
 	margin-right: auto;
@@ -393,7 +393,7 @@ article {
 #sidebar {
 	font-family: 'Montserrat', sans-serif;
 	width: 235px;
-	height: 566px;
+	height: 800px;
 	display: block;
 	float: right;
 	margin-right: 20px;
