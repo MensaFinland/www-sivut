@@ -13,6 +13,7 @@ $(document).ready(function () {
         return [true, '', ""];
     }
     $(function () {
+        $("#datasource").css({height: '0px'});
         $.datepicker.regional.fi = {
             closeText: '',
             prevText: '',

@@ -295,6 +295,18 @@ article {
 	vertical-align: top;
 }
 
+.kalenteritaus{
+	height: 240px; 
+	width: 236px; 
+	background-image: url(images/KalenteriTausta.jpg);
+}
+
+.karttataus{
+	background-image: url(images/KarttaKehys.png); 
+	padding-left: 3px; 
+	padding-bottom: 3px;
+}
+
 /* Pieni POS-laatikko paikallisosastokartan alapuolella. */
 .posLista {
 	display: block;
