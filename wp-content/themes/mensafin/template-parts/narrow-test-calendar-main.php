@@ -40,10 +40,10 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
                         print "</li><li><a href=\"http://www.mensa.fi/testikalenteri\">http://www.mensa.fi/testikalenteri</a>");						
-                        print "</li></ul></div><script>\r\n";
-                        print "$(function() { $(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
-                        print "$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){$(\"#testinfo".htmlspecialchars($row["Id"])."\").dialog(\"open\");});";
-						print "});</script>";
+                        print "</li></ul></div>\r\n";
+                        //print "<script>$(function() { $(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
+                        //print "$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){$(\"#testinfo".htmlspecialchars($row["Id"])."\").dialog(\"open\");});";
+						//print "});</script>";
                         print "\r\n<ul><li><a id=\"testopener".htmlspecialchars($row["Id"])."\" href=\"#\"><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
                     } else {
