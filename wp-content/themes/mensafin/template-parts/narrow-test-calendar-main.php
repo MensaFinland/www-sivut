@@ -18,7 +18,7 @@ $DA = new Data_Access;
 $DA->openDatabase();
 
 $hideGone = "and (ISNULL(CONCAT(DateYear, '-', DateMonth, '-', DateDay)) or DateYear=0 or STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') >= NOW() ) ";
-$sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, Id DESC";
+$sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, City ASC";
 $eventdata=$DA->getValues($sql);
 
    
@@ -39,9 +39,12 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
-                        print "</li></ul></div>\r\n";
-                        print "<script>$(function() { $('#testInfo".htmlspecialchars($row["Id"])."').dialog({ autoOpen: false });});</script>";
-                        print "\r\n<ul><li><a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");return false;'><span class='aika'>".htmlspecialchars($row["City"]);
+                        print "</li><li>http://www.mensa.fi/testikalenteri");						
+                        print "</li></ul></div><script>\r\n";
+                        print "$(function() { $(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
+                        print "$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){$(\"#testinfo\".htmlspecialchars($row["Id"])."\").dialog("open");});";
+						print "});</script>";
+                        print "\r\n<ul><li><a id=\"testopener".htmlspecialchars($row["Id"])."\" href=\"#\"><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
                     } else {
                         print "<ul><li>".htmlspecialchars($row["Title"]);
