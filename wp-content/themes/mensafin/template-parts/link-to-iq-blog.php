@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
   * Kuvallinen linkki älykkyysblogiin.
   *
@@ -7,7 +7,7 @@
 ?>
 <div id="blog">
   <p class="textBlogi">
-    ÄLYKKYYSBLOGI kertoo älykkyystutkimuksen tuoreimmat tulokset selvällä suomenkielellä.
+    Blogista löydät älykkyystutkimuksen tuoreimmat tulokset selvällä suomen kielellä
     <a target="_blank" href="http://blog.mensa.fi/">Lue lisää älystä...</a>
   </p> <!-- .textBlogi -->
 </div> <!-- #blog -->
