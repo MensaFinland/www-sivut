@@ -18,7 +18,7 @@ $DA = new Data_Access;
 $DA->openDatabase();
 
 $hideGone = "and (ISNULL(CONCAT(DateYear, '-', DateMonth, '-', DateDay)) or DateYear=0 or STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') >= NOW() ) ";
-$sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, City ASC";
+$sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, City ASC, Id DESC";
 $eventdata=$DA->getValues($sql);
 
    
@@ -39,7 +39,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
-                        print "</li><li>http://www.mensa.fi/testikalenteri");						
+                        print "</li><li><a href=\"http://www.mensa.fi/testikalenteri\">http://www.mensa.fi/testikalenteri</a>");						
                         print "</li></ul></div><script>\r\n";
                         print "$(function() { $(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
                         print "$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){$(\"#testinfo\".htmlspecialchars($row["Id"])."\").dialog("open");});";
