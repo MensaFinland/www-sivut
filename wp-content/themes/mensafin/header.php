@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The Header for our theme.
  *
@@ -19,6 +19,8 @@
 </script>
 <?php wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.js'                                       ); ?>
 <?php wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           ); ?>
+<?php wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.js'      , array('jquery-bundle')   ); ?>
+<?php wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css'); ?>
 <?php wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   ); ?>
 <?php wp_enqueue_style('font-montserrat', 'http://fonts.googleapis.com/css?family=Montserrat'); ?>
 <?php wp_head(); ?>
