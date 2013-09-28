@@ -292,6 +292,7 @@ article {
 	margin-left: auto;
 	background-image: url(images/BGcalender980.png);
 	background-repeat: repeat-x;
+	vertical-align: top;
 }
 
 /* Pieni POS-laatikko paikallisosastokartan alapuolella. */
