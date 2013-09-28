@@ -29,7 +29,8 @@ $eventdata=$DA->getValues($sql);
             if(isset($eventdata)){
                 while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC)){
                     print "<div class='event'><ul><li>";
-                    if($row["EventType"]=="0" || $row["EventType"]==0){
+                    if($row["EventType"]=="0" || $row["EventType"]==0){										
+                        print "<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti' class='testInfoDialog'>";
                         print "<span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"]);
 						$parseMin = htmlspecialchars($row["DateMinute"]);
@@ -37,6 +38,9 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
+                        print "</div>");
+                        print "<a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");'><span class='aika'>".htmlspecialchars($row["City"]);
+                        print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</a>";
                     } else {
                         print "".htmlspecialchars($row["Title"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
@@ -44,6 +48,7 @@ $eventdata=$DA->getValues($sql);
                     print "</li></ul></div><!-- end event -->";
                     print "<p class='testitPistelinja'></p>";
                 }
-            }
+            }			
             ?>
                  </div><!-- end testit -->
+

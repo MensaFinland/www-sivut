@@ -1,4 +1,4 @@
-// <!--
+﻿// <!--
 	function openPopup(url) {
 		newwindow=window.open(url,'name','height=650,width=800');
 		if (window.focus) {newwindow.focus()}
@@ -15,6 +15,10 @@
 	document.write(unescape("%3Cscript src='" + theme_path + "/js/modernizr.2.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
 
 	$(document).ready(function() {
+
+	    /* Testi-info popup */
+	    $('.testInfoDialog').dialog({ autoOpen: false });
+
 	    /* Valikon valitun kohteen tyyli */
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
