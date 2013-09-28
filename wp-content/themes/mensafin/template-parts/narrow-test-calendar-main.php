@@ -41,7 +41,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
                         print "</li></ul></div>\r\n";
                         print "<script>$(function() { $('#testInfo".htmlspecialchars($row["Id"])."').dialog({ autoOpen: false });});</script>";
-                        print "\r\n<ul><li><a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");'><span class='aika'>".htmlspecialchars($row["City"]);
+                        print "\r\n<ul><li><a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");return false;'><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
                     } else {
                         print "<ul><li>".htmlspecialchars($row["Title"]);
