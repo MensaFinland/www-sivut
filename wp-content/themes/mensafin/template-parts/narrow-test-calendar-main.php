@@ -31,7 +31,7 @@ $eventdata=$DA->getValues($sql);
                 while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC)){
                     print "<div class='event'>";
                     if($row["EventType"]=="0" || $row["EventType"]==0){
-                        print "\r\n<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti' class='event'>";
+                        print "\r\n<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti' class='event testipopup'>";
                         print "<ul><li><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"]);
 						$parseMin = htmlspecialchars($row["DateMinute"]);
