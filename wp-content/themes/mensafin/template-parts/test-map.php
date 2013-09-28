@@ -6,9 +6,9 @@
   */
 ?>
 <div class="kalenteritaus" >
-	<img src="images/KalenteriPalkki.jpg" /> 
+	<img src="<?php bloginfo('template_directory'); ?>/images/KalenteriPalkki.jpg" /> 
 	<div class="datepicker" id="datepicker"></div>
 </div>
-	<img src="images/KarttaPalkki.jpg" /> 
+	<img src="<?php bloginfo('template_directory'); ?>/images/KarttaPalkki.jpg" /> 
 	<div id="mapContainer" class="karttataus"></div><!-- end mapContainer -->
 
