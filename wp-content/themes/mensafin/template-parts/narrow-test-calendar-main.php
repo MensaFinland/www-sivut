@@ -23,7 +23,6 @@ $eventdata=$DA->getValues($sql);
 
    
 ?>
-$('.testInfoDialog').dialog({ autoOpen: false });
 
       <p class="palsta">Testikalenteri 2013</p>
           <div class="testit" id="maineventlist">
@@ -41,7 +40,7 @@ $('.testInfoDialog').dialog({ autoOpen: false });
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
                         print "</li></ul></div>";
-                        print "<script>$(function() { $('#testInfo".htmlspecialchars($row["Id"])."').dialog({ autoOpen: false });});</script>"
+                        print "<script>$(function() { $('#testInfo".htmlspecialchars($row["Id"])."').dialog({ autoOpen: false });});</script>";
                         print "<ul><li><a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");'><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</a>";
                     } else {
