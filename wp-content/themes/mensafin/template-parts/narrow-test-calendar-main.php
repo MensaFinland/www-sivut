@@ -23,14 +23,16 @@ $eventdata=$DA->getValues($sql);
 
    
 ?>
+$('.testInfoDialog').dialog({ autoOpen: false });
+
       <p class="palsta">Testikalenteri 2013</p>
           <div class="testit" id="maineventlist">
           <?php
             if(isset($eventdata)){
                 while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC)){
                     print "<div class='event'>";
-                    if($row["EventType"]=="0" || $row["EventType"]==0){										
-                        print "<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti' class='testInfoDialog'>";
+                    if($row["EventType"]=="0" || $row["EventType"]==0){
+                        print "\r\n<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti'>";
                         print "<ul><li><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"]);
 						$parseMin = htmlspecialchars($row["DateMinute"]);
@@ -39,6 +41,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
                         print "</li></ul></div>";
+                        print "<script>$(function() { $('#testInfo".htmlspecialchars($row["Id"])."').dialog({ autoOpen: false });});</script>"
                         print "<ul><li><a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");'><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</a>";
                     } else {

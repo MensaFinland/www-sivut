@@ -16,9 +16,6 @@
 
 	$(document).ready(function() {
 
-	    /* Testi-info popup */
-	    $('.testInfoDialog').dialog({ autoOpen: false });
-
 	    /* Valikon valitun kohteen tyyli */
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
