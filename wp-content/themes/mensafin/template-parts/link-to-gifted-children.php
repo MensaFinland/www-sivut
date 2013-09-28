@@ -8,7 +8,7 @@
 <div id="lahjakkaat">
   
   <p class="textLahjakkaat">
-    Ohjelmalla on nyt oma porttaali.
-    <a href="http://lahjakkaatlapset.fi" target="_blank">Linkki Lahjakkaat lapset -sivustolle...</a>
+    Mensan Lahjakkaat Lapset -projekti: 
+    <a href="http://lahjakkaatlapset.fi" target="_blank">lue lis&auml;&auml; lasten ja nuorten lahjakkuudesta</a>
   </p> <!-- .textBlogi -->
 </div> <!-- #blog -->
