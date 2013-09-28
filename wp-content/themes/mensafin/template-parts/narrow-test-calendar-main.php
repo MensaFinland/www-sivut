@@ -22,9 +22,7 @@ $sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHo
 $eventdata=$DA->getValues($sql);
 
    
-?>
-
-      <p class="palsta">Testikalenteri 2013</p>
+?><p class="palsta">Testikalenteri 2013</p>
           <div class="testit" id="maineventlist">
           <?php
             if(isset($eventdata)){
