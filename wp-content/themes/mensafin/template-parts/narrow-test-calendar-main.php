@@ -38,7 +38,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
-                        print "</div>");
+                        print "</div>";
                         print "<a href='#' onclick='$(\"#testinfo".$row["Id"]."\").dialog(\"open\");'><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</a>";
                     } else {
