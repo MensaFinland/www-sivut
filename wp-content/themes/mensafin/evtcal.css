@@ -48,30 +48,26 @@
     width: 400px;
 }
 .qrButton{
-    background-image:url('images/KALqr1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    color: black;
+    border-style: none;
+	background-color: transparent;
     padding: 0;
     margin: 0;
     cursor: pointer;
-}
-.qrButton:hover{
-    background-image:url('images/KALqr2.png');
 }
 .icalButton{
-    background-image:url('images/KALical1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    color: black;
+    border-style: none;
+	background-color: transparent;
     padding: 0;
     margin: 0;
     cursor: pointer;
 }
-.icalButton:hover{
-    background-image:url('images/KALical2.png');
+.infoButton{
+    border-style: none;
+	background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
 }
-
 /* Google maps container: */
 #mapContainer {
     width: 235px; /* lisätty 35 px */

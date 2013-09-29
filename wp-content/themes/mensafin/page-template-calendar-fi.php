@@ -108,8 +108,12 @@ $eventdata=$DA->getValues($sql);
             <img id="iQRCode" alt="QR-code" src="<?php bloginfo('template_directory') ?>/images/qr-empty.png"/>
         </div>
         <div id="IcalPath" style="visibility: hidden"><?php bloginfo('template_directory') ?>/ical.php</div>
-        <div id="LocalizationQrcode" style="visibility: hidden">QR</div>
-        <div id="LocalizationIcal" style="visibility: hidden">iCal</div>
+        <div id="LocalizationInfoUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALinfo1.png</div>
+        <div id="LocalizationQrcodeUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALqr1.png</div>
+        <div id="LocalizationIcalUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALical1.png</div>
+        <div id="LocalizationInfoHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALinfo2.png</div>
+        <div id="LocalizationQrcodeHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALqr2.png</div>
+        <div id="LocalizationIcalHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALical2.png</div>
 
 		<table class="datacontainer">
 			<thead><tr class="dsHead"><th>Id</th>               <th>Event title</th>              <th>Year</th>               <th>Month</th>             <th>Day</th>             <th>Hour</th>             <th>Minute</th>             <th>City</th>                   <th>Street Address</th>                         <th>Location details</th>                                                  <th>Event details</th>                              <th>Latitude</th>                     <th>Longitude</th></tr></thead>
