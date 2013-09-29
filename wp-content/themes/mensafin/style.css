@@ -301,6 +301,12 @@ article {
 	background-image: url(images/KalenteriTausta.jpg);
 }
 
+.dialogiAlaosa{
+	background-image: url(images/KalenteriTausta.jpg);
+	width: 100px;
+	height: 25px;
+}
+
 .karttataus{
 	background-image: url(images/KarttaKehys.png); 
 	padding-left: 3px; 
