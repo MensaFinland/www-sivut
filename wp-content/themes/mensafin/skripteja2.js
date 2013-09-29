@@ -7,8 +7,8 @@
 		$("#mapContainer").resizable({
 			helper: "ui-resizable-helper",
 			handles: 's, w, sw',
-			minHeight: 345,
-			minWidth: 235,
+			minHeight: 300,
+			minWidth: 220,
 			knobHandles: true,
 		});
 		

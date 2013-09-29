@@ -70,7 +70,7 @@
 }
 /* Google maps container: */
 #mapContainer {
-    width: 235px; /* lisätty 35 px */
+    width: 229px;
     height: 345px;
     display: block;
     float: right;
