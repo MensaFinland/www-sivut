@@ -37,7 +37,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li>".htmlspecialchars($row["LocationDetails"]);
                         print "</li><li>".htmlspecialchars($row["StreetAddress"]);
                         print "</li><li>".htmlspecialchars($row["EventDetails"]);
-                        print "</li><li><div class=""dialogiAlaosa""><a href=\"?page_id=11\"><img class=\"infoButton\" src=\"".bloginfo('template_directory')."/images/KALinfo1.png\" alt=\"Tarkemmat tiedot testikalenterista\"/></a></div>";						
+                        print "</li><li><div class=\"dialogiAlaosa\"><a href=\"?page_id=11\"><img class=\"infoButton\" src=\"".bloginfo('template_directory')."/images/KALinfo1.png\" alt=\"Tarkemmat tiedot testikalenterista\"/></a></div>";						
                         print "</li></ul></div>";
                         print "\r\n<ul><li><a id=\"testopener".htmlspecialchars($row["Id"])."\" href=\"#\"><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
