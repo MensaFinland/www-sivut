@@ -307,6 +307,29 @@ article {
 	padding-bottom: 3px;
 }
 
+.event ul li a:link {
+	text-decoration: none;
+	color: #5f7d99;
+}
+
+.event ul li a {
+	text-decoration: none;
+}
+
+.event ul li a:visited {
+	color: #4a7eaf;   
+}
+
+.event ul li a:hover {
+	text-decoration: underline;
+	color: #2b81da; 
+}
+
+.event ul li a:active {
+	color: #2b81da;
+}
+
+
 /* Pieni POS-laatikko paikallisosastokartan alapuolella. */
 .posLista {
 	display: block;
