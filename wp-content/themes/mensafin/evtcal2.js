@@ -4,10 +4,9 @@
 $(document).ready(function () {
     var dates = $(".technicaldate").text();
     function hasEventDay(date) {
-        var f1 = "" + $.datepicker.formatDate('yy-mm-dd', date).toString();
-        //var f2 = "" + $.datepicker.formatDate('yy-m-d', date).toString();
-alert(f1);
-alert(dates.first());
+        function pad(n){return n<10 ? '0'+n : n}
+        var f1 = "" + date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() );
+        alert(f1);
         if (dates.indexOf(f1) !== -1 /*|| dates.indexOf(f2) !== -1 */) {
             return [true, 'eventDate', ""];
         }
