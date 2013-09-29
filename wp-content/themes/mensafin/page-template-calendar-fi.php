@@ -33,10 +33,10 @@ $eventdata=$DA->getValues($sql);
   // wp_head() call in header.php prints the actual include lines.
   //
   //                 A NAME WE CHOOSE   ADDRESS OF SCRIPT/CSS                                  DEPENDENCY SCRIPTS
-  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.js'                                       );
+  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.min.js'                                       );
   wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
-  wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.js'      , array('jquery-bundle')   );
-  wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
+  wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
+  wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
 
   wp_enqueue_script('goggle-maps-api' , 'http://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
   wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   );
@@ -49,6 +49,13 @@ $eventdata=$DA->getValues($sql);
   wp_enqueue_style('font-montserrat', 'http://fonts.googleapis.com/css?family=Montserrat');
   get_template_part('header');
 ?>
+<script type="text/javascript">
+  if (typeof jQuery == 'undefined') {
+  document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.css' type='text/javascript'%3E%3C/script%3E"));
+  document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+</script>
 
 <div id="container">
 <div id="container-edge"></div>

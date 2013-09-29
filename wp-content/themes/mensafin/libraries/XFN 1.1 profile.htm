@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0022)http://gmpg.org/xfn/11 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>XFN 1.1 profile</title>
+
+
+
+<meta name="author" lang="tr" content="Tantek Çelik">
+
+<meta name="author" content="Matthew Mullenweg">
+
+<meta name="author" content="Eric Meyer">
+
+<link type="text/css" href="./XFN 1.1 profile_files/default.css" rel="alternate stylesheet" title="xfn default.css">
+
+<style type="text/css">
+
+/*<![CDATA[*/
+
+body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }
+
+dl { margin:0 0 0 2em }
+
+dt { font-weight:bold } 
+
+h3 { margin:0; font-weight:normal; font-size:1em } 
+
+h3:first-letter { text-transform:capitalize; }
+
+h2 a { display:block; margin-left:2em }
+
+#warning { border: 1px solid red; background-color: #c33; padding: 1em;}
+
+/*]]>*/
+
+</style>
+
+<link rel="contents" href="http://gmpg.org/xfn/" title="XFN - XHTML Friends Network">
+
+<link rel="start" href="http://gmpg.org/xfn/intro" title="XFN: Introduction and Examples">
+
+<link rel="help" href="http://gmpg.org/xfn/faq" title="XFN: FAQ">
+
+<link rel="copyright" href="http://gmpg.org/xfn/11#copyright" title="Copyright">
+
+<script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/menu_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="global_constants.js"><meta name="get_html_text.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><meta name="menu_injection_builder.js"><meta name="change_sink.js"></head>
+
+<body>
+
+<h1><abbr title="XHTML Friends Network">XFN</abbr> 1.1 relationships meta data profile</h1>
+
+<h2>Authors</h2>
+
+<ul id="authors">
+
+<li><a href="http://tantek.com/">Tantek Çelik</a></li>
+
+<li><a href="http://photomatt.net/">Matthew Mullenweg</a></li>
+
+<li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+
+</ul>
+
+<p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a>.</p>
+
+<dl class="profile">
+
+ <dt id="rel">rel</dt>
+
+ <dd><p><a rel="help" href="http://www.w3.org/TR/html401/struct/links.html#adef-rel">HTML4 definition of the 'rel' attribute.</a>  Here are some additional values, each of which can be used or omitted in any combination (unless otherwise noted, and except where prohibited by law) and their meanings, <dfn title="A symmetric relationship &#39;rel&#39; is one where &#39;A rel B&#39; implies &#39;B rel A&#39; and vice versa.">symmetry</dfn>, <dfn title="A transitive relationship &#39;rel&#39; is one where &#39;A rel B&#39; and &#39;B rel C&#39; implies &#39;A rel C&#39;">transitivity</dfn> and <dfn title="A relationship &#39;rel&#39; has an inverse &#39;inv&#39; when &#39;A rel B&#39; implies &#39;B inv A&#39;.  A symmetrical relationship is its own inverse.">inverse</dfn> if any.   Please see the <a href="http://gmpg.org/xfn/">XFN home page</a> for more information about <abbr title="XHTML Friends Network">XFN</abbr>.</p>
+
+    <div><h3>friendship (pick at most one)</h3>
+
+     <dl>
+
+    <dt id="contact">contact</dt>
+
+	<dd>Someone you know how to get in touch with. Often symmetric.</dd>
+
+     <dt id="acquaintance">acquaintance</dt>
+
+         <dd>Someone who you have exchanged greetings and not much (if any) more — maybe a short conversation or two. Often symmetric.</dd>
+
+         <dt id="friend">friend</dt>
+
+     	 <dd>Someone you are a friend to. A compatriot, buddy, home(boy|girl) that you know. Often symmetric.</dd>
+
+     </dl>
+
+    </div>
+
+    <div><h3>physical</h3>
+
+     <dl>
+
+     <dt id="met">met</dt>
+
+     	<dd>Someone who you have actually met in person. Symmetric.</dd>
+
+     </dl>
+
+    </div>
+
+    <div><h3>professional</h3>
+
+     <dl>
+
+     <dt id="co-worker">co-worker</dt>
+
+     	 <dd>Someone a person works with, or works at the same organization as. Symmetric.  Usually transitive.</dd>
+
+         <dt id="colleague">colleague</dt>
+
+         <dd>Someone in the same field of study/activity. Symmetric. Often transitive.</dd>
+
+     </dl>
+
+    </div>
+
+    <div><h3>geographical (pick at most one)</h3>
+
+     <dl> 
+
+	 <dt id="co-resident">co-resident</dt>
+
+	 	 <dd>Someone you share a street address with.  Symmetric and transitive.</dd>
+
+	 <dt id="neighbor">neighbor</dt>
+
+	     <dd>Someone who lives nearby, perhaps only at an adjacent street address or doorway.  Symmetric. Often transitive.</dd>
+
+	 </dl>
+
+	</div>
+
+	<div><h3>family (pick at most one)</h3>
+
+	 <dl>
+
+     <dt id="child">child</dt>
+
+     	 <dd>A person's genetic offspring, or someone that a person has adopted and takes care of. Inverse is parent.</dd>
+
+     <dt id="parent">parent</dt>
+
+     	 <dd>Inverse of child.</dd>
+
+     <dt id="sibling">sibling</dt>
+
+     	 <dd>Someone a person shares a parent with.  Symmetric. Usually transitive.</dd>
+
+         <dt id="spouse">spouse</dt>
+
+         <dd>Someone you are married to. Symmetric. Not transitive.</dd>
+
+         <dt id="kin">kin</dt>
+
+         <dd>A relative, someone you consider part of your extended family. Symmetric and typically transitive.</dd>	
+
+     </dl>
+
+    </div>
+
+    <div><h3>romantic</h3>
+
+     <dl>
+
+     <dt id="muse">muse</dt>
+
+     	 <dd>Someone who brings you inspiration. No inverse.</dd>
+
+	 <dt id="crush">crush</dt>
+
+         <dd>Someone you have a crush on. No inverse.</dd>
+
+     <dt id="date">date</dt>
+
+         <dd>Someone you are dating. Symmetric. Not transitive.</dd>
+
+     <dt id="sweetheart">sweetheart</dt>
+
+         <dd>Someone with whom you are intimate and at least somewhat committed, typically exclusively. Symmetric. Not transitive.</dd>
+
+     </dl>
+
+    </div>
+
+	<div><h3>identity</h3>
+
+     <dl>
+
+    <dt id="me">me</dt>
+
+	<dd>A link to yourself at a different URL. Exclusive of all other XFN values. Required symmetric. There is an implicit "me" relation from the contents of a directory to the directory itself.</dd>
+
+     </dl>
+
+    </div>
+
+ </dd>
+
+</dl>
+
+<h2>Acknowledgments</h2>
+
+<p>Please see our <a href="http://gmpg.org/xfn/thanks">Thanks page</a> for acknowledgments.
+
+</p>
+
+
+
+<h2>Copyright</h2>
+
+<p id="copyright">Copyright © 2003–<!--?php echo date('Y'); ?-->  GMPG <a href="http://gmpg.org/xfn/11#authors"></a>. <a rel="license" href="http://creativecommons.org/licenses/by-nd/2.0/">Some rights reserved</a>.</p>
+
+
+
+
+</body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1" hightlightingswitched="0"></span><object id="skype_plugin_object" location.href="http://gmpg.org/xfn/11" location.hostname="gmpg.org" width="0" height="0" type="application/x-vnd.skype.click2call.chrome.5.7.0" style="position: absolute; visibility: hidden; left: -100px; top: -100px;"></object></html>

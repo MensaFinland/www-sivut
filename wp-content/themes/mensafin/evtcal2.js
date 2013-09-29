@@ -1,5 +1,5 @@
-﻿/// <reference path="http://code.jquery.com/jquery-1.9.1.js" /> 
-/// <reference path="http://code.jquery.com/ui/1.10.3/jquery-ui.js" /> 
+﻿/// <reference path="http://code.jquery.com/jquery-1.9.1.min.js" /> 
+/// <reference path="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js" /> 
 /// <reference path="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" /> 
 $(document).ready(function () {
     var dates = $(".technicaldate").text();
