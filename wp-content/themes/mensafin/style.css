@@ -335,7 +335,6 @@ article {
 }
 
 .event ul li a:active, .myevent a:active {
-	text-decoration: underline;
 	color: #2b81da;
 }
 

@@ -77,10 +77,10 @@ $eventdata=$DA->getValues($sql);
 					<br/>
             <div><p class="textWish"><label for="mailbody"><span class="lomakeLaatikko">Toive</span> (255 merkkiä)</label></p><textarea name="mailbody" id="mailbody" maxlength="255"></textarea></div>
                         
-					<div><p class="textWish"><label for="mailfrom"><span class="lomakeLaatikko">Sähköposti</span> </label></p>
+					<div><p class="textWish"><label for="mailfrom"><span class="lomakeLaatikko">Sähköposti</span> </label></p><br/><br/>
                     <input type="email" name="mailfrom" id="mailfrom" title="Palaamme asiaan" maxlength="255" /></div>
                         
-					<div><p class="textWish"><label for="answer"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </label></p>
+					<div><p class="textWish"><label for="answer"><span class="lomakeLaatikko">Turvakysymys</span><br/>Paljonko on viisi ynnä kolme (kirjaimin)?  </label></p><br/><br/>
                     <input name="answer" type="text" id="answer" maxlength="255" /></div>
 					<div><input type="hidden" name="sendmail" id="sendmail" value="1" /><button id="sendbtn" class="nappi marginaalilla" type="submit"><span class="textWish">Lähetä</span></button></div>
 					</form>
