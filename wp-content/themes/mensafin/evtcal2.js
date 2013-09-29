@@ -2,12 +2,9 @@
 /// <reference path="http://code.jquery.com/ui/1.10.3/jquery-ui.js" /> 
 /// <reference path="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" /> 
 $(document).ready(function () {
-    var dates = $(".technicaldate").text();
-    alert("test");
+    var dates = $(".technicaldate").map(function(val,idx){return $.datepicker.formatDate('yy-mm-dd', val);}).text();
     function hasEventDay(date) {
-        alert(date);
         var f1 = "" + $.datepicker.formatDate('yy-mm-dd', date).toString();
-        alert(f1);
         //var f2 = "" + $.datepicker.formatDate('yy-m-d', date).toString();
         if (dates.indexOf(f1) !== -1 /*|| dates.indexOf(f2) !== -1 */) {
             return [true, 'eventDate', ""];
