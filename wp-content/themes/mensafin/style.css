@@ -304,7 +304,7 @@ article {
 .dialogiAlaosa {
     background-image: url(images/KalenteriTausta.jpg);
     width: 100px;
-    height: 30px;
+    height: 25px;
     vertical-align: middle;
     padding: 5px;
     text-align: center;
@@ -316,25 +316,26 @@ article {
 	padding-bottom: 3px;
 }
 
-.event ul li a:link, .myevent ul li a:link {
+.event ul li a:link, .myevent a:link {
 	text-decoration: none;
 	color: #5f7d99;
 }
 
-.event ul li a, .myevent ul li a {
+.event ul li a, .myevent a {
 	text-decoration: none;
 }
 
-.event ul li a:visited, .myevent ul li a:visited {
+.event ul li a:visited, .myevent a:visited {
 	color: #4a7eaf;   
 }
 
-.event ul li a:hover, .myevent ul li a:hover {
+.event ul li a:hover, .myevent a:hover {
 	text-decoration: underline;
 	color: #2b81da; 
 }
 
-.event ul li a:active, .myevent ul li a:active {
+.event ul li a:active, .myevent a:active {
+	text-decoration: underline;
 	color: #2b81da;
 }
 
