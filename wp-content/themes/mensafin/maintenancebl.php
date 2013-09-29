@@ -8,7 +8,7 @@
 // Tallenna tämä tiedosto jonnekin mihin kaikilla ei ole pääsyä!
 
 //Debug:
-ini_set('display_errors', 'On');
+//ini_set('display_errors', 'On');
 
 //Alustetaan sivu:
 require 'dataaccess.php';

@@ -10,7 +10,7 @@
 //Haetaan tietokannasta testitapahtumat...toistaiseksi kommenteissa.
    
 ////Debug:
-ini_set('display_errors', 'On');
+//ini_set('display_errors', 'On');
  
 ////Alustetaan sivu:
 require 'dataaccess.php';

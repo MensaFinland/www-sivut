@@ -8,7 +8,7 @@ if(isset($_POST["sendmail"])){
     if($_POST["answer"]=="kahdeksan" || $_POST["answer"]=="kaheksan"){ //Uusi kohde
     
         //Debug:
-        ini_set('display_errors', 'On');
+        //ini_set('display_errors', 'On');
 
         //Alustetaan sivu:
         require 'dataaccess.php';
