@@ -7,6 +7,21 @@
 ?>
 <?php
 
+////Debug:
+//ini_set('display_errors', 'On');
+ 
+////Alustetaan sivu:
+//require 'dataaccess.php';
+//$DA = new Data_Access;
+//$DA->openDatabase();
+
+//$sql="select id, pos, title, name, email, tel from PosContacts where active=1 order by Pos ASC";
+//$posdata=$DA->getValues($sql);
+//while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC))
+//{
+  //...add corresponding persons to right POSses...
+//}
+
   $GLOBALS['paikallisosastot'] = array(
     array(
       "name" => "Mensanuoret", "province" => "Koko Suomi", "people" => array(
