@@ -6,8 +6,6 @@ $(document).ready(function () {
     function hasEventDay(date) {
         var f1 = "" + $.datepicker.formatDate('yy-mm-dd', date).toString();
         //var f2 = "" + $.datepicker.formatDate('yy-m-d', date).toString();
-alert(f1);
-alert(dates.first());
         if (dates.indexOf(f1) !== -1 /*|| dates.indexOf(f2) !== -1 */) {
             return [true, 'eventDate', ""];
         }
@@ -27,7 +25,7 @@ alert(dates.first());
             dayNames: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
             dayNamesMin: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
             weekHeader: 'Vk',
-            dateFormat: 'yymmdd',
+            dateFormat: 'yy-mm-dd',
             firstDay: 1,
             isRTL: false,
             showMonthAfterYear: false,
