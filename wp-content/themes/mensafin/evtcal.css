@@ -6,7 +6,7 @@
     /*height: 150px;*/
     position:relative;
     z-index: 50;
-	border: 1px dotted #06F;
+	border: 0px none #06F;
 	padding-top: 5px;
 }
 .myNearEvent {

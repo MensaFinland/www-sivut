@@ -27,10 +27,6 @@ $sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHo
 $eventdata=$DA->getValues($sql);
 
  
-?>
-
-
-<?php
   // wp_enqueue_script is the preferred way to include Javascript and CSS.
   //  - Scripts are included only once.
   //  - Dependencies are included in correct order.
