@@ -3,8 +3,11 @@
 /// <reference path="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" /> 
 $(document).ready(function () {
     var dates = $(".technicaldate").text();
+    alert("test");
     function hasEventDay(date) {
+        alert(date);
         var f1 = "" + $.datepicker.formatDate('yy-mm-dd', date).toString();
+        alert(f1);
         //var f2 = "" + $.datepicker.formatDate('yy-m-d', date).toString();
         if (dates.indexOf(f1) !== -1 /*|| dates.indexOf(f2) !== -1 */) {
             return [true, 'eventDate', ""];
