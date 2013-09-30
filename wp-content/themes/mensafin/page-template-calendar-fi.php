@@ -2,6 +2,7 @@
 /*
 Template Name: Testikalenteri (suomenkielinen)
 */
+get_template_part('calendar-header');
 
 /**
  * The template for displaying test calendar page.
@@ -26,7 +27,6 @@ $hideGone = "and (ISNULL(CONCAT(DateYear, '-', DateMonth, '-', DateDay)) or Date
 $sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, Id DESC";
 $eventdata=$DA->getValues($sql);
 
-get_template_part('calendar-header');
 
 ?>
 <div id="container">
