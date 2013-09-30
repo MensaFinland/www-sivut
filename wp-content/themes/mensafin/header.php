@@ -50,6 +50,7 @@ if (typeof jQuery == 'undefined') {
 <?php get_template_part('template-parts/init-facebook-social-plugin') ?>
 
 <div id="background">
+<div style="background-image: url(<?php bloginfo('template_directory'); ?>/images/BGtop.jpg);width: 950px;height: 1px;"></div>
 <div id="wrapper">
 
 <div id="page" class="hfeed site">
