@@ -346,7 +346,6 @@ article {
 }
 
 .event ul li a:hover, .myevent a:hover {
-	text-decoration: underline;
 	color: #2b81da; 
 }
 
