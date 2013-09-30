@@ -28,7 +28,7 @@
 				<area shape="rect" coords="136,0,171,29" href="https://pinterest.com/mensafinland/" target="_blank" alt="Pinterest"
 				  onMouseOver="if(document.images) $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2P.png');" 
 				  onMouseOut="if(document.images)  $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png');">
-				<area shape="rect" coords="211,0,355,29" href="https://www.mensa.fi/forum/" target="_blank" alt="Jäsenten sivusto"
+				<area shape="rect" coords="211,0,355,29" href="https://www.mensa.fi/forum/" alt="Jäsenten sivusto"
 				  onMouseOver="if(document.images) $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2Fo.png');" 
 				  onMouseOut="if(document.images)  $('#someicons').attr('src', '<?php bloginfo('template_directory'); ?>/images/some/networkKaikki2.png');">
 			</map>
