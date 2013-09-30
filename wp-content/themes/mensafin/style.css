@@ -27,6 +27,21 @@ body {
 	background-image: url(images/BGtop.jpg);
 }
 
+#backgroundfix {
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 950px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-position: top;
+    height: 313px;
+    background-image: url(images/BGtop.jpg);
+}
+
 #wrapper {
 	display:block;
 	width: 1000px;
