@@ -48,6 +48,7 @@ body {
 	height: auto; 
 	margin-right: auto;
 	margin-left: auto;
+    z-index: 2;
 }
 
 header {
