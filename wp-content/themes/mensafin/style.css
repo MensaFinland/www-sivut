@@ -334,23 +334,24 @@ article {
 
 .event ul li a:link, .myevent a:link {
 	text-decoration: none;
-	color: #5f7d99;
+	color: #4D70DB;
 }
 
 .event ul li a, .myevent a {
 	text-decoration: none;
+	color: #4D70DB;
 }
 
 .event ul li a:visited, .myevent a:visited {
-	color: #4a7eaf;   
+	color: #4D70DB;   
 }
 
 .event ul li a:hover, .myevent a:hover {
-	color: #2b81da; 
+	color: #718DE2; 
 }
 
 .event ul li a:active, .myevent a:active {
-	color: #2b81da;
+	color: #718DE2;
 }
 
 
