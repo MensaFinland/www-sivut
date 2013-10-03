@@ -427,7 +427,11 @@ article {
 /* Span aika testikalenteriin */
 .aika {
 	font-weight: bolder;
-	color: #06C;
+	color: #4D70DB;
+}
+.aika a:hover{
+	font-weight: bolder;
+	color: #718DE2;
 }
 
 .testitPistelinja {
