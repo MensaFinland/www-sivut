@@ -89,6 +89,7 @@ $eventdata=$DA->getValues($sql);
         <div id="LocalizationInfoHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALinfo2.png</div>
         <div id="LocalizationQrcodeHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALqr2.png</div>
         <div id="LocalizationIcalHoverUrl" style="visibility: hidden"><?php bloginfo('template_directory') ?>/images/KALical2.png</div>
+        <div id="CalInfoDetails" style="visibility: hidden">Maksa paikan p&auml;&auml;ll&auml; tai ennakkomaksuna tilille FI30 8000 1002 1175 06</div>
 
 		<table class="datacontainer">
 			<thead><tr class="dsHead"><th>Id</th>               <th>Event title</th>              <th>Year</th>               <th>Month</th>             <th>Day</th>             <th>Hour</th>             <th>Minute</th>             <th>City</th>                   <th>Street Address</th>                         <th>Location details</th>                                                  <th>Event details</th>                              <th>Latitude</th>                     <th>Longitude</th></tr></thead>
