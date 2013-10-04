@@ -11,17 +11,15 @@ $eventdata=$DA->getValues($sql);
    
 ?>
 <html><head>
-Suomen Mensa ry:n älykkyystestit, alkaen 1.10.2013
+Suomen Mensa ry:n &auml;lykkyystestit, alkaen 1.10.2013
 </head><body>
-<h3>Suomen Mensa ry:n älykkyystestit, alkaen 1.10.2013</h3>
+<h3><a href="http://www.mensa.fi">Suomen Mensa ry</a>:n &auml;lykkyystestit, alkaen 1.10.2013</h3>
 <br/>
-          <div class="testit" id="maineventlist">
+		  <table style="padding: 3px; border-style: inset dotted inset dotted; border-width: thin; border-color: #000000; font-family: Consolas">
           <?php
             if(isset($eventdata)){
                 while($row=mysqli_fetch_array($eventdata, MYSQL_ASSOC)){
-                    print "<table class='event'>";
                     if($row["EventType"]=="0" || $row["EventType"]==0){
-                        print "\r\n<div id='testInfo".htmlspecialchars($row["Id"])."' title='&Auml;lykkyystesti' class='event testipopup'>";
                         print "<tr><td><span class='aika'>".htmlspecialchars($row["City"]);
                         print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"]);
 						$parseMin = htmlspecialchars($row["DateMinute"]);
@@ -33,24 +31,16 @@ Suomen Mensa ry:n älykkyystestit, alkaen 1.10.2013
                         print "</td><td>Maksa paikan p&auml;&auml;ll&auml; tai ennakkomaksuna tilille FI30 8000 1002 1175 06";
                         print "</td><td>".htmlspecialchars($row["Title"]);
                         print "</td><td>&nbsp;";
-                        print "</td><td><a href=\"?page_id=11\">Tarkemmat tiedot testikalenterista</a>";						
-                        print "</td></tr></div>";
-                        print "\r\n<tr><td><a id=\"testopener".htmlspecialchars($row["Id"])."\" href=\"#\"><span class='aika'>".htmlspecialchars($row["City"]);
-                        print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
-						print "<script>\r\n";
-                        print "\$(function() { \$(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
-                        print "\$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){\$(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog(\"open\");return false;});";
-                        print "});</script>";
+                        print "</td>";
                     } else {
                         print "<tr><td>".htmlspecialchars($row["Title"]);
                         print "</td><td>".htmlspecialchars($row["EventDetails"]);
                     }
-                    print "</td></tr></table><!-- end event -->";
-                    print "<p class='testitPistelinja'></p>";
+                    print "</tr>";
                 }
             }			
             ?>
-                 </div><!-- end testit -->
+                 </table>
 
 </body>
 </html>
