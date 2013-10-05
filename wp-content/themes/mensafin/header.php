@@ -41,7 +41,8 @@ if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
-<!--[if lt IE 9 ]><style>.mainArticleFull{overflow: scroll;}</style><![endif]-->
+<!--[if lt IE 9 ]><style>.mainArticleFull{overflow-y: scroll;}</style><![endif]-->
+<!--[if IE 9 ]><style>.mainArticleFull{overflow-y: scroll;}</style><![endif]-->
 
 </head>
 
