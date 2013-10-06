@@ -26,14 +26,14 @@
 				success: function(data){
 					//alert(data);
 					if(data=="safty-fail"){
-						alert("Vastasit turvakysymykseen v‰‰rin.");
+						alert("Vastasit turvakysymykseen v√§√§rin.");
 					}else{
-						alert("Palaute l‰hetetty. Pyrimme vastaamaan toiveeseesi.");
+						alert("Palaute l√§hetetty. Pyrimme vastaamaan toiveeseesi.");
 						$("#wish").closest('form').find("input[type=text], textarea").val("");
 					}
 				},
 				error:function(xhr){
-					alert("L‰hetys ep‰onnistui. " + xhr.statusText);
+					alert("L√§hetys ep√§onnistui. " + xhr.statusText);
 				}                    
 				});
 		});
