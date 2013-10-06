@@ -20,6 +20,16 @@
 	    var fun = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
 		$('nav ul li a[href$="' + fun + '"]').addClass("current");
 
+            /* Laita tombstone/end-of-proof oletustekstialueiden loppuun. Vaikuttaa sivuihin ja postauksiin. */
+            var last_p = null;
+            $('div.default-content-area p').each(
+                function(index, element) {
+                    last_p = $(element);
+                });
+            if (last_p) {
+                last_p.append('<img src="' + theme_path + 'images/loppunelio.jpg" alt="Halmos" class="loppunelio"/>');
+            }
+
             /* Lisää ylätason valikkoihin piilotusnuolet. */
             $('ul#menu-mainmensamenu > li').each(
                 function(index, element) {
