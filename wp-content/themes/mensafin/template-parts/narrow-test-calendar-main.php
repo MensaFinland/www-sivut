@@ -1,3 +1,4 @@
+<p class="palsta">Testikalenteri 2013</p>
 <?php
   /**
    * Front page: Narrow test calendar strip.
@@ -22,7 +23,7 @@ $sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHo
 $eventdata=$DA->getValues($sql);
 
    
-?><p class="palsta">Testikalenteri 2013</p>
+?>
           <div class="testit" id="maineventlist">
           <?php
             if(isset($eventdata)){
