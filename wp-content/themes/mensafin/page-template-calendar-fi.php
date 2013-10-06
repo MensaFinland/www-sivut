@@ -1,3 +1,5 @@
+<div id="container">
+<div id="container-edge"></div>
 <?php
 /*
 Template Name: Testikalenteri (suomenkielinen)
@@ -29,9 +31,6 @@ $eventdata=$DA->getValues($sql);
 
 
 ?>
-<div id="container">
-<div id="container-edge"></div>
-
 	<div id="primary" class="content-area" style="width:425px; float: left; background-color:transparent;">
 		<div id="content" class="site-content" role="main">
 
