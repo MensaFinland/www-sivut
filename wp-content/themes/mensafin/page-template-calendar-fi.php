@@ -1,11 +1,14 @@
-<div id="container">
-<div id="container-edge"></div>
 <?php
 /*
 Template Name: Testikalenteri (suomenkielinen)
 */
 get_template_part('calendar-header');
+?>
 
+<div id="container">
+<div id="container-edge"></div>
+
+<?php
 /**
  * The template for displaying test calendar page.
  *
@@ -28,7 +31,6 @@ $DA->openDatabase();
 $hideGone = "and (ISNULL(CONCAT(DateYear, '-', DateMonth, '-', DateDay)) or DateYear=0 or STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') >= CURDATE() ) ";
 $sql="select Id, Title, Visible, EventType, DateYear, DateMonth, DateDay, DateHour, DateMinute, City, StreetAddress, LocationDetails, EventDetails, Latitude, Longitude from EventCalendar where Visible=0 " . $hideGone . "order by STR_TO_DATE(CONCAT(DateYear, '-', DateMonth, '-', DateDay),'%Y-%m-%d') ASC, City ASC, Id DESC";
 $eventdata=$DA->getValues($sql);
-
 
 ?>
 	<div id="primary" class="content-area" style="width:425px; float: left; background-color:transparent;">
