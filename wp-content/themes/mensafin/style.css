@@ -464,7 +464,10 @@ article {
 	margin-left: auto;
 	background-color: transparent;
 	padding-top: 4px;
-	padding-left: 5px;
+	padding-left: 10px;
+
+        background-image: url("images/BGdotted.jpg");
+        background-repeat: repeat-y
 }
 
 #sidebar.pos-map {
