@@ -32,7 +32,9 @@
 	padding-top: 5px;
 	background-color: #a4c7ff;
 }
-.myNearEvent.myDateEvent{
+.myNearEvent.myDateEvent,
+.myDateEvent.myNearEvent,
+{
     background-color: #B4BDDF;
     width: auto;
     height: auto; /*height: 150px;*/
