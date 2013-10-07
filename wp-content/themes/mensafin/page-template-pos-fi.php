@@ -18,7 +18,7 @@ get_header(); ?>
 <div id="container">
 <div id="container-edge"></div>
 
-	<div id="primary" class="content-area" style="width: 525px; float:left; background-color:transparent;">
+	<div id="primary" class="content-area default-content-area" style="width: 525px; float:left; background-color:transparent;">
 		<div id="content" class="site-content" role="main">
 
 			<?php the_post(); ?>

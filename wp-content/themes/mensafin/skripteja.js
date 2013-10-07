@@ -1,6 +1,6 @@
 ﻿// <!--
 	function openPopup(url) {
-		newwindow=window.open(url,'name','height=650,width=800');
+		newwindow=window.open(url,'nettitesti','height=650,width=800,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');
 		if (window.focus) {newwindow.focus()}
 		return false;
 	}
@@ -27,7 +27,7 @@
                     last_p = $(element);
                 });
             if (last_p) {
-                last_p.append('<img src="' + theme_path + 'images/loppunelio.jpg" alt="Halmos" class="loppunelio"/>');
+                last_p.append('&nbsp;<img src="' + theme_path + 'images/loppunelio.jpg" alt="Halmos" class="loppunelio"/>');
             }
 
             /* Lisää ylätason valikkoihin piilotusnuolet. */
