@@ -32,6 +32,15 @@
 	padding-top: 5px;
 	background-color: #a4c7ff;
 }
+.myNearEvent.myDateEvent{
+    background-color: #B4BDDF;
+    width: auto;
+    height: auto; /*height: 150px;*/
+    position: relative;
+    z-index: 50;
+    border: 1px dotted #06F;
+    padding-top: 5px;
+}
 .timeAndCity {
     font-weight: bold
 }
