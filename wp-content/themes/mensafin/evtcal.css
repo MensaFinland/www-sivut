@@ -9,6 +9,10 @@
 	border: 0px none #06F;
 	padding-top: 5px;
 }
+.myNearEvent ul li a:link, .myNearEvent a:link, .myDateEvent ul li a:link, .myDateEvent a:link  {
+	text-decoration: none;
+	color: #4D70DB;
+}
 .myNearEvent {
     width: auto;
     height: auto;
