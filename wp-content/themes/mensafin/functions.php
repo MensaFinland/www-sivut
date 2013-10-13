@@ -65,19 +65,25 @@ endif; // mensafin_setup
 add_action( 'after_setup_theme', 'mensafin_setup' );
 
 /**
- * Register widgetized area and update sidebar with default widgets
+ * Register widgetized areas for the two banners.
  */
 function mensafin_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'mensafin' ),
-		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'name'          => 'Upper Banner', /* __( 'Upper Banner', 'mensafin' ), */
+		'id'            => 'banner-1',
+		'before_widget' => '<div id="banner-1" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Lower Banner', /*  __( 'Lower Banner', 'mensafin' ), */
+		'id'            => 'banner-2',
+		'before_widget' => '<div id="banner-2" class="widget %2$s">',
+		'after_widget'  => '</div>',
 	) );
 }
+
 add_action( 'widgets_init', 'mensafin_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles

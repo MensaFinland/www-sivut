@@ -474,25 +474,13 @@ article {
   padding-right:25px;
 }
 
-#blog {
+div#banner-1, div#banner-2 {
 	width: 235px;
 	height: 210px;
 	display: block;
 	float: left;
-	margin-right: auto;
 	margin-left: auto;
-	background-image: url(images/AlyBlogiBG.png);
-	background-repeat: no-repeat;
-}
-
-#lahjakkaat {
-	width: 235px;
-	height: 210px;
-	display: block;
-	float: left;
 	margin-right: auto;
-	margin-left: auto;
-	background-image: url(images/LahjLapset2.png);
 	background-repeat: no-repeat;
 }
 
@@ -638,36 +626,15 @@ article p {
 	color: #06C;
 }
 
-.textBlogi {
+#banner-1 p, #banner-2 p {
 	font-size: 0.7em;
 	line-height: 1.4em;
 	letter-spacing: 0.04em;
-	padding-left: 30px;
-	padding-top: 120px;
-	padding-right: 5px;
 	font-family: Verdana, Geneva, sans-serif;
-}	
-	
-.textBlogi a {
-	font-size: 0.9em;
-	line-height: 1.4em;
-	letter-spacing: 0.04em;
-	text-decoration: none;
-	font-weight: bolder;
-	color: #06C;
-}	
+        padding-left: 30px;
+}
 
-.textLahjakkaat {
-	font-size: 0.7em;
-	line-height: 1.4em;
-	letter-spacing: 0.04em;
-	padding-left: 30px;
-	padding-top: 80px;
-	padding-right: 50px;
-	font-family: Verdana, Geneva, sans-serif;
-}	
-	
-.textLahjakkaat a {
+#banner-1 p a, #banner-2 p a {
 	font-size: 0.9em;
 	line-height: 1.4em;
 	letter-spacing: 0.04em;

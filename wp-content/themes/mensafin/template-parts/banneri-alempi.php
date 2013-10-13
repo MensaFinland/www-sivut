@@ -6,4 +6,4 @@
   * @package mensafin
   */
 ?>
-<?php get_template_part( 'template-parts/link-to-gifted-children' ); ?>
+<?php dynamic_sidebar('Lower Banner'); ?>

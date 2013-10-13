@@ -6,4 +6,4 @@
   * @package mensafin
   */
 ?>
-<?php get_template_part( 'template-parts/link-to-iq-blog' ); ?>
+<?php dynamic_sidebar('Upper Banner'); ?>
