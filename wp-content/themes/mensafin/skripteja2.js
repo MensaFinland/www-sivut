@@ -12,6 +12,12 @@
 			knobHandles: true,
 		});
 		
+		/* Wordpressin teeman kuvahakemisto */
+        var theme_pathk = '';
+        if (window.wordpress_theme_path) {
+          theme_pathk = window.wordpress_theme_path
+        }
+		
 		//Posti-lahetys
 		$("#wish").submit(function(e){
 			e.preventDefault();
@@ -21,7 +27,7 @@
 			$.ajax({
 				cache: false,
 				type: 'POST',
-				url: 'testikalenteribl.php',
+				url: theme_pathk + 'testikalenteribl.php',
 				data: $serdata,
 				success: function(data){
 					//alert(data);
