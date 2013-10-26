@@ -22,7 +22,7 @@ if(isset($_POST["sendmail"]) && isset($_POST["mailbody"])){
 		    // Mail:
             $to = 'atk-vastaava@mensa.fi';
             $subject = 'Palaute testikalenterin weppilomakkeesta';
-            $message = 'Palaute osoitteesta: \n' + htmlspecialchars($_POST["mailfrom"]) + '\n\nViesti: \n' + htmlspecialchars($_POST["mailbody"]) + '\r\n\r\nKirjautumalla forumille voit katsoa kaikki annetut palautteet: https://www.mensa.fi/members/wwwmaintenance/maintenance.php';
+            $message = 'Uusi viesti! Kirjautumalla forumille voit katsoa kaikki annetut palautteet: https://www.mensa.fi/members/wwwmaintenance/maintenance.php';
             mail($to,$subject,$message);
         }        
         echo "ok";
