@@ -314,6 +314,7 @@ article {
 	height: 240px; 
 	width: 236px; 
 	background-image: url(images/KalenteriTausta.jpg);
+	background-size: 100% auto;
 }
 
 .dialogiAlaosa {

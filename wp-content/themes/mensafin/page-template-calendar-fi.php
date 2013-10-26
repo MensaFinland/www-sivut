@@ -72,8 +72,13 @@ $eventdata=$DA->getValues($sql);
         <?php get_template_part('template-parts/narrow-test-calendar-full'); ?>
 	</div> <!-- #calendar -->
 	</div> <!-- #calendarBG -->
-	<div id="sidebar"> 
-          <?php get_template_part( 'template-parts/test-map' ) ?>
+	<div id="sidebar">
+		<div class="kalenteritaus" >
+			<img src="<?php bloginfo('template_directory'); ?>/images/KalenteriPalkki.jpg" alt="Testikalenteri" /> 
+			<div class="datepicker" id="datepicker"></div>
+		</div>
+		<img src="<?php bloginfo('template_directory'); ?>/images/KarttaPalkki.jpg" alt="Testipaikkakunnat" /> 
+		<div id="mapContainer" class="karttataus"></div><!-- end mapContainer -->
 	</div><!-- #sidebar (secondary) -->
 </div> <!-- #container -->
 
