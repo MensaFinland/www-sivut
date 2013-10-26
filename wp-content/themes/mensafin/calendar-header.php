@@ -33,8 +33,8 @@
 
   wp_enqueue_script('goggle-maps-api' , 'http://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
   wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   );
-  wp_enqueue_script('local-skripteja2', get_bloginfo('template_directory') . '/skripteja2.js', array('jquery-ui-bundle')   );
   wp_enqueue_script('local-evtcal'    , get_bloginfo('template_directory') . '/eventcalendar.js', array('jquery-ui-bundle')   );
+  wp_enqueue_script('local-skripteja2', get_bloginfo('template_directory') . '/skripteja2.js', array('jquery-ui-bundle')   );
   wp_enqueue_style( 'local-evtcal'    , get_bloginfo('template_directory') . '/evtcal.css' );
 
   wp_enqueue_script('local-evtcal2'   , get_bloginfo('template_directory') . '/evtcal2.js', array('jquery-ui-bundle')   );
