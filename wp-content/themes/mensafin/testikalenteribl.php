@@ -20,9 +20,9 @@ if(isset($_POST["sendmail"]) && isset($_POST["mailbody"])){
 
         if (isset($_POST["mailfrom"])) {
 		    // Mail:
-            $to = 'atk-vastaava@mensa.fi';
+            $to = 'testivastaava@mensa.fi';
             $subject = 'Palaute testikalenterin weppilomakkeesta';
-            $message = 'Uusi viesti! Kirjautumalla forumille voit katsoa kaikki annetut palautteet: https://www.mensa.fi/members/wwwmaintenance/maintenance.php';
+            $message = 'Uusi viesti! Kirjautumalla forumille voit katsoa kaikki annetut palautteet: http://www.mensa.fi/members/wwwmaintenance/maintenance.php';
             mail($to,$subject,$message);
         }        
         echo "ok";
