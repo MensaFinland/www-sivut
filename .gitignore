@@ -3,3 +3,4 @@ wp-config.php
 speksi*/
 *.inc
 wp-content/uploads/
+github-update-hook.php
