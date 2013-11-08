@@ -14,6 +14,7 @@
            <li style="padding-top:10px;" class="footerText"><a href="http://www.mensa.fi/wordpress/?page_id=85">Medialle</a></li>
            <!--<li class="footerText"><a href="#">Aineistopankki</a></li>-->
            <li class="footerText"><a href="http://www.mensa.fi/wordpress/?year=<?php echo date("Y"); ?>">Arkisto</a></li>
+           <li class="footerText"><a href="http://www.mensa.fi/wordpress/?page_id=687">Rekisteriseloste</a></li>
          </ul>
        </div><!-- end footerInfo yhteystiedot -->
        <div style="width:195px;" class="footerInfo">
