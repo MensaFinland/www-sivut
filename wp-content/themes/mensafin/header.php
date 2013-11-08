@@ -32,6 +32,7 @@
 <meta name="rating" content="general" />
 <meta name="description" content="Mensa on kansainvälinen järjestö, jonka toiminnan tarkoituksena on älykkyyden tunnistaminen ja kehittäminen ihmisyyden hyväksi, älykkyystutkimuksen tukeminen sekä älyllisen ja sosiaalisen ympäristön tarjoaminen jäsenilleen. Mensan jäseneksi voi liittyä jokainen, joka saavuttaa älykkyystestissä paremman tuloksen kuin 98% väestöstä." />
 <meta name="keywords" content="mensa, mensa testi, älykkyystesti, mensan testi, äo testi, mensan kotitesti, älykkyysosamäärä, äly, älykkyys, yli, huippu, älykäs, huippuälykäs, älykkäille, älykkäiden, äo, iq, äo testi, iq testi, testi, test, aivokapasiteetti, nettitesti, kotitesti, soveltuvuustesti, suomen mensa, suomi, finland, älykkyystestit, sosiaalinen älykkyys, älypeli, älypää, psykologinen, logiikka, looginen, loogiset, päättely, kyky, tehtäviä, tunneäly, ilmainen nettitesti, numeerinen, numeeriset, raja, jakauma, online, järjestö, yhdistys, yhteisö, seura, seuraa, verkosto, vertais, tapahtuma, tapahtumia, lahjakkuus, lahjakas, lapsi, tuki, erilaisuus, perspektiivi, harrastus, ystävä, ystäviä, kavereita, keskustelu, pulmapeli, pulmapelit, vapaaehtois, parantaa, tutustuminen, tekemistä, kohtaamisia, yhteistyö, oppiminen, oppia, kansainvälinen, maailmanlaajuinen, toiminta, toimintaa, älyä" />
+<meta name="google-site-verification" content="U9zMoDfEQyW04N7KPNeXXpaYKzmrFfg1ztDSPLE7l6g" />
 <meta name="Author" content="Suomen Mensa ry, Sivut suunnitteli Tuomas Hietanen, Ulla Sainio, Simo Härkönen 2013" />
 
 <script type="text/javascript">
