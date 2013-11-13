@@ -123,6 +123,7 @@ div.ui-datepicker
 .technicaldate {
     position:absolute;
     visibility: hidden;
+    display:none;
 }
 
 /* Data source: See the table if JavaScript is disabled... */

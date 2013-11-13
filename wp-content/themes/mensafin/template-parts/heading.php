@@ -12,6 +12,7 @@
 psykologinen testi, sosiaalinen älykkyys, älypeli, älypää, psykologinen, logiikka, looginen, loogiset, päättely, kyky, tehtäviä, tunneäly, ilmainen nettitesti, matemaattinen, numeerinen, numeeriset, raja, jakauma, online, järjestö, yhdistys, yhteisö, ryhmä, seura, seuraa, verkosto, vertais, tapahtuma, tapahtumia, kokemuksia, taito, lahjakkuus,
 lahjakas, lapsi, tuki, erilaisuus, perspektiivi, harrastus, ystävä, ystäviä, kavereita, keskustelu, sananvapaus, chat, huumori, pulmapeli, pulmapelit, vapaaehtois, hyväntekeväisyys, parantaa, sukututkimus, tutustuminen, tekemistä, kohtaamisia, yhteistyö, oppiminen, oppia, mahdollisuus, kansainvälinen, maailmanlaajuinen, toiminta, toimintaa, älyä, oivallusta, oivaltaminen, oivaltaa, &auml;lykkyys, &auml:o, &auml;lykas, alykkyys, aly, alykas</h1>
 
+		<img src="<?php bloginfo('template_directory'); ?>/images/Mlogo.jpg" alt="" style="display:none;visibility:hidden;width:0px;height:0px;" />
 		<div id="MensaLogo"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaLogo.png" alt="Mensa Logo" /></a></div><!-- end MensaLogo -->
 		<div id="MensaText"><a href="index.php"><img src="<?php bloginfo('template_directory'); ?>/images/MensaText.png" alt="Mensa Finland" /></a></div><!-- end MensaText -->
 		<div id="network">

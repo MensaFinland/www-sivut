@@ -7,7 +7,7 @@
  * @package mensaFin
  */
 ?><!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -27,6 +27,8 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/Mlogo.jpg" />
 
 <meta name="robots" content="index,follow" />
 <meta name="rating" content="general" />
