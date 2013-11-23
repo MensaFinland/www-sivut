@@ -9,7 +9,7 @@
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -26,7 +26,7 @@
   // wp_head() call in header.php prints the actual include lines.
   //
   //                 A NAME WE CHOOSE   ADDRESS OF SCRIPT/CSS                                  DEPENDENCY SCRIPTS
-  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-1.9.1.min.js'                                       );
+  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-2.0.3.min.js'                                       );
   wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
   wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
   wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
@@ -54,8 +54,8 @@
 
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {
-    document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.css' type='text/javascript'%3E%3C/script%3E"));
-    document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Clink rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.css' type='text/css'%3E%3C/link%3E"));
+    document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
     document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
