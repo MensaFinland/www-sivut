@@ -51,8 +51,8 @@ $eventdata=$DA->getValues($sql);
                         print "\$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){\$(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog(\"open\");return false;});";
                         print "});</script>";
                     } else {
-                        print "<ul><li>".htmlspecialchars($row["Title"]);
-                        print "</li><li>".htmlspecialchars($row["EventDetails"]);
+                        print "<ul><li><b>".htmlspecialchars($row["Title"]);
+                        print "</b></li><li>".htmlspecialchars($row["EventDetails"]);
                     }
                     print "</li></ul></div><!-- end event -->";
                     print "<p class='testitPistelinja'></p>";
