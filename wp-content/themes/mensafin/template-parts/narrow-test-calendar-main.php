@@ -46,7 +46,7 @@ $eventdata=$DA->getValues($sql);
                         print "</li><li><a href=\"?page_id=11\">Tarkemmat tiedot testikalenterista</a>";						
                         print "</li></ul></div>";
                         print "\r\n<ul><li><a id=\"testopener".htmlspecialchars($row["Id"])."\" href=\"#\"><span class='aika'>".htmlspecialchars($row["City"]);
-                        print " ".htmlspecialchars($row["DateDay"]).".".htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
+                        print " ".(intval($parseDay)<1?"":$parseDay.".").htmlspecialchars($row["DateMonth"]).".".htmlspecialchars($row["DateYear"])."</span></a>";
 						print "<script>\r\n";
                         print "\$(function() { \$(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog({ autoOpen: false });";
                         print "\$(\"#testopener".htmlspecialchars($row["Id"])."\").click(function(){\$(\"#testInfo".htmlspecialchars($row["Id"])."\").dialog(\"open\");return false;});";
