@@ -5,7 +5,7 @@
  header("Pragma: no-cache");
 
 if(isset($_POST["sendmail"]) && isset($_POST["mailbody"])){
-    if($_POST["answer"]=="kahdeksan" || $_POST["answer"]=="kaheksan"){ //Uusi kohde
+    if(strtolower($_POST["answer"])=="kahdeksan" || $_POST["answer"]=="kaheksan"){ //Uusi kohde
     
         //Debug:
         //ini_set('display_errors', 'On');
