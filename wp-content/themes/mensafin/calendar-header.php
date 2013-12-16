@@ -19,25 +19,20 @@
 </script>
 
 <?php
-  $http = 'http';
-  if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off'
-    || $_SERVER['SERVER_PORT'] == 443) {
-
-    $http = 'https';
-  }
-
+  $http = is_ssl() ? 'https' : 'http';
+  
   // wp_enqueue_script is the preferred way to include Javascript and CSS.
   //  - Scripts are included only once.
   //  - Dependencies are included in correct order.
   // wp_head() call in header.php prints the actual include lines.
   //
   //                 A NAME WE CHOOSE   ADDRESS OF SCRIPT/CSS                                  DEPENDENCY SCRIPTS
-  wp_enqueue_script('jquery-bundle'   , $http+'://code.jquery.com/jquery-2.0.3.min.js'                                       );
-  wp_enqueue_script('html5shiv'       , $http+'://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
-  wp_enqueue_script('jquery-ui-bundle', $http+'://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
-  wp_enqueue_style( 'jquery-ui-bundle', $http+'://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
+  wp_enqueue_script('jquery-bundle'   , $http.'://code.jquery.com/jquery-2.0.3.min.js'                                       );
+  wp_enqueue_script('html5shiv'       , $http.'://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
+  wp_enqueue_script('jquery-ui-bundle', $http.'://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
+  wp_enqueue_style( 'jquery-ui-bundle', $http.'://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
 
-  wp_enqueue_script('goggle-maps-api' , $http+'://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
+  wp_enqueue_script('goggle-maps-api' , $http.'://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
   wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   );
   wp_enqueue_script('local-evtcal'    , get_bloginfo('template_directory') . '/eventcalendar.js', array('jquery-ui-bundle')   );
   wp_enqueue_script('local-skripteja2', get_bloginfo('template_directory') . '/skripteja2.js', array('jquery-ui-bundle')   );
@@ -45,7 +40,7 @@
 
   wp_enqueue_script('local-evtcal2'   , get_bloginfo('template_directory') . '/evtcal2.js', array('jquery-ui-bundle')   );
 
-  wp_enqueue_style('font-montserrat', $http+'://fonts.googleapis.com/css?family=Montserrat');
+  wp_enqueue_style('font-montserrat', $http.'://fonts.googleapis.com/css?family=Montserrat');
 
   wp_head(); ?>
 
