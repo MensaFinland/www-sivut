@@ -7,7 +7,7 @@
  * @package mensaFin
  */
 ?><!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -19,6 +19,12 @@
 </script>
 
 <?php
+  $http = 'http';
+  if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off'
+    || $_SERVER['SERVER_PORT'] == 443) {
+
+    $http = 'https';
+  }
 
   // wp_enqueue_script is the preferred way to include Javascript and CSS.
   //  - Scripts are included only once.
@@ -26,12 +32,12 @@
   // wp_head() call in header.php prints the actual include lines.
   //
   //                 A NAME WE CHOOSE   ADDRESS OF SCRIPT/CSS                                  DEPENDENCY SCRIPTS
-  wp_enqueue_script('jquery-bundle'   , 'http://code.jquery.com/jquery-2.0.3.min.js'                                       );
-  wp_enqueue_script('html5shiv'       , 'http://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
-  wp_enqueue_script('jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
-  wp_enqueue_style( 'jquery-ui-bundle', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
+  wp_enqueue_script('jquery-bundle'   , $http+'://code.jquery.com/jquery-2.0.3.min.js'                                       );
+  wp_enqueue_script('html5shiv'       , $http+'://html5shiv.googlecode.com/svn/trunk/html5.js'                           );
+  wp_enqueue_script('jquery-ui-bundle', $http+'://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   );
+  wp_enqueue_style( 'jquery-ui-bundle', $http+'://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');
 
-  wp_enqueue_script('goggle-maps-api' , 'http://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
+  wp_enqueue_script('goggle-maps-api' , $http+'://maps.google.com/maps/api/js?sensor=false'    , array('jquery-ui-bundle'));
   wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   );
   wp_enqueue_script('local-evtcal'    , get_bloginfo('template_directory') . '/eventcalendar.js', array('jquery-ui-bundle')   );
   wp_enqueue_script('local-skripteja2', get_bloginfo('template_directory') . '/skripteja2.js', array('jquery-ui-bundle')   );
@@ -39,12 +45,14 @@
 
   wp_enqueue_script('local-evtcal2'   , get_bloginfo('template_directory') . '/evtcal2.js', array('jquery-ui-bundle')   );
 
-  wp_enqueue_style('font-montserrat', 'http://fonts.googleapis.com/css?family=Montserrat');
+  wp_enqueue_style('font-montserrat', $http+'://fonts.googleapis.com/css?family=Montserrat');
 
   wp_head(); ?>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/Mlogo.jpg" />
 
 <meta name="robots" content="index,follow" />
 <meta name="rating" content="general" />
