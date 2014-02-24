@@ -1,4 +1,4 @@
-<p class="palsta">Testikalenteri 2013</p>
+<p class="palsta">Testikalenteri</p>
 <?php
   /**
    * Front page: Narrow test calendar strip.

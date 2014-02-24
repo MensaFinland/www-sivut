@@ -5,7 +5,7 @@
    * @package mensafin
    */
 ?>
-      <p class="palsta">Testikalenteri 2013</p>
+      <p class="palsta">Testikalenteri</p>
           <div class="testit" id="maineventlist">
                        <div class="event">
                                 <ul>
