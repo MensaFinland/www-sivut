@@ -41,19 +41,19 @@ CREATE TABLE PosContact(
 -- Public: 0=no, 1=yes, 2=forum
 
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Mensanuoret', 'Koko Suomi', NULL, 1);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Mensa Ã…land', 'Ahvenanmaa / Ã…land', 'pos17', 2);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('PÃ¤Ã¤majaMensa', 'EtelÃ¤-Savo', 'pos8', 3);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Helsingin Mensa', 'PÃ¤Ã¤kaupunkiseutu', 'pos12', 4);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('ItÃ¤-Uusimaa', 'ItÃ¤-Uusimaa', 'pos11', 5);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Kanta-HÃ¤me (HÃ¤mensa)', 'Kanta-HÃ¤me', 'pos16', 6);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Mensa Åland', 'Ahvenanmaa / Åland', 'pos17', 2);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('PäämajaMensa', 'Etelä-Savo', 'pos8', 3);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Helsingin Mensa', 'Pääkaupunkiseutu', 'pos12', 4);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Itä-Uusimaa', 'Itä-Uusimaa', 'pos11', 5);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Kanta-Häme (Hämensa)', 'Kanta-Häme', 'pos16', 6);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Keski-Suomi', 'Keski-Suomi', 'pos5', 7);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Kymenlaakso', 'Kymeenlaakso ja EtelÃ¤-Karjala', 'pos9', 8);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Kymenlaakso', 'Kymeenlaakso ja Etelä-Karjala', 'pos9', 8);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Lappi (Napapiirin Mensa - Mensa Arctic Circle)', 'Lappi', 'pos2', 9);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Oulu', 'Pohjois-Pohjanmaa, Kainuu', 'pos3', 10);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Pirkanmaa (Mansen Mensa)', 'Pirkanmaa', 'pos13', 11);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Pohjois-Karjala', 'Pohjois-Karjala', 'pos7', 12);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Pohjois-Savo', 'Pohjois-Savo', 'pos6', 13);
-INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('PÃ¤ijÃ¤t-HÃ¤me (Demensa)', 'PÃ¤ijÃ¤t-HÃ¤me', 'pos10', 14);
+INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Päijät-Häme (Demensa)', 'Päijät-Häme', 'pos10', 14);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Satakunta (Satamensa)', 'Satakunta', 'pos15', 15);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Turku', 'Varsinais-Suomi', 'pos14', 16);
 INSERT INTO Pos(PosName, Province, Map_Id, Order_Id) values ('Vaasa', 'EtelÃ¤-Pohjanmaa, Pohjanmaa, Keski-Pohjanmaa', 'pos4', 17);
@@ -71,18 +71,18 @@ $current_pos = null;
 
 while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
 
-	$person = array("title" => $row["PosContacts.Title"], "name" => $row["PosContacts.Name"], "email" => $row["PosContacts.Email"], "tel" => $row["PosContacts.Tel"]);
+	$person = array("title" => $row["Title"], "name" => $row["Name"], "email" => $row["Email"], "tel" => $row["Tel"]);
 
-	if ($row["Pos.Name"] != $current_pos) {
-		$current_pos = $row["Pos.Name"];
+	if ($row["PosName"] != $current_pos) {
+		$current_pos = $row["PosName"];
 		$peoplearray = array();
 		$peoplearray[] = $person;
-		$posarray["Pos.Name"] = array("Map_Id" => $row["Pos.Map_Id"], "province" => $row["Pos.Province"], "name" => $row["Pos.Name"], "people" => $peoplearray);
+		$posarray[$row["PosName"]] = array("Map_Id" => $row["Map_Id"], "province" => $row["Province"], "name" => $row["PosName"], "people" => $peoplearray);
 	}else{
-		$posarray["Pos.Name"]["people"][] = $person;
+		$posarray[$row["PosName"]]["people"][] = $person;
 	}
 }
-var_dump($posarray);
+//var_dump($posarray);
 
   $GLOBALS['paikallisosastot'] = $posarray;
 
