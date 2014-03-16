@@ -4,11 +4,10 @@
   *
   * @package mensafin
   */
-?>
-<?php
+?><?php
 
 //Debug:
-ini_set('display_errors', 'On');
+//ini_set('display_errors', 'On');
  
 //Alustetaan sivu:
 require 'dataaccess.php';
@@ -77,7 +76,7 @@ while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
 		$current_pos = $row["PosName"];
 		$peoplearray = array();
 		$peoplearray[] = $person;
-		$posarray[$row["PosName"]] = array("Map_Id" => $row["Map_Id"], "province" => $row["Province"], "name" => $row["PosName"], "people" => $peoplearray);
+		$posarray[$row["PosName"]] = array("map_id" => $row["Map_Id"], "province" => $row["Province"], "name" => $row["PosName"], "people" => $peoplearray);
 	}else{
 		$posarray[$row["PosName"]]["people"][] = $person;
 	}
@@ -87,4 +86,3 @@ while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
   $GLOBALS['paikallisosastot'] = $posarray;
 
 ?>
-

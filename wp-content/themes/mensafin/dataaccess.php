@@ -24,7 +24,7 @@ class Data_Access {
 
         $this->connection = mysqli_connect($this->server,$this->user,$this->pwd,$this->databasename);
         if (mysqli_connect_errno($this->connection)) {
-            echo mysqli_connect_error() . "\n<br><br>";
+            echo mysqli_connect_error() . "\n<br/><br/>";
             mysqli_close($this->connection);
             exit("Can't connect to server.");
         }

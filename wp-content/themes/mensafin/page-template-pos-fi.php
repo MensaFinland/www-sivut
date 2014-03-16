@@ -12,9 +12,11 @@ Template Name: Paikallisosastosivu (suomenkielinen)
  * @package mensaFin
  */
 
-get_template_part('template-parts/pos-data');
+get_header();
 
-get_header(); ?>
+get_template_part('template-parts/pos-data2');
+
+ ?>
 <div id="container">
 <div id="container-edge"></div>
 
