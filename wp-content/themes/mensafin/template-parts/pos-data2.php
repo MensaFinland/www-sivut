@@ -71,15 +71,15 @@ $current_pos = null;
 
 while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
 
-	$person = array("title" => $row["PosContacts.Title"], "name" => $row["PosContacts.Name"], "email" => $row["PosContacts.Email"], "tel" => $row["PosContacts.Tel"]);
+	$person = array("title" => $row["Title"], "name" => $row["PosName"], "email" => $row["Email"], "tel" => $row["Tel"]);
 
-	if ($row["Pos.Name"] != $current_pos) {
-		$current_pos = $row["Pos.Name"];
+	if ($row["PosName"] != $current_pos) {
+		$current_pos = $row["PosName"];
 		$peoplearray = array();
 		$peoplearray[] = $person;
-		$posarray[$row["Pos.Name"]] = array("Map_Id" => $row["Pos.Map_Id"], "province" => $row["Pos.Province"], "name" => $row["Pos.Name"], "people" => $peoplearray);
+		$posarray[$row["PosName"]] = array("Map_Id" => $row["Map_Id"], "province" => $row["Province"], "name" => $row["PosName"], "people" => $peoplearray);
 	}else{
-		$posarray[$row["Pos.Name"]]["people"][] = $person;
+		$posarray[$row["PosName"]]["people"][] = $person;
 	}
 }
 var_dump($posarray);
