@@ -77,9 +77,9 @@ while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
 		$current_pos = $row["Pos.Name"];
 		$peoplearray = array();
 		$peoplearray[] = $person;
-		$posarray["Pos.Name"] = array("Map_Id" => $row["Pos.Map_Id"], "province" => $row["Pos.Province"], "name" => $row["Pos.Name"], "people" => $peoplearray);
+		$posarray[$row["Pos.Name"]] = array("Map_Id" => $row["Pos.Map_Id"], "province" => $row["Pos.Province"], "name" => $row["Pos.Name"], "people" => $peoplearray);
 	}else{
-		$posarray["Pos.Name"]["people"][] = $person;
+		$posarray[$row["Pos.Name"]]["people"][] = $person;
 	}
 }
 var_dump($posarray);
