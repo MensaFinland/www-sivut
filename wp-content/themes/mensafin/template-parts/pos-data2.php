@@ -87,3 +87,4 @@ while($row=mysqli_fetch_array($posdata, MYSQL_ASSOC)){
   $GLOBALS['paikallisosastot'] = $posarray;
 
 ?>
+
