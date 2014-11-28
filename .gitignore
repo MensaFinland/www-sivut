@@ -4,3 +4,10 @@ speksi*/
 *.inc
 wp-content/uploads/
 github-update-hook.php
+
+#Generoidaan gulp:in kautta: npm install --save gulp gulp-concat gulp-jshint gulp-minify-css gulp-plato gulp-rename gulp-sourcemaps gulp-uglify#
+common.min.js
+calendar.min.js
+node_modules/
+report/
+*.js.map

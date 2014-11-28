@@ -15,13 +15,13 @@
 		/* Wordpressin teeman kuvahakemisto */
         var theme_pathk = '';
         if (window.wordpress_theme_path) {
-          theme_pathk = window.wordpress_theme_path
+          theme_pathk = window.wordpress_theme_path;
         }
 		
 		//Posti-lahetys
 		$("#wish").submit(function(e){
 			e.preventDefault();
-			$serdata = $(this).serialize();
+			var $serdata = $(this).serialize();
 			//alert($serdata);
 			
 			$.ajax({
@@ -31,7 +31,7 @@
 				data: $serdata,
 				success: function(data){
 					//alert(data);
-					if(data=="safty-fail"){
+					if(data==="safty-fail"){
 						alert("Vastasit turvakysymykseen väärin.");
 					}else{
 						alert("Palaute lähetetty. Pyrimme vastaamaan toiveeseesi.");

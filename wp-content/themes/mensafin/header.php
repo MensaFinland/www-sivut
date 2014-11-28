@@ -20,11 +20,11 @@
 <script type="text/javascript">
   window.wordpress_theme_path = "<?php bloginfo('template_directory'); ?>/";
 </script>
-<?php wp_enqueue_script('jquery-bundle'   , $http.'://code.jquery.com/jquery-2.0.3.min.js'                                       ); ?>
+<?php wp_enqueue_script('jquery-bundle'   , $http.'://code.jquery.com/jquery-2.1.1.min.js'                                       ); ?>
 <?php wp_enqueue_script('html5shiv'       , $http.'://html5shiv.googlecode.com/svn/trunk/html5.js'                           ); ?>
 <?php wp_enqueue_script('jquery-ui-bundle', $http.'://code.jquery.com/ui/1.10.3/jquery-ui.min.js'      , array('jquery-bundle')   ); ?>
 <?php wp_enqueue_style( 'jquery-ui-bundle', $http.'://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css'); ?>
-<?php wp_enqueue_script('local-skripteja' , get_bloginfo('template_directory') . '/skripteja.js' , array('jquery-bundle')   ); ?>
+<?php wp_enqueue_script('local-generoitu' , get_bloginfo('template_directory') . '/common.min.js' , array('jquery-bundle')   ); ?>
 <?php wp_enqueue_style('font-montserrat', $http.'://fonts.googleapis.com/css?family=Montserrat'); ?>
 <?php wp_head(); ?>
 
@@ -43,7 +43,7 @@
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Clink rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.css' type='text/css'%3E%3C/link%3E"));
-    document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-2.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
     document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/libraries/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
