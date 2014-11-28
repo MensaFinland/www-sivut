@@ -1,0 +1,14 @@
+#       robots.txt for http://www.mensa.fi/                                     
+User-agent:     *                                                               
+Disallow:       /forum                                                          
+Disallow:       /members                                                        
+Disallow:       /mkportal                                                       
+Disallow:       /admin                                                          
+Disallow:       /index.php                                                      
+Disallow:	/test
+Disallow:       /wp-includes                                                        
+Disallow:       /wp-content                                                        
+Disallow:       /wp-admin                                                        
+Disallow:       /speksi                                                        
+Disallow:       /images                                                        
+Disallow:       /.git                                                        
