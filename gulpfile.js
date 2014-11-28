@@ -24,7 +24,7 @@ function scripts(items, target) {
     return gulp.src(items)
         .pipe(sourcemaps.init())
         .pipe(concat(target))
-        .pipe(uglify({mangle: false, compress: {dead_code: false, unused: false }}))
+        .pipe(uglify())
         .pipe(sourcemaps.write('/.'))
         .pipe(gulp.dest(files.root));
 }
