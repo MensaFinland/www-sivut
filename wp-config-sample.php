@@ -11,6 +11,8 @@
  * asennuksen yhteydessä. Sinun ei tarvitse käyttää web-asennusta, vaan voit 
  * tallentaa tämän tiedoston nimellä "wp-config.php" ja muokata allaolevia arvoja.
  *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
+ *
  * @package WordPress
  */
 
@@ -63,20 +65,12 @@ define('NONCE_SALT',       'oma uniikki lauseesi');
 $table_prefix  = 'wp_';
 
 /**
- * WordPressin kieli.
- *
- * Muuta tämä WordPressin kieliasetusten muuttamiseksi. Vastaavasti nimetty 
- * kielitiedosto pitää asentaa hakemistoon wp-content/languages. Esimerkiksi,
- * asenna de.mo wp-content/languages -hakemistoon ja muuta WPLANG:in arvoksi 'de'
- * käyttääksesi WordPressiä saksan kielellä.
- */
-define ('WPLANG', 'fi');
-
-/**
  * Kehittäjille: WordPressin debug-moodi.
  *
  * Muuta tämän arvoksi true jos haluat nähdä kehityksen ajan debug-ilmoitukset
  * Tämä on erittäin suositeltavaa lisäosien ja teemojen kehittäjille.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
